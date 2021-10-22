@@ -9,6 +9,8 @@
     {{ recipe.instructions }}<br>
 {% endfor %}
 
+<h3 class="center-align">Recipes</h3>
+
 <div class="row">
     {% for recipe in recipes %}
     <div class="card">
@@ -25,6 +27,7 @@
             <li>{{ recipe.ingredients }}</li>
             <span class="card-title grey-text text-darken-4">Instructions</span>
             <li>{{ recipe.instructions }}</li>
+            <p><em>by: {{recipe.created_by}}</em></p>
         </div>
     </div>
     {% endfor %}
