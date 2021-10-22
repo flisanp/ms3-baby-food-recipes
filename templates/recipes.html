@@ -9,4 +9,25 @@
     {{ recipe.instructions }}<br>
 {% endfor %}
 
+<div class="row">
+    {% for recipe in recipes %}
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+        </div>
+        <div class="card-content">
+            {{ recipe.category_name }}
+            <span class="card-title activator grey-text text-darken-4"> {{ recipe.recipe_name }}<i class="fas fa-utensils"></i></span>
+            <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Ingredients</span>
+            <li>{{ recipe.ingredients }}</li>
+            <span class="card-title grey-text text-darken-4">Instructions</span>
+            <li>{{ recipe.instructions }}</li>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
 {% endblock %}
