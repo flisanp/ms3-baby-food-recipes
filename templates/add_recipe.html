@@ -2,32 +2,36 @@
 {% block content %}
 
 <h3 class="center-align">Add Recipe</h3>
-<div class="container">
-<div class="row">
-    <form class="col s12" method="POST" action="">
-        <div class="row">
-            <div class="input-field col s12 m6">
-                <i class="fas fa-asterisk prefix"></i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">Recipe Name</label>
+
+
+    <div class="row card-panel">
+        <form class="col s12" method="POST" action="">
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <i class="fas fa-asterisk prefix"></i>
+                    <input id="recipe_name" name="recipe_name" minlength="5" 
+                    maxlength="50" type="text" class="validate" required>
+                    <label for="recipe_name">Recipe Name</label>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12 m6">
-                <i class="fas fa-carrot prefix"></i>
-                <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Ingredients</label>
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <i class="fas fa-carrot prefix"></i>
+                    <input id="ingredients" name="ingredients" minlength="3"
+                    maxlength="50" type="text" class="validate" required>
+                    <label for="ingredients">Ingredients</label>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12 m6">
-                <i class="fas fa-book-open prefix"></i>
-                <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Instructions</label>
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <i class="fas fa-book-open prefix"></i>
+                    <input id="instructions" name="instructions" minlength="5" 
+                    type="text" class="validate" required>
+                    <label for="instructions">Instructions</label>
+                </div>
             </div>
-        </div>
-    </form>
-</div>
-</div>
+        </form>
+    </div>
+
 
 {% endblock %}
