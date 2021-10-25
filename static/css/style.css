@@ -1,12 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
 body {
-    background-color: #F6F4D2;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FEF9D7;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #B2E89B; 
+
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #FF5757;
+
+
+}
+
+h3 {
+
 }
 
 
 .nav-color{
-    background-color: rgb(203, 223, 189)
+    background-color: #FF5757;
 }
 
 .btn-small {
