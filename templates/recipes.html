@@ -12,6 +12,26 @@
 <h3 class="center-align">Recipes</h3>
 
 <div class="row">
+    <form action="{{ url_for('search') }}" method="post" class="col s12">
+        <div class="row valign-wrapper center-align">
+            <div class="input-field col s12 m8">
+                <i class="fas fa-search prefix grey-text"></i>
+                <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                <label for="query">Search recipes</label>
+            </div>
+        <div class="col s12 m4">
+            <a href="{{ url_for('get_recipes' )}}" class="red btn">Reset</a>
+            <button type="submit" class="grey btn">
+                <i class="fas fa-search left"></i>Search
+            </button>
+        </div>
+        </div>
+    </form>
+</div>
+
+
+{% if tasks|length > 0 %}
+<div class="row">
     {% for recipe in recipes %}
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
@@ -39,5 +59,10 @@
     </div>
     {% endfor %}
 </div>
+{% else %}
+
+<h4 class="center-align red-text">No Results Found</h4>
+
+{% endif %}
 
 {% endblock %}
