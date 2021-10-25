@@ -14,7 +14,8 @@
                             <option value="" disabled>Choose your category</option>
                     {% for category in categories %}
                         {% if category.category_name == recipe.category_name %}
-                            <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                            <option value="{{ category.category_name }}" selected>{{ category.category_name }}
+                            </option>
                         {% else %}
                             <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                         {% endif %}
@@ -37,10 +38,8 @@
             <div class="row">
                 <div class="input-field col s12 m6">
                     <i class="fas fa-carrot prefix"></i>
-                    <input id="ingredients" name="ingredients" minlength="3"
-                    maxlength="50" type="text" value="{{ recipe.ingredients }}" 
+                    <input id="ingredients" name="ingredients" type="text" value="{{ recipe.ingredients }}" 
                     class="validate" required>
-                    {{- recipe.recipe_description -}}
                     <label for="ingredients">Ingredients</label>
                 </div>
             </div>

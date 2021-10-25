@@ -29,7 +29,9 @@
             <li>{{ recipe.instructions }}</li>
 
             <div>
-                <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small grey">Edit</a>
+                {% if session.user|lower == recipe.created_by|lower %}
+                    <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small grey">Edit</a>
+                {% endif %}
             </div>
             <p><em>by: {{recipe.created_by}}</em></p>
         </div>
