@@ -38,11 +38,10 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 # Baby Food Recipes
 
-[A live version of the page can be viewed here](https://flisanp.github.io/ms2-barcelona-guide/)
+[A live version of the page can be viewed here]()
 
-![mockup image](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/mockup-image.png)
+![mockup image]()
 
-This website is a city guide to Barcelona and aims to provide information about the city to users who are planning to visit or are currently visiting Barcelona. Users can navigate through Google Maps to get top picks for restaurants, tourist attractions, hotels and shops.
 
 This website is a recipe site for baby food. Users can search trough existing recipes and create an account where they can upload their own recipes and share them with other users.
 
@@ -50,26 +49,25 @@ This website is a recipe site for baby food. Users can search trough existing re
 # UX
 
 #### The Goals For This Website Is To: 
-- Be user-friendly.
-- Let users know about good restaurants, shops and hotels.
-- Give users information about interesting places to visit during their stay.
-- Provide a map with markers for users to easily navigate and find what they are looking for.
-- Provide the citys weather forecast.
-- Make it easy for users to share the site.
+- Provide a place where people can find good and healthy recipes for babies
+- Share baby food recipes with other people
+- Have a place to store own recipes
+- Make it easy for users to navigate on the site to find what they are looking for
+
 
 #### User Stories
 
-1. As a new visitor to the website I would like to find good and healthy recipes that I can make for my baby.
+1. As a user I easily want to find good and healthy recipes that I can make for my baby
 ![wireframe]()
-2. As a user I want to be able to create an account where I can upload my own recipes.
+2. As a user I want to be able to search for a specific ingredient in the recipes
 ![wireframe]()
-3. As a user I want to be able to edit my recipes
+3. As a user I want to be able to create an account where I can upload my own recipes
 ![wireframe]()
-4. As a user I want to be able to delete my recipes
+4. As a user I want to be able to edit my recipes
 ![wireframe]()
-5. As a user I want to be able to log in to my account
+5. As a user I want to be able to delete my recipes
 ![wireframe]()
-6. As a user I want to be able to search for different recipes
+6. As a user I want to be able to log in and out of my account
 ![wireframe]()
 7. 
 ![wireframe]()

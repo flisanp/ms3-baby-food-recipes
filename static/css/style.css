@@ -18,6 +18,7 @@ h2 {
     font-weight: 500;
     font-size: 28px;
     letter-spacing: 1px;
+    text-transform: uppercase;
     color: #FF5757;
 
 
@@ -32,10 +33,11 @@ h4 {
 
 }
 
-.hero-image {
-
-   
+.card {
+    height: 300px;
+    width: 300px;  
 }
+
 
 .hero-text {
    

@@ -1,16 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 
+<h2 class="center-align">Recipes</h2>
 
-    {% for recipe in recipes %}
-    {{ recipe.recipe_name }}<br>
-    {{ recipe.category_name }}<br>
-    {{ recipe.ingredients }}<br>
-    {{ recipe.instructions }}<br>
-{% endfor %}
-
-<h3 class="center-align">Recipes</h3>
-
+<!--search recipes-->
 <div class="row">
     <form action="{{ url_for('search') }}" method="post" class="col s12">
         <div class="row valign-wrapper center-align">
@@ -29,18 +22,17 @@
     </form>
 </div>
 
-
+<!--recipes-->
+<div class="row"></div>
 {% if recipes|length > 0 %}
-<div class="row">
     {% for recipe in recipes %}
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/office.jpg">
+            <img class="activator" src="{{ recipe.image_url }}">
         </div>
         <div class="card-content">
             {{ recipe.category_name }}
             <span class="card-title activator grey-text text-darken-4"> {{ recipe.recipe_name }}<i class="fas fa-utensils"></i></span>
-            <p><a href="#">This is a link</a></p>
         </div>
         <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Ingredients</span>
