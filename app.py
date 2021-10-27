@@ -24,6 +24,31 @@ def home():
     return render_template("index.html")
 
 
+
+@app.route("/breakfast")
+def breakfast():
+    recipes = list(mongo.db.recipes.find())
+    return render_template("breakfast.html", recipes=recipes)
+
+
+@app.route("/lunch")
+def lunch():
+    recipes = list(mongo.db.recipes.find())
+    return render_template("lunch.html", recipes=recipes)
+
+
+@app.route("/dinner")
+def dinner():
+    recipes = list(mongo.db.recipes.find())
+    return render_template("dinner.html", recipes=recipes)
+
+
+@app.route("/snack")
+def snack():
+    recipes = list(mongo.db.recipes.find())
+    return render_template("snack.html", recipes=recipes)
+
+
 # all recipes page
 @app.route("/get_recipes")
 def get_recipes():
