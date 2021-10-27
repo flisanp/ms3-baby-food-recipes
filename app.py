@@ -24,7 +24,6 @@ def home():
     return render_template("index.html")
 
 
-
 @app.route("/breakfast")
 def breakfast():
     recipes = list(mongo.db.recipes.find())

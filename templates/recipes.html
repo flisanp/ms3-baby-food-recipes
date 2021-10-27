@@ -22,16 +22,14 @@
     </form>
 </div>
 
-<div class="row">
-    <div class="col">
-        <ul>
-            <li><a href="{{ url_for('breakfast') }}">Breakfast</a></li>
-            <li><a href="{{ url_for('lunch') }}">Lunch</a></li>
-            <li><a href="{{ url_for('dinner') }}">Dinner</a></li>
-            <li><a href="{{ url_for('snack') }}">Snack</a></li>
-        </ul>
-    </div>
-</div>
+<ul class="pagination center-align">
+    <li><a href="{{ url_for('get_recipes') }}">All</a></li>
+    <li><a href="{{ url_for('breakfast') }}">Breakfast</a></li>
+    <li><a href="{{ url_for('lunch') }}">Lunch</a></li>
+    <li><a href="{{ url_for('dinner') }}">Dinner</a></li>
+    <li><a href="{{ url_for('snack') }}">Snack</a></li>
+</ul>
+
 
 <!--all recipes-->
 <div class="row">
@@ -55,11 +53,26 @@
 
             <div>
                 {% if session.user|lower == recipe.created_by|lower %}
-                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small grey">Delete</a>
                 <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small grey">Edit</a>
+                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small grey modal-trigger"
+                    data-target="modal1{{ recipe._id }}">Delete</a>
                 {% endif %}
+
+                <p><em>by: {{recipe.created_by}}</em></p>
+
             </div>
-            <p><em>by: {{recipe.created_by}}</em></p>
+        </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal1{{recipe._id}}" class="modal">
+        <div class="modal-content">
+            <h4>Are You Sure You Want To Delete This Recipe?</h4>
+            <p>Deleting The Recipe Will Remove It Permanently</p>
+        </div>
+        <div class="modal-footer">
+            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}"" class=" modal-close waves-effect waves-green
+                btn-flat">Yes</a>
+            <a href="{{ url_for('get_recipes' )}}"" class=" modal-close waves-effect waves-green btn-flat">No</a>
         </div>
     </div>
 </div>

@@ -3,6 +3,7 @@ $(document).ready(function () {
     edge: "right"
   });
   $('select').formSelect();
+  $('.modal').modal();
 
 /*
 Code that will fix the validation requirements for Materialize select elements copied from Code Institue lesson: Materialize Form Validation
