@@ -73,11 +73,36 @@
         {% endblock %}
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    {% block scripts %}
-    {% endblock %}
-</body>
-</html>
+   <!-- footer -->
+   <footer class="page-footer">
+       <div class="container">
+           <div class="row">
+               <div class="col l6 s12">
+                   <h5 class="white-text">Footer Content</h5>
+               </div>
+               <!-- social icons/links -->
+               <div class="col l6 s12 pagination">
+                   <ul>
+                       <li><a target="_blank" class="grey-text text-lighten-3" href="https://www.facebook.com"><i
+                                   class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                       <li><a target="_blank" class="grey-text text-lighten-3" href="https://www.instagram.com"><i
+                                   class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                       <li><a target="_blank" class="grey-text text-lighten-3" href="https://www.twitter.com"><i
+                                   class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                       <li><a target="_blank" class="grey-text text-lighten-3" href="https://www.pinterest.com"><i
+                                   class="fab fa-pinterest" aria-hidden="true"></i></a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </footer>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+   {% block scripts %}
+   {% endblock %}
+   </body>
+
+   </html>

@@ -2,10 +2,19 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #Fff;
+    background: url("../images/food-jar.jpg") no-repeat fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
 }
 
-
+main {
+    flex: 1 0 auto;
+  }
 
 h1 {
     font-family: "Montserrat", sans-serif;
@@ -46,11 +55,17 @@ h4 {
 
 }
 
+/*----------navbar-----------*/
+
 /*------------ changing the text color on navbar:
 https://stackoverflow.com/questions/33746269/changing-the-text-color-on-a-nav-bar-using-materialize-css-rails
 ------------*/
 
 nav ul li a{
+    color: black;
+  } 
+
+nav a i{
     color: black;
   } 
 
@@ -62,20 +77,12 @@ nav ul li a{
     letter-spacing: 2px;
     padding-right: 20px;
   }
-.nav-color{
-    
-}
 
-
-  }
-
-  
-
+/*----------recipes-----------*/
 
 .recipe-display{
  
 }
-
 
 .card {
     
@@ -85,7 +92,6 @@ nav ul li a{
     width:  300px;
     height: 300px;
     object-fit: cover;
-
 }
 
 
@@ -96,11 +102,12 @@ nav ul li a{
     
 }
 
-.hero-text {
-   
-}
-
+/*----------buttons-----------*/
 
 .btn-small {
     margin: 10px;
 }
+
+.hero-container {
+ 
+  }
