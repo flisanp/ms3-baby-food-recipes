@@ -5,6 +5,8 @@ body {
     background-color: #Fff;
 }
 
+
+
 h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -44,6 +46,32 @@ h4 {
 
 }
 
+/*------------ changing the text color on navbar:
+https://stackoverflow.com/questions/33746269/changing-the-text-color-on-a-nav-bar-using-materialize-css-rails
+------------*/
+
+nav ul li a{
+    color: black;
+  } 
+
+.menu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-right: 20px;
+  }
+.nav-color{
+    
+}
+
+
+  }
+
+  
+
+
 .recipe-display{
  
 }
@@ -57,11 +85,12 @@ h4 {
     width:  300px;
     height: 300px;
     object-fit: cover;
+
 }
 
+
 .card-image{
-    
-}
+   
 
 .card-content{
     
@@ -71,9 +100,6 @@ h4 {
    
 }
 
-.nav-color{
-    background-color: #8BB8A8;
-}
 
 .btn-small {
     margin: 10px;
