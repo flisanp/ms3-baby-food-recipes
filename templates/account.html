@@ -1,38 +1,54 @@
 {% extends "base.html" %}
 {% block content %}
-
-
+<!--show username-->
 <div class="row">
     <div class="col s12 m8 offset-m2">
-            <h2 class="card-panel center-align">
-                {{ username }}'s 
-            </h2>
-            <h3 class="center-align">My recipes</h3>
-            <div class="row">
-                <div class="center-align">
-                    <a class="btn center-align" href="{{ url_for('add_recipe') }}">Add Recipe<i class="fas fa-plus right "></i></a>
-                </div>
+        <h2 class="card-panel center-align">
+            {{ username }}'s
+        </h2>
+        <!--add recipe button-->
+        <div class="row">
+            <div class="col s12 center-align">
+                <h3 class="center-align">My recipes</h3>
+                <a class="btn center-align" href="{{ url_for('add_recipe') }}">Add Recipe<i
+                    class="fas fa-plus right "></i></a>
             </div>
+        </div>
+        {% if recipes|length > 0 %}
         <!--show users recipes-->
         <div class="row">
-            {% if recipes|length > 0 %}
             {% for recipe in recipes %}
             {% if session.user|lower == recipe.created_by|lower %}
             <div class="col s12 m6 l4">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator recipe-image" src="{{ recipe.image_url }}" alt="#">
-                    
+                    </div>
                     <div class="card-content">
                         {{ recipe.category_name }}
                         <span class="card-title activator grey-text text-darken-4">{{ recipe.recipe_name }}</span>
                     </div>
+                    <!--recipe display-->
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Ingredients</span>
-                        <li>{{ recipe.ingredients }}</li>
+                        {% for ingredient in recipe.ingredients.splitlines() %}
+                        <div>
+                            <ul>
+                                <li>
+                                    {{ ingredient }}
+                                </li>
+                            </ul>
+                        </div>
+                        {% endfor %}
                         <span class="card-title grey-text text-darken-4">Instructions</span>
-                        <li>{{ recipe.instructions }}</li>
-
+                        {% for steps in recipe.instructions.splitlines() %}
+                        <div>
+                            <ol>
+                                <li>{{ steps }}</li>
+                            </ol>
+                        </div>
+                        {% endfor %}
+                        <!--edit/delete recipe-->
                         <div>
                             {% if session.user|lower == recipe.created_by|lower %}
                             <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small grey">Edit</a>
@@ -66,7 +82,4 @@
     </div>
 </div>
 </div>
-
-
-
 {% endblock %}
