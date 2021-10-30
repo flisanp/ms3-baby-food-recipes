@@ -68,6 +68,7 @@
             </div>
             {% endfor %}
 
+            <!--edit/delete recipe-->
             <div>
                 {% if session.user|lower == recipe.created_by|lower %}
                 <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small grey">Edit</a>
