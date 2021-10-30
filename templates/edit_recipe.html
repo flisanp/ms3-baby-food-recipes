@@ -51,19 +51,28 @@
                     type="text" value="{{ recipe.instructions }}" class="validate" required>
                     <label for="instructions">Instructions</label>
                 </div>
-            </div>
-            <!--submit button-->
-            <div class="row">
-                <div class="col s12 center-align">
-                       <!-- cancel button -->
-                       <a href="{{ url_for('get_recipes') }}" class="btn-small grey">
-                        Cancel <i class="fas fa-times-circle right"></i>
-                    </a>
-                    <button type="submit" class="btn-small grey">Edit Recipe<i class="fas fa-plus right"></i></button>
                 </div>
-            </div>
-        </form>
-    </div>
+                <!--image_url-->
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <i class="fas fa-book-open prefix"></i>
+                        <input id="image_url" name="image_url" type="text" class="validate" required>
+                        <label for="image_url">Image</label>
+                    </div>
+                </div>
+                <!--submit button-->
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <!-- cancel button -->
+                        <a href="{{ url_for('get_recipes') }}" class="btn-small grey">
+                            Cancel <i class="fas fa-times-circle right"></i>
+                        </a>
+                        <button type="submit" class="btn-small grey">Edit Recipe<i
+                                class="fas fa-plus right"></i></button>
+                    </div>
+                </div>
+                </form>
+                </div>
 
 
 {% endblock %}
