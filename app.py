@@ -117,14 +117,15 @@ def login():
     return render_template("login.html")
 
 
+# account
 @app.route("/account/<username>", methods=["GET", "POST"])
 def account(username):
     # grab the session user's username from db
-    username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
-
+    username = mongo.db.users.find_one({"username": session["user"]})["username"]
+    recipes = list(mongo.db.recipes.find({"created_by": username }))
+    
     if session["user"]:
-        return render_template("account.html", username=username)
+        return render_template("account.html", username=username, recipes=recipes)
 
     return redirect(url_for("login"))
 
