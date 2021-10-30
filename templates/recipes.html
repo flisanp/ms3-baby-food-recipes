@@ -39,17 +39,34 @@
 <div class="col s12 m6 l4">
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator recipe-image" src="{{ recipe.image_url }}">
+            <img class="activator recipe-image" src="{{ recipe.image_url }}" alt="">
         </div>
         <div class="card-content">
             {{ recipe.category_name }}
             <span class="card-title activator grey-text text-darken-4">{{ recipe.recipe_name }}</span>
         </div>
+        <!--recipe display-->
         <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Ingredients</span>
-            <li>{{ recipe.ingredients }}</li>
+            {% for ingredient in recipe.ingredients.splitlines() %}
+            <div>
+                <ul>
+                    <li>
+                        {{ ingredient }}
+                    </li>
+                </ul>
+            </div>
+            {% endfor %}
+
             <span class="card-title grey-text text-darken-4">Instructions</span>
-            <li>{{ recipe.instructions }}</li>
+
+            {% for steps in recipe.instructions.splitlines() %}
+            <div>
+                <ol>
+                    <li>{{ steps }}</li>
+                </ol>
+            </div>
+            {% endfor %}
 
             <div>
                 {% if session.user|lower == recipe.created_by|lower %}
