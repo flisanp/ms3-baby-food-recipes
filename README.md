@@ -161,11 +161,32 @@ I manually tested the responsiveness on all available devices in DevTools. Galax
 
 #### During Development I Fixed The Following Bugs
 
-- Google Maps would not load.
-    - InitMap being called in the `<body>` instead of as a callback function: `<body onload="initMap()">`
 
-- Info window on markers only shows last location.
-    - changed marker and infowindow to const types instead of var. They need to be const as per the google documentation.
+- I wanted the user to be able to add ingredients and instructions so they would appear on new lines. At first I had the <input> field from Materialize then I changed it to <textarea> and added the class of materialize-textarea so that when a user added an ingredient they could just press enter and next ingredient would appear on a new line.
+
+
+- Ingredients and Instructions on the recipe card was showing without any linebreaks.
+Previous:{{ recipe.category_name }}
+Added a for loop with list element so the ingredients/instructions could iterate through:
+    {% for ingredient in recipe.ingredients %}
+            <div>
+                <ul>
+                    <li>
+                        {{ ingredient }}
+                    </li>
+                </ul>
+            </div>
+    {% endfor %} 
+
+- This solves the issue but now all the letters was on a new line.
+I added .splitlines() and that problem was solved.
+
+- The instructions all have nr 1 
+
+
+
+
+
 
 - Issue with previous info window not closing when clicking on a new marker.
   ![issue markers](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/issue-markers.png)
