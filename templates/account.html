@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
+
+
 <!--show username-->
 <div class="row">
-    <div class="col s12 m8 offset-m2">
-        <h2 class="card-panel center-align">
+    <div class="col s12">
+        <h2 class="center-align">
             {{ username }}'s
         </h2>
         <!--add recipe button-->
@@ -14,6 +16,8 @@
                     class="fas fa-plus right "></i></a>
             </div>
         </div>
+    
+        
         {% if recipes|length > 0 %}
         <!--show users recipes-->
         <div class="row">
@@ -82,4 +86,5 @@
     </div>
 </div>
 </div>
+
 {% endblock %}
