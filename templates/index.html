@@ -12,19 +12,36 @@
 
 <div class="row">
    <div class="col s12 ">
+      <!--
       <img class="responsive-img" src="{{ url_for('static', filename='images/baby2.png') }}">
-      
+      -->
       <div class="row">
          <div class="col s12 ">
-      <h1 class="center-align">Yum Yum</h1>
+      <h1 class="center-align heading">Yum Yum</h1>
+      <h2 class="center-align sub-heading">Good and healthy recipes for babies</h2>
+      <p>Sign Up Now</p>
          </div>
       </div>
-      
-      <div class="row">
-         <div class="col s12">
-      <h2 class="center-align sub-heading">BABY FOOD</h2>
-         </div>
-      </div>
+   </div>
+</div>
+
+<!--recipe category links-->
+<div class="row">
+   <div class="col s12 m6 l3">
+     
+      <a href="{{ url_for('breakfast') }}">Breakfast
+      <img class="responsive-img circle" src="{{ url_for('static', filename='images/breakfast.png') }}"></a>
+            
+               <span class="card-title">Breakfast</span>
+     
+         <div class="card">
+            <div class="card-image">
+              <img src="{{ url_for('static', filename='images/breakfast.png') }}">
+              <span class="card-title">Breakfast</span>
+            </div>
+        </div>
+        
+         
    </div>
 </div>
 
