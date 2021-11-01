@@ -285,6 +285,27 @@ Scroll to top button: [w3schools.com](https://www.w3schools.com/howto/howto_js_s
 
 
 #### Media
+
+Apple and blueberry puree: https://unsplash.com/photos/QvMen4ChnoI
+Fruit and veggie smoothie: https://unsplash.com/photos/wjt2-Vo7GA8
+Pancakes: https://unsplash.com/photos/tKKe3aDvncE
+Porridge: https://unsplash.com/photos/-eLS9k_uhUc
+risotto: https://unsplash.com/photos/qIPRTMulc-g
+Pumpkin soup: https://cdn.pixabay.com/photo/2018/03/20/09/18/plate-3242587_1280.jpg
+chickpea rice: https://unsplash.com/photos/vCNLO20cuwY
+mango chia: https://unsplash.com/photos/oCKpSGYTizE
+soppa: https://unsplash.com/photos/BA6FzJZ9IfY
+soppa: https://unsplash.com/photos/BA6FzJZ9IfY
+
+Recipes from:
+https://www.eatingbirdfood.com/oatmeal-for-babies/
+https://www.homemade-baby-food-recipes.com/
+https://www.mylittlemoppet.com/easy-pumpkin-soup-recipe-babies/
+https://plantbasedjuniors.com/
+https://babyfoode.com/
+
+  
+
 - Image on landing page by [Camille Minouflet on Unsplash](https://unsplash.com/@caminouflet)
 - Image on contact page by [Vitor Monteiro on Unsplash](https://unsplash.com/@vitorhugomonteiro) 
 - Icons for markers on map from [Map icons](http://map-icons.com)
