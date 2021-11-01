@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;  
-    background-color: blanchedalmond;
+    color: #343739;
 }
 
 main {
@@ -55,6 +55,21 @@ h5 {
     font-family: 'Gluten', cursive;
 }
 
+/*----------top header-----------*/
+
+.header-top {
+    background-color: #FEDCD2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: 'Gluten', cursive;
+
+}
+.header-top a {
+    color: #FC6A60;
+}
+
 /*----------navbar-----------*/
 
 /*------------ changing the text color on navbar:
@@ -62,11 +77,11 @@ https://stackoverflow.com/questions/33746269/changing-the-text-color-on-a-nav-ba
 ------------*/
 
 nav ul li a{
-    color: black;
+    color: #343739;
   } 
 
 nav a i{
-    color: black;
+    color: #343739;
   } 
 
 .menu {
@@ -76,17 +91,16 @@ nav a i{
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+  }
+
+  .menu a:hover {
+    color: #FC6A60!important;
   }
 
 /*----------recipes-----------*/
-
-.recipe-display{
- 
-}
-
-.card {
-    
-}
 
 .recipe-image {
     width:  300px;
@@ -94,7 +108,13 @@ nav a i{
     object-fit: cover;
 }
 
+.recipe-display{
 
+}
+
+.card {
+    
+}
 .card-image{
    
 
@@ -108,6 +128,8 @@ nav a i{
     margin: 10px;
 }
 
+/*----------heading text-----------*/
+
 .heading {
     text-align: center;
     padding-top: 30%;
@@ -116,4 +138,10 @@ nav a i{
 sub-heading{
     text-align: center;
   padding-top: 2rem;
+}
+
+/*----------footer----------*/
+
+.page-footer{
+    background-color:#FEDCD2;
 }
