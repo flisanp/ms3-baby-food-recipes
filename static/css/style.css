@@ -107,7 +107,7 @@ nav a i{
   }
 
   .menu a:hover {
-    color: #FC6A60!important;
+    color: #ff8a65;
   }
 
 /*----------recipes-----------*/
@@ -153,11 +153,8 @@ sub-heading{
 
 /*----------footer----------*/
 
-.page-footer{
-    background-color:#FEDCD2;
-  
-}
+
 
 .active {
-    color: #FEDCD2!important;
+    color: #ff8a65;
 }
