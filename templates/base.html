@@ -22,14 +22,15 @@
 <div class="header-top #e0f2f1 teal lighten-5">
     <div class="center-align">
         <a href="{{ url_for('home') }}">Yum Yum</a>
+        <img class="logo center-align" src="{{ url_for('static', filename='images/logo.png') }}" alt="">
     </div>
+
 </div>
 
 
         <!--top navbar-->
         <nav class="nav-extended menu">
             <div class="nav-wrapper">
-                <a href="{{ url_for('home') }}" class="brand-logo"><img src="#" alt=""></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
@@ -50,7 +51,8 @@
         </nav>
         <!--mobile sidenav-->
         <ul class="sidenav" id="mobile-demo">
-            <li><h4 class="center-align">Yum Yum</h4></li>
+            <li><a class="center-align" href="{{ url_for('home') }}"><img class="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt=""></a></li>
+            
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
             {% if session.user %}
