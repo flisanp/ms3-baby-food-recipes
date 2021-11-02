@@ -14,7 +14,7 @@ main {
   }
 
 h1 {
-    font-family: 'Gluten', cursive;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 64px;
     letter-spacing: 3px;
@@ -56,6 +56,12 @@ h5 {
 }
 
 /*----------top header-----------*/
+
+.logo {
+   
+    height: 36px;
+    width: 36px;
+}
 
 .header-top {
     
