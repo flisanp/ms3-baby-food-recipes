@@ -233,6 +233,7 @@ def delete_category(category_id):
     flash("Category Deleted")
     return redirect(url_for("get_categories"))
 
+# https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vii-error-handling
 
 @app.errorhandler(404)
 def not_found_error(error):
