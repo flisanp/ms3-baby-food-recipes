@@ -13,7 +13,7 @@
                     <input type="text" name="query" id="query" minlength="3" class="validate" required>
                     <label for="query">Search recipes</label>
                 </div>
-
+                <!--reset/search buttons-->
                 <div class="col s12 m4">
                     <a href="{{ url_for('get_recipes' )}}" class="red btn">Reset</a>
                     <button type="submit" class="grey btn">
@@ -63,7 +63,6 @@
                 {% endfor %}
 
                 <span class="card-title grey-text text-darken-4">Instructions</span>
-
                 {% for steps in recipe.instructions.splitlines() %}
                 <div>
                     <ol>

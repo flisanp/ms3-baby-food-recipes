@@ -26,24 +26,28 @@ def home():
     return render_template("index.html")
 
 
+# breakfast category page
 @app.route("/breakfast")
 def breakfast():
     recipes = list(mongo.db.recipes.find())
     return render_template("breakfast.html", recipes=recipes)
 
 
+# lunch category page
 @app.route("/lunch")
 def lunch():
     recipes = list(mongo.db.recipes.find())
     return render_template("lunch.html", recipes=recipes)
 
 
+# dinner category page
 @app.route("/dinner")
 def dinner():
     recipes = list(mongo.db.recipes.find())
     return render_template("dinner.html", recipes=recipes)
 
 
+# snack category page
 @app.route("/snack")
 def snack():
     recipes = list(mongo.db.recipes.find())
@@ -106,7 +110,7 @@ def login():
                 existing_user["password"], request.form.get("password")
             ):
                 session["user"] = request.form.get("username").lower()
-                flash("Welcome, {}".format(request.form.get("username")))
+                flash("Hi, {}".format(request.form.get("username")))
                 return redirect(url_for("account", username=session["user"]))
             else:
                 # invalid password match
@@ -121,7 +125,7 @@ def login():
     return render_template("login.html")
 
 
-# account (help from tutor)
+# account page (help from tutor to view users recipes)
 @app.route("/account/<username>", methods=["GET", "POST"])
 def account(username):
     # grab the session user's username from db
@@ -140,7 +144,7 @@ def account(username):
 @app.route("/logout")
 def logout():
     # remove user from session cookie
-    flash("You have been logged out")
+    flash("You have been logged out, see you soon")
     session.pop("user")
     return redirect(url_for("login"))
 
@@ -178,7 +182,7 @@ def edit_recipe(recipe_id):
             "created_by": session["user"]
         }
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
-        flash("Your Recipe Is Successfully Updated")
+        flash("Your Recipe Is Updated!")
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
@@ -190,16 +194,18 @@ def edit_recipe(recipe_id):
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
-    flash("Your Recipe is Successfully Deleted")
+    flash("Your Recipe is Deleted")
     return redirect(url_for("get_recipes"))
 
 
+# manage categories page
 @app.route("/get_categories")
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
 
 
+# add category function
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
     if request.method == "POST":
@@ -213,6 +219,7 @@ def add_category():
     return render_template("add_category.html")
 
 
+# edit category function
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
     if request.method == "POST":
@@ -227,14 +234,15 @@ def edit_category(category_id):
     return render_template("edit_category.html", category=category)
 
 
+# delete category function
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
     flash("Category Deleted")
     return redirect(url_for("get_categories"))
 
-# https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vii-error-handling
 
+# 404 error page, code from https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vii-error-handling
 @app.errorhandler(404)
 def not_found_error(error):
     return render_template('404.html'), 404
