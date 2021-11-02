@@ -4,6 +4,7 @@ $(document).ready(function () {
   });
   $('select').formSelect();
   $('.modal').modal();
+  $('.collapsible').collapsible();
 
 /*
 Code that will fix the validation requirements for Materialize select elements copied from Code Institue lesson: Materialize Form Validation
