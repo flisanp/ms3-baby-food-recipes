@@ -110,6 +110,13 @@ nav a i{
     height: 300px;
     object-fit: cover;
 }
+.card {
+   
+}
+
+.pagination li.active{
+    background-color: #DCB239 !important;
+}
 
 /*----------buttons-----------*/
 
