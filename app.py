@@ -132,7 +132,7 @@ def account(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
     recipes = list(mongo.db.recipes.find({"created_by": username}))
-    
+
     if session["user"]:
         return render_template(
             "account.html", username=username, recipes=recipes)
@@ -144,7 +144,7 @@ def account(username):
 @app.route("/logout")
 def logout():
     # remove user from session cookie
-    flash("You have been logged out, see you soon")
+    flash("You have been logged out, see you soon!")
     session.pop("user")
     return redirect(url_for("login"))
 
@@ -242,7 +242,9 @@ def delete_category(category_id):
     return redirect(url_for("get_categories"))
 
 
-# 404 error page, code from https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vii-error-handling
+# 404 error page, code from:
+# https://blog.miguelgrinberg.com/post/
+# the-flask-mega-tutorial-part-vii-error-handling
 @app.errorhandler(404)
 def not_found_error(error):
     return render_template('404.html'), 404

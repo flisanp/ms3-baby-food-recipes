@@ -69,7 +69,7 @@ This website is a recipe site for baby food. Users can search trough existing re
 - [ResizeImage](https://resizeimage.net) - used to resize images.
 - [Coolors](https://coolors.co) - used to create the color palette.
 - [Techsini](https://techsini.com/multi-mockup/index.php) - used to create the mockup image in the beginning of this README file.
-- [Canva](https://www.canva.com) used to create the favicon.
+- [Canva](https://www.canva.com) used to create the hero image and logo in navbar.
 
 # Deployment
 ### Create Project
