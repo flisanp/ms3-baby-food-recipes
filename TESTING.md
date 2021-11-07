@@ -33,8 +33,9 @@
 ### During Development I Fixed The Following Bugs
 
 - When a user added the ingredients to the recipes they've appeared on the same line instead of seperate lines which made it difficult to read. The same was for instructions.
-! [issue1] <br>
+<br>
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/issue1.png" width="200" height="200"/>
+<br>
 
     - I wanted the user to be able to add ingredients and instructions so they all would appear on seperate lines in a list. At first I had the `input` field from Materialize then I changed it to `textarea` and added the class of .materialize-textarea so that when a user added an ingredient or a new step in the instructions they could just press enter to make a line break. I've also added a .helper-text to clearify for the user what to do.
 
@@ -53,7 +54,9 @@ Changed it to:
     `{% endfor %}`
 
 - This solved the issue but now all the letters was on a new line.
-![issue2](https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/issue2.png)
+<br>
+<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/issue2.png" width="200" height="200"/>
+<br>
     - I added .splitlines() and that the fixed problem.
 
 - The different steps for the instructions all have nr 1.
