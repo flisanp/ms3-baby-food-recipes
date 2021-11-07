@@ -52,90 +52,54 @@ This website is a recipe site for baby food. Users can search trough existing re
 # Technologies Used
 
 - HTML5, CSS3, Javascript and Python3
-- [GitPod](https://www.gitpod.io) - The developer used GitPod for their IDE while building the website.
+- [GitPod](https://www.gitpod.io) - used GitPod for their IDE while building the website.
 - [GitHub](https://github.com) - This project uses GitHub to store the projects code after being pushed from Git.
-- [Materialize](https://materializecss.com/) - This project uses Bootstrap to make the site responsive and to implement features such as the navbar and the buttons.
-- [FontAwesome](https://fontawesome.com) - This project uses FontAwesome for social media icons.
+- [Materialize](https://materializecss.com/) - used to make the site responsive and to implement features such as the navbar and the buttons.
+- [FontAwesome](https://fontawesome.com) - for social media icons.
 - [Google Fonts](https://fonts.google.com) - This project uses Montserrat and Lora from Google Fonts.
-- [Balsamiq](https://balsamiq.com) - The developer used Balsamiq to create wireframes.
-- [DevTools](https://developers.google.com/web/tools/chrome-devtools) - The developer has used DevTools to test responsiveness and diagnose problems. The tool **Lighthouse** has been used to improve the website's quality. 
-- [Tinypng](https://tinypng.com) - The developer used Tinypng for compressing images.
-- [Freeformatter](https://www.freeformatter.com/) - The developer used Freeformatter for beautifying the code.
-- [A11y](https://color.a11y.com) - The developer used A11y for checking the websites color contrast accessibility.
-- [Wave](https://wave.webaim.org) - The developer used Wave for checking the websites color contrast accessibility. 
-- [ResizeImage](https://resizeimage.net) - The developer used ResizeImage to resize images.
-- [Coolors](https://coolors.co) - The developer used Coolors to create color palette.
-- [Techsini](https://techsini.com/multi-mockup/index.php) - The developer used Techsini for creating the mockup image in the beginning of this README file.
-- [Canva](https://www.canva.com) The developer used Canva for creating the favicon.
-
-
-
-# Testing
-
-#### I Manually Tested The Following Features
-- Links in navbar works and takes you to the correct pages.
-- Buttons on landing page 
-- Hover effect on links in navbar.
-- Links to social media platforms works and opens in a new tab window.
-
-**Responsiveness**
-
-
-#### Testing User Stories 
-
-
-#### During Development I Fixed The Following Bugs
-
-
-- I wanted the user to be able to add ingredients and instructions so they would appear on new lines. At first I had the <input> field from Materialize then I changed it to <textarea> and added the class of materialize-textarea so that when a user added an ingredient they could just press enter and next ingredient would appear on a new line.
-
-
-- Ingredients and Instructions on the recipe card was showing without any linebreaks.
-Previous:{{ recipe.category_name }}
-Added a for loop with list element so the ingredients/instructions could iterate through:
-    {% for ingredient in recipe.ingredients %}
-            <div>
-                <ul>
-                    <li>
-                        {{ ingredient }}
-                    </li>
-                </ul>
-            </div>
-    {% endfor %} 
-
-- This solves the issue but now all the letters was on a new line.
-I added .splitlines() and that problem was solved.
-
-- The different steps for the instructions all have nr 1 
-
-
-
-#### HTML Testing
-https://validator.w3.org/ -
-![html]()
-
-
-#### CSS Testing 
-https://jigsaw.w3.org/css-validator/ - 
-![css]()
-
-
-#### JS Testing
-https://jshint.com/ - 
-
-
-#### Accessibility test
-https://wave.webaim.org - 
-![wave valid]()
+- [Balsamiq](https://balsamiq.com) - to create wireframes.
+- [DevTools](https://developers.google.com/web/tools/chrome-devtools) - to test responsiveness and diagnose problems. The tool **Lighthouse** has been used to improve the website's quality. 
+- [Tinypng](https://tinypng.com) - for compressing images.
+- [Freeformatter](https://www.freeformatter.com/) - used for beautifying the code.
+- [A11y](https://color.a11y.com) - used to check the websites color contrast accessibility.
+- [Wave](https://wave.webaim.org) - used to check the websites color contrast accessibility. 
+- [ResizeImage](https://resizeimage.net) - used to resize images.
+- [Coolors](https://coolors.co) - used to create the color palette.
+- [Techsini](https://techsini.com/multi-mockup/index.php) - used to create the mockup image in the beginning of this README file.
+- [Canva](https://www.canva.com) used to create the favicon.
 
 # Deployment
+### Create Project
 To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
-1. Navigate to flisanp repositories.
+1. Navigate to Github[GitHub](https://github.com/) and sign in
+flisanp repositories.
 2. Select the one that is called ms2-barcelona-guide from the list.
 3. Click on settings in the menu that is located to the top right.
 4. Scroll down to "GitHub Pages"
 5. Under "Source", Select Master Branch from the drop-down menu.
 6. Click Save and the website is now deployed.
+
+### Deployment to Heroku
+This project was deployed through Heroku using the following steps:
+
+-Navigate to Heroku[Heroku](https://dashboard.heroku.com/login) and sign in
+-On the top right corner there is a button that says "New". Click this button and choose the option "Create New App"
+-Choose a name for the App and what region that are closest to your location, click "Create App"
+-Click on the tab saying "Deploy" and select GitHub, Connect to GitHub
+-Enter the name of your repository on GitHub and click search
+-When the repository is found, click the "Connect" button
+-Click on the tab saying "Settings" and then click on the button saying "Reveal config vars"
+
+Add these variables:
+
+key: IP, value: 0.0.0.0
+key: MONGODB_NAME, value: (the name of your database)
+key: MONGO_URI, value: (unique uri from mongo.db)
+key: PORT, value: 5000
+key: SECRET_KEY, value: (unique secret key for configuration)
+
+-Click on the "Deploy" tab and scroll down to the section "Automatic Deployment"
+-Choose the branch you want to deploy from and then click "Enable Automatic Deploys"
 
 ### How To Run The Code Locally
 1. Log inte Gitpod with your account.
