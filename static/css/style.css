@@ -16,9 +16,9 @@ main {
 h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 52px;
     letter-spacing: 3px;
-    color: #ff8a65; 
+    color: #455a64; 
 }
 
 h2 {
@@ -52,18 +52,17 @@ h5 {
 
 /*----------top header-----------*/
 
-.logo {
-    height: 36px;
-    width: 36px;
-}
-
-.header-top {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 32px;
+.brand-logo {
     text-transform: uppercase;
     font-family: 'Gluten', cursive;
+    color: #ff8a65;
+}
 
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 5px;
 }
 
 .header-top a {
