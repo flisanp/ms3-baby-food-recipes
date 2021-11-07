@@ -1,6 +1,6 @@
 # Baby Food Recipes
 
-[A live version of the page can be viewed here]()
+[A live version of the page can be viewed here](https://baby-food.herokuapp.com/home)
 
 ![mockup image]()
 
@@ -51,7 +51,10 @@ This website is a recipe site for baby food. Users can search trough existing re
 
 # Technologies Used
 
+## Languages used
 - HTML5, CSS3, Javascript and Python3
+
+## Frameworks, Libraries & Programs Used
 - [GitPod](https://www.gitpod.io) - used GitPod for their IDE while building the website.
 - [GitHub](https://github.com) - This project uses GitHub to store the projects code after being pushed from Git.
 - [Materialize](https://materializecss.com/) - used to make the site responsive and to implement features such as the navbar and the buttons.
@@ -82,24 +85,24 @@ flisanp repositories.
 ### Deployment to Heroku
 This project was deployed through Heroku using the following steps:
 
--Navigate to Heroku[Heroku](https://dashboard.heroku.com/login) and sign in
--On the top right corner there is a button that says "New". Click this button and choose the option "Create New App"
--Choose a name for the App and what region that are closest to your location, click "Create App"
--Click on the tab saying "Deploy" and select GitHub, Connect to GitHub
--Enter the name of your repository on GitHub and click search
--When the repository is found, click the "Connect" button
--Click on the tab saying "Settings" and then click on the button saying "Reveal config vars"
+1. Navigate to Heroku[Heroku](https://dashboard.heroku.com/login) and sign in
+2. On the top right corner there is a button that says "New". Click this button and choose the option "Create New App"
+3. Choose a name for the App and what region that are closest to your location, click "Create App"
+4. Click on the tab saying "Deploy" and select GitHub, Connect to GitHub
+5. Enter the name of your repository on GitHub and click search
+6. When the repository is found, click the "Connect" button
+7. Click on the tab saying "Settings" and then click on the button saying "Reveal config vars"
 
-Add these variables:
+8. Add these variables:
 
-key: IP, value: 0.0.0.0
-key: MONGODB_NAME, value: (the name of your database)
-key: MONGO_URI, value: (unique uri from mongo.db)
-key: PORT, value: 5000
-key: SECRET_KEY, value: (unique secret key for configuration)
+    key: IP, value: 0.0.0.0 <br>
+    key: MONGODB_NAME, value: (the name of your database)<br>
+    key: MONGO_URI, value: (unique uri from mongo.db)<br>
+    key: PORT, value: 5000<br>
+    key: SECRET_KEY, value: (unique secret key for configuration)<br>
 
--Click on the "Deploy" tab and scroll down to the section "Automatic Deployment"
--Choose the branch you want to deploy from and then click "Enable Automatic Deploys"
+9. Click on the "Deploy" tab and scroll down to the section "Automatic Deployment"
+10. Choose the branch you want to deploy from and then click "Enable Automatic Deploys"
 
 ### How To Run The Code Locally
 1. Log inte Gitpod with your account.

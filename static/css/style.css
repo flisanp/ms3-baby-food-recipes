@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;  
-    color: #343739;
+    color: #455a64;
 }
 
 main {
@@ -26,7 +26,7 @@ h2 {
     font-weight: 400;
     font-size: 24px;
     letter-spacing: 1px;
-    color: #343739;
+    color: #455a64;
 }
 
 h3 {
@@ -35,7 +35,7 @@ h3 {
     font-size: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #343739;
+    color: #455a64;
 }
 
 h4 {
@@ -43,7 +43,7 @@ h4 {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
-    color: #FF5757;
+    color: #ff8a65;
 }
 
 h5 {
@@ -76,11 +76,11 @@ h5 {
 https://stackoverflow.com/questions/33746269/changing-the-text-color-on-a-nav-bar-using-materialize-css-rails
 ------------*/
 nav ul li a{
-    color: #343739;
+    color: #455a64;
   } 
 
 nav a i{
-    color: #343739;
+    color: #455a64;
   } 
 
   nav {
@@ -101,6 +101,7 @@ nav a i{
 
   .menu a:hover {
     color: #ff8a65;
+    background-color: transparent;
   }
 
 /*----------recipes-----------*/
@@ -115,17 +116,17 @@ nav a i{
 }
 
 .pagination li.active{
-    background-color: #DCB239 !important;
+    background-color: #ff8a65 !important;
 }
 
 form a .btn{
-    background-color: turquoise;
+    background-color:;
 }
 /*----------buttons-----------*/
 
 .btn {
     margin: 10px;
-    background-color: #DCB239 !important;
+    background-color: #ff8a65 !important;
 }
 
 /*----------heading text-----------*/
