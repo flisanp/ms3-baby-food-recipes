@@ -2,23 +2,48 @@
 {% block content %}
 
 
-
-<p>
-
-</p>
-
-<div class="row">  
-         <div class="col s12 l6">
-            <h1 class="center-align sub-heading">Is Your Baby Hungry? <a href="{{ url_for('get_recipes') }}" class="btn-small #ff8a65 deep-orange lighten-2">SHOW RECIPES</a></h1>
-         </div>
+<div class="row">
+   <div class="col s12 l6">
+      <h1 class="center-align heading">Is Your Baby Hungry? <a href="{{ url_for('get_recipes') }}"
+            class="btn-small #ff8a65 deep-orange lighten-2">SHOW RECIPES</a></h1>
+      <h2 class="center-align sub-heading">Lorem Ipsum</h2>
+   </div>
 
    <!--hero image-->
-         <div class="col s12 l6">
-            <img class="responsive-img" src="{{ url_for('static', filename='images/baby-feed.png') }}">
-         </div>
-   
+   <div class="col s12 l6">
+      <img class="responsive-img hero-image" src="{{ url_for('static', filename='images/mother-feed-baby.png') }}">
+   </div>
 </div>
  
+
+
+<!--
+<div class="row #ffebee red lighten-5">
+   <div class="col s12 l6 center-align">
+      <div class="quick-tip">Quick tip!</div>
+      <h3 class="recipe-index">Banana Pancakes</h3>
+      <h4>Ingredients
+         <ul>
+            <li>1 banana</li>
+            <li>1 egg</li>
+         </ul>
+         <p>Instructions</p>
+         <ul>
+            <li>Mash the banana</li>
+            <li> Mix with the egg</li>
+            <li> Cook 1 tablespoon at a time</li>
+            <li>Flip over and serve warm</li>
+         </ul>
+
+
+      </h4>
+   </div>
+   <div class="col s12 l6 center-align">
+      <img class="circle" src="{{ url_for('static', filename='images/banana-pancakes.jpg') }}">
+   </div>
+</div>
+
+-->
 
 <!--recipe category links
 <div class="row">
