@@ -5,40 +5,31 @@
 ![mockup image]()
 
 
-This website is a recipe site for baby food. Users can search trough existing recipes and create an account where they can upload their own recipes and share them with other users.
+This website is a recipe site for baby food. Users can search trough existing recipes and create an account where they can upload and store their own recipes and share them with other users.
 
 
-# UX
+## UX
 
-#### The Goals For This Website Is To: 
-- Provide a place where people can find good and healthy recipes for babies
+### The Goals For This Website Is To: 
+- Provide a place where people can easily find good and healthy recipes for babies
+- Be able to create an account to store your own recipes
 - Share baby food recipes with other people
-- Have a place to store own recipes
-- Make it easy for users to navigate on the site to find what they are looking for
+- Make it easy for users to navigate the site on any device 
 
-
-#### User Stories
+### User Stories
 
 1. As a user I easily want to find good and healthy recipes that I can make for my baby
-![wireframe]()
 2. As a user I want to be able to search for a specific ingredient in the recipes
-![wireframe]()
-3. As a user I want to be able to create an account where I can upload my own recipes
-![wireframe]()
-4. As a user I want to be able to edit my recipes
-![wireframe]()
-5. As a user I want to be able to delete my recipes
-![wireframe]()
-6. As a user I want to be able to log in and out of my account
-![wireframe]()
-7. 
-![wireframe]()
-8. 
-![wireframe]()
-9. 
-![wireframe]()
-10. 
-![wireframe]()
+3. As a user I want to be able to look for recipes sorted by category
+4. As a user I want to be able to create my own account
+5. As a user I want to upload my own recipes
+6. As a user I want to be able to edit my recipes
+7. As a user I want to be able to delete my recipes
+8. As a user I want to be able to log in to my account
+9. As a user I want to be able to log out of my account
+10. As a site admin I want to be able to add new categories to the site
+11. As a site admin I want to be able to edit categories
+12. As a site admin I want to be able to delete categories
 
 #### Design 
 
