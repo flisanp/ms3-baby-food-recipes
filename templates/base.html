@@ -23,7 +23,7 @@
         <!--top navbar-->
         <nav class="nav-extended menu">
             <div class="nav-wrapper">
-                <img class="logo" src="{{ url_for('static', filename='images/logo-green.png') }}" alt="food bowl">
+                <img class="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="food bowl">
                 <a href="{{ url_for('home') }}" class="brand-logo">Yum Yum</a>
 
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
@@ -46,7 +46,7 @@
         <!--mobile sidenav-->
         <ul class="sidenav" id="mobile-demo">
             <li><a class="center-align" href="{{ url_for('home') }}"><img class="logo"
-                        src="{{ url_for('static', filename='images/logo.png') }}" alt=""></a></li>
+                        src="{{ url_for('static', filename='images/logo.png') }}" alt="food bowl"></a></li>
 
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
