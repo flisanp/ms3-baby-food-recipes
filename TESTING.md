@@ -64,6 +64,25 @@ Changed it to:
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/issue3.png" width="300" height="300"/>
 <br>
 
+    - moved for loop inside list item
+    
+    -  <div>
+                <ol>
+                    {% for steps in recipe.instructions.splitlines() %}
+                    <li>{{ steps }}</li>
+                    {% endfor %}
+                </ol>
+            </div>
+
+instead of:
+{% for steps in recipe.instructions.splitlines() %}
+            <div>
+                <ol>
+                    <li>{{ steps }}</li>
+                </ol>
+            </div>
+            {% endfor %}
+
 ## Validator Testing
 
 #### HTML Testing
