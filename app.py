@@ -4,6 +4,7 @@ from flask import (
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+from typing import Union
 from werkzeug.security import generate_password_hash, check_password_hash
 
 if os.path.exists("env.py"):
@@ -17,6 +18,14 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
+
+
+# mentor
+def is_logged_in() -> Union[str, None]:
+    """
+    Returns None if the user isn't logged in otherwise returns the username
+    """
+    return session.get("user")
 
 
 # landing page
@@ -125,34 +134,35 @@ def login():
     return render_template("login.html")
 
 
-# account page (help from tutor to view users recipes)
-@app.route("/account/<username>", methods=["GET", "POST"])
-def account(username):
-    # grab the session user's username from db
-    username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
-    recipes = list(mongo.db.recipes.find({"created_by": username}))
+# account page (help from tutor to view users recipes) #mentor
+@app.route("/account", methods=["GET", "POST"])
+def account():
+    if is_logged_in():
+        # grab the session user's username from db
+        user = mongo.db.users.find_one({"username": session["user"]})
+        recipes = list(mongo.db.recipes.find({"created_by": user["username"]}))
 
-    if session["user"]:
-        return render_template(
-            "account.html", username=username, recipes=recipes)
-
-    return redirect(url_for("login"))
+        if session["user"]:
+            return render_template("account.html", user=user, recipes=recipes)
+        return redirect(url_for("login"))
 
 
+# mentor
 # logout function
 @app.route("/logout")
 def logout():
-    # remove user from session cookie
-    flash("You have been logged out, see you soon!")
-    session.pop("user")
+    if is_logged_in():
+        # remove user from session cookie
+        flash("You have been logged out, see you soon!")
+        session.pop("user", None)
     return redirect(url_for("login"))
 
 
+# mentor
 # create recipe function
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
-    if request.method == "POST":
+    if is_logged_in() and request.method == "POST":
         recipe = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
@@ -169,10 +179,11 @@ def add_recipe():
     return render_template("add_recipe.html", categories=categories)
 
 
+# mentor
 # update recipe function
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
-    if request.method == "POST":
+    if is_logged_in() and request.method == "POST":
         submit = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
@@ -193,8 +204,9 @@ def edit_recipe(recipe_id):
 # delete recipe function
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
-    mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
-    flash("Your Recipe is Deleted")
+    if is_logged_in():
+        mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
+        flash("Your Recipe is Deleted")
     return redirect(url_for("get_recipes"))
 
 
@@ -242,12 +254,36 @@ def delete_category(category_id):
     return redirect(url_for("get_categories"))
 
 
+# mentor
 # 404 error page, code from:
 # https://blog.miguelgrinberg.com/post/
 # the-flask-mega-tutorial-part-vii-error-handling
 @app.errorhandler(404)
 def not_found_error(error):
-    return render_template('404.html'), 404
+    return (
+        render_template(
+            "error.html",
+            error_message="We can't find the page you're looking for",
+            error_title="Oooopss...",
+        ),
+        404,
+    )
+
+
+@app.errorhandler(Exception)
+def server_error(error):
+    # optional
+    error_title = "Oooopss..."
+    if isinstance(error, bson.errors.InvalidId):
+        error_message = "Couldn't find it in the database"
+    else:
+        error_message = "Something went wrong"
+    return (
+        render_template(
+            "error.html", error_message=error_message, error_title=error_title
+        ),
+        500,
+    )
 
 
 if __name__ == "__main__":
