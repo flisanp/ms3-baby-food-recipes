@@ -63,13 +63,13 @@
                 {% endfor %}
 
                 <span class="card-title grey-text text-darken-4">Instructions</span>
-                {% for steps in recipe.instructions.splitlines() %}
                 <div>
                     <ol>
+                        {% for steps in recipe.instructions.splitlines() %}
                         <li>{{ steps }}</li>
+                        {% endfor %}
                     </ol>
                 </div>
-                {% endfor %}
 
                 <!--edit/delete recipe-->
                 <div>
