@@ -14,11 +14,11 @@ main {
   }
 
 h1 {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 48px;
     letter-spacing: 3px;
-    color: #53796B; 
+    color: #381D2A; 
 }
 
 h2 {
@@ -91,8 +91,9 @@ nav a i{
   .brand-logo {
     text-transform: uppercase;
     font-family: 'Gluten', cursive;
-    color: #343739 !important; 
+    color: #381D2A !important; 
 }
+
 
 .logo {
     
@@ -103,6 +104,16 @@ nav a i{
 }
 
 /*----------index page-----------*/
+
+.top-text {
+    letter-spacing: 7px;
+    color: #381D2A;
+    text-transform: uppercase;
+
+}
+.top-text-box {
+    background-color: #;
+}
 
 .heading {
     text-align: center;
@@ -120,7 +131,7 @@ nav a i{
 }
 
 .hero-text-box{
-    background-color: #fff8e1;
+    background-color: ;
 }
 /*----------recipes-----------*/
 
@@ -134,8 +145,6 @@ nav a i{
     font-weight: 500;
     text-transform: uppercase;
     font-size: 16px;
-    
-
 }
 
 .card .card-title:hover{
@@ -168,6 +177,8 @@ form a .btn{
     background-color: #FFE0D6;
 }
 .social-icons {
-    color: #53796B !important;
+    color: #381D2A !important;
 }
 
+.social-icons i:hover {
+    color: #FC6A60;
