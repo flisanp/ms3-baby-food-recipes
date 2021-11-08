@@ -91,12 +91,13 @@ nav a i{
   .brand-logo {
     text-transform: uppercase;
     font-family: 'Gluten', cursive;
-    color: #ff8a65;
+    color: #53796B !important; 
 }
 
 .logo {
-    height: 50px;
+    
     width: 50px;
+    margin-top: 10px;
     margin-right: 10px;
     margin-left: 5px;
 }
@@ -145,3 +146,6 @@ form a .btn{
 
 /*----------footer----------*/
 
+.social-icons {
+    color: #53796B !important;
+}
