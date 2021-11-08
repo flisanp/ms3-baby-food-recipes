@@ -18,7 +18,7 @@ h1 {
     font-weight: 600;
     font-size: 48px;
     letter-spacing: 3px;
-    color: #455a64; 
+    color: #53796B; 
 }
 
 h2 {
@@ -118,6 +118,10 @@ nav a i{
 .hero-image {
     height: 100vh;
 }
+
+.hero-text-box{
+    background-color: #fff8e1;
+}
 /*----------recipes-----------*/
 
 .recipe-image {
@@ -140,12 +144,18 @@ form a .btn{
 
 .btn {
     margin: 10px;
-    background-color: #ff8a65 !important;
+    background-color: #FC6A60 !important;
 }
 
+.btn-small {
+
+    margin: 10px;
+    background-color: #FC6A60 !important;
+}
 
 /*----------footer----------*/
 
 .social-icons {
     color: #53796B !important;
 }
+
