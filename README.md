@@ -5,7 +5,7 @@
 ![mockup image]()
 
 
-This website is a recipe site for baby food. Users can search trough existing recipes and create an account where they can upload and store their own recipes and share them with other users.
+This website is a recipe site for baby food. Users can search trough existing recipes and create an account where they can upload and store their own recipes and share them with other users. As a new mom I've realized the importance of finding good and healthy recipes for my kid. I've also realized the importance of finding them fast due to lack of time. This is way I wanted to create this website for me and parents alike that could benefit from this service.
 
 
 ## UX
@@ -31,12 +31,14 @@ This website is a recipe site for baby food. Users can search trough existing re
 11. As a site admin I want to be able to edit categories
 12. As a site admin I want to be able to delete categories
 
-#### Design 
+### Design 
+
+With a potential user in mind being a parent with a restricted time searching for recipes, I wanted to have a minimalistic design and focus on ways to quick and easy locate what they're looking for. That is way I choose to have the recipes on a card that immidiately shows the recipes when they click on them rather then sending the user to an additional page. I choose to have a earthy color palette with calm colors that also had a good contrast ratio. The name Yum Yum is for me a playful way of saying that something is good when you're talking to a baby and also indicates that the website is designed with babies in mind. 
 
 ![color palette]()
 
 
-# Features
+## Features
 
 **Navbar** - Each page features a responsive Materialize navbar that’s collapsed to a burger icon when viewing on smaller screens. The navbar has a hover effect so when the user hovers over the different pages the text changes color. The navbar has links to the landing page *HOME*, recipes page *RECIPES*, registration page *SIGN UP* and login page *LOG IN*. When you are logged in the navbar has a link to your profile page *ACCOUNT* and when Admin is logged in there is also a link to a page for managing the categories *MANAGE CATEGORIES*.
 
@@ -47,6 +49,10 @@ This website is a recipe site for baby food. Users can search trough existing re
 **Footer** - Exists on the bottom of every page. Located in the center of the footer are four icons with links to the sites social media platforms. 
 
 #### Features Left To Implement
+- Pagination on recipe pages
+- Upload own images of recipes instead of URL
+- The possibility for users to delete their own account
+- More information 
 
 
 # Technologies Used
