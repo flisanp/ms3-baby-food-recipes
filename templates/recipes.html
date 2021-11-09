@@ -52,7 +52,7 @@
         </div>
         <!--recipe display-->
         <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Ingredients</span>
+            <span class="card-title grey-text text-darken-4">Ingredients<i class="far fa-times-circle right"></i></span>
             {% for ingredient in recipe.ingredients.splitlines() %}
             <div>
                 <ul>
@@ -90,9 +90,9 @@
             <p>Deleting The Recipe Will Remove It Permanently</p>
         </div>
         <div class="modal-footer">
-            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}"" class=" modal-close waves-effect waves-green
+            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="modal-close waves-effect waves-green
                 btn-flat">Yes</a>
-            <a href="{{ url_for('get_recipes' )}}"" class=" modal-close waves-effect waves-green btn-flat">No</a>
+            <a href="{{ url_for('get_recipes' )}}" class="modal-close waves-effect waves-green btn-flat">No</a>
         </div>
     </div>
 </div>

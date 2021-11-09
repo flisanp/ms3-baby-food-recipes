@@ -80,7 +80,7 @@ nav a i{
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: #fff;
+    background-color: #FFF0EB;
   }
 
   .menu a:hover {
@@ -174,7 +174,7 @@ form a .btn{
 /*----------footer----------*/
 
 .page-footer {
-    background-color: #FFE0D6;
+    background-color: #FFF0EB;
 }
 .social-icons {
     color: #381D2A !important;
