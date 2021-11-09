@@ -1,11 +1,11 @@
-# Baby Food Recipes
+# Yum Yum - Baby Food Recipes
 
 [A live version of the page can be viewed here](https://baby-food.herokuapp.com/home)
 
 ![mockup image]()
 
 
-This website is a recipe site for baby food. Users can search trough existing recipes and create an account where they can upload and store their own recipes and share them with other users. As a new mom I've realized the importance of finding good and healthy recipes for my kid. I've also realized the importance of finding them fast due to lack of time. This is way I wanted to create this website for me and parents alike that could benefit from this service.
+Yum Yum is a recipe site for baby food. Users can search trough existing recipes and create an account where they can upload and store their own recipes and share them with other users. As a new mom I've realized the importance of finding good and healthy recipes for my kid. I've also realized the importance of finding them fast due to lack of time. This is way I wanted to create this website for me and parents alike that could benefit from this service.
 
 
 ## UX
@@ -37,19 +37,71 @@ With a potential user in mind being a parent with a restricted time searching fo
 
 ![color palette]()
 
+#### Typography
+
+The main fonts that I choose for this project is Montserrat and Lato which are two quite simple sans-serif fonts that gives a clean expression and are easy to read. For the name of the website I have used Gluten which is a cursive font with round shapes that fits well with the kids theme. This font is also being used for the flash messages.  
 
 ## Features
+### Existing Features
 
-**Navbar** - Each page features a responsive Materialize navbar that’s collapsed to a burger icon when viewing on smaller screens. The navbar has a hover effect so when the user hovers over the different pages the text changes color. The navbar has links to the landing page *HOME*, recipes page *RECIPES*, registration page *SIGN UP* and login page *LOG IN*. When you are logged in the navbar has a link to your profile page *ACCOUNT* and when Admin is logged in there is also a link to a page for managing the categories *MANAGE CATEGORIES*.
+- **Navbar** 
+    - Each page features a responsive Materialize navbar that’s collapsed to a burger icon when viewing on smaller screens. The navbar has a hover effect so when the user hovers over the different pages the text changes color. In the left corner there is a logo with a link that takes you to the landing page.
+    - Users that are not logged in have the following pages in the navbar:
+        - *HOME*
+        - *RECIPES*
+        - *SIGN UP*
+        - *LOG IN* 
+    - Users that are logged in have the following pages in the navbar:
+        - *HOME*
+        - *RECIPES*
+        - *ACCOUNT*
+        - *LOG OUT* 
+    - Admin that are logged in have the following pages in the navbar:
+        - *HOME*
+        - *RECIPES*
+        - *ACCOUNT*
+        - *MANAGE CATEGORIES*
+        - *LOG OUT* 
 
-**Home** - 
+- **Footer**
+        - The footer is displayed on all pages and features links to social media accounts (currently to the main sites for the platforms but will eventually be linked to Yum Yum's social media accounts once they exist)
 
-**Recipes** - 
+- **Home** - The landing page features a flat illustration picturing a woman feeding a baby that is sitting in her lap. There is also a call to action button with the text *show recipes* that leads to the page with all the recipes so that users quick and easy can find it.
 
-**Footer** - Exists on the bottom of every page. Located in the center of the footer are four icons with links to the sites social media platforms. 
+- **Recipes** 
+    The Recipe page features a search bar at the top and beaneath that are links to the different categories that the recipes are divided into so you can filter out the category you're intrested in. The recipes are presented in a grid with image cards.
+    - **Search bar**
+    Allows the user to search for the name of a recipe or an ingredient in the recipe. This will then filter out all the recipes that includes the word that was searched.
+    - **Cards**
+    On the front the user is provided with an image of the recipe followed by the category and then the name. There is also an hover effect when you move the cursor over the cards to highligt which recipe you're currently on. When you click on the card the recipe is displayed. If you're the user who has uploaded the recipe you also have the possibility to edit or delete it.
 
-#### Features Left To Implement
-- Pagination on recipe pages
+- **Account** 
+On top of the Account page there is a button to Add a recipe and beneath is all the recipes uploaded by the user.
+    - **Add Recipe**
+    As a registered user you can upload your own recipes. To do this you fill in a form that includes:
+        - Recipe Category
+        - Recipe Name
+        - Ingredients
+        - Instructions
+        - Image
+    All fields need to be filled out for the form to be submitted. The recipe is then displayed on the users own account page and on the recipe page.
+    - **Edit Recipe**
+    You can edit your own recipe. The form is prefilled with the information that you have filled out so it's easy to adjust any changes. 
+    - **Delete Recipe**
+    You can delete your own recipe. When you click on the delete button a confirmation modal pops up to assure you want to delete the recipe and not doing it accidentally.
+
+- **Sign Up** 
+The Sign up page features a simple form where the user can pick a username and a password. A request is made to MongoDB to check if the username is already in use. If it's not being used a profile is created and the user is directed to their account page.
+
+- **Log In**
+The log in page also features a simple form  where the user type their username and password to log in to their account. If the user don't exists or make a typo a flash message appears that says "Incorrect Username and/or Password".
+
+- **Manage Categories**
+When the Admin is logged in there is a page to manage the categories for the recipes. It's possible to either edit or delete the existing categories or to add new ones.
+
+
+### Features Left To Implement
+- Pagination on recipe pages 
 - Upload own images of recipes instead of URL
 - The possibility for users to delete their own account
 - More information 
