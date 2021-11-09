@@ -109,8 +109,13 @@ nav a i{
     letter-spacing: 7px;
     color: #381D2A;
     text-transform: uppercase;
-
 }
+
+.top-text-image{
+    width: 30px;
+    margin-left: 5px;
+}
+
 .top-text-box {
     background-color: #;
 }
