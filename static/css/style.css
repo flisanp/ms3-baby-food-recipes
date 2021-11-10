@@ -138,6 +138,19 @@ nav a i{
 .hero-text-box{
     background-color: ;
 }
+
+.image-box{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 /*----------recipes-----------*/
 
 .recipe-image {

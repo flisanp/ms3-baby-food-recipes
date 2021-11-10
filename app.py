@@ -20,7 +20,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-# mentor
+# code from mentor Reuben Ferrante
 def is_logged_in() -> Union[str, None]:
     """
     Returns None if the user isn't logged in otherwise returns the username
@@ -134,7 +134,7 @@ def login():
     return render_template("login.html")
 
 
-# account page (help from tutor to view users recipes) #mentor
+# account page (Mentor Reuben Ferrante helped me with parts of the code for this function)
 @app.route("/account", methods=["GET", "POST"])
 def account():
     if is_logged_in():
@@ -147,7 +147,6 @@ def account():
         return redirect(url_for("login"))
 
 
-# mentor
 # logout function
 @app.route("/logout")
 def logout():
@@ -158,7 +157,6 @@ def logout():
     return redirect(url_for("login"))
 
 
-# mentor
 # create recipe function
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
@@ -179,7 +177,6 @@ def add_recipe():
     return render_template("add_recipe.html", categories=categories)
 
 
-# mentor
 # update recipe function
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
@@ -254,7 +251,7 @@ def delete_category(category_id):
     return redirect(url_for("get_categories"))
 
 
-# mentor
+# mentor Reuben Ferrante helped me with these functions for error handling and to make them more efficiently
 # 404 error page, code from:
 # https://blog.miguelgrinberg.com/post/
 # the-flask-mega-tutorial-part-vii-error-handling

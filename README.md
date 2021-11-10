@@ -41,6 +41,9 @@ With a potential user in mind being a parent with restricted time searching for 
 
 The main fonts that I choose for this project is Montserrat and Lato which are two quite simple sans-serif fonts that gives a clean expression and are easy to read. For the name of the website I have used Gluten which is a cursive font with round shapes that fits well with the kids theme. It's also being used for the flash messages to tie the page together. This is a font that I think could feel a little overhelming and unserious if it's used too much so that is way I choose to use it sparingly.
 
+### Wireframes
+Wireframes can be viewed [here](../images/README/wireframes/wireframes.pdf)
+
 ## Features
 ### Existing Features
 
@@ -108,12 +111,12 @@ When the Admin is logged in there is a page to manage the categories for the rec
 - The possibility for users to delete their own account
 - Add more information about the recipes such as allergies, servings, preparation time and so on. 
 
-# Technologies Used
+## Technologies Used
 
-## Languages
+### Languages
 - HTML5, CSS3, Javascript and Python3
 
-## Frameworks and Libraries
+### Frameworks and Libraries
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 - [Flask-PyMongo](https://pypi.org/project/Flask-PyMongo/)
 - [pip](https://pip.pypa.io/en/stable/)
@@ -125,7 +128,7 @@ When the Admin is logged in there is a page to manage the categories for the rec
 - [FontAwesome](https://fontawesome.com) 
 - [Google Fonts](https://fonts.google.com) 
 
-## All other tools
+### All other tools
 - [MongoDB](https://www.mongodb.com/atlas/database) - used as database for this project
 - [Heroku](https://dashboard.heroku.com/) - used to deploy the live site
 - [GitPod](https://www.gitpod.io) - used for their IDE while building the website
@@ -145,8 +148,8 @@ When the Admin is logged in there is a page to manage the categories for the rec
 - [JSHint](https://jshint.com) - used to check the script.js file
 - [PEP8 online](http://pep8online.com) - used to check the app.py file
 
-# Deployment
-## Create Project  
+## Deployment
+### Create Project  
 This project was creted on Github using the following steps: 
 1. Navigate to Github[GitHub](https://github.com/) and sign in
 2. On the left hand side above the list of your repositories click on the green button that says "New", this will create a new repository
@@ -162,7 +165,7 @@ Before creating the Heroku app you need to add the following files in Gitpod:
 
 In the Procfile make sure it contains the following line: web: python app.py, and that it is no blank line after it.
 
-## Deployment to Heroku  
+### Deployment to Heroku  
 This project was deployed through Heroku using the following steps:
 1. Navigate to Heroku[Heroku](https://dashboard.heroku.com/login) and sign in
 2. On the top right corner there is a button that says "New". Click this button and choose the option "Create New App"
@@ -183,7 +186,7 @@ This project was deployed through Heroku using the following steps:
 9. Click on the "Deploy" tab and scroll down to the section "Automatic Deployment"
 10. Choose the branch you want to deploy from and then click "Enable Automatic Deploys"
 
-## How To Run The Code Locally  
+### How To Run The Code Locally  
 To run this project locally you need to create the env.py file using your own variables since these are not provided for security reasons. To have the database connection you'll also need to create your own database collection on MongoDB and connect it to your project.
 
 1. Log in to Github.
@@ -193,7 +196,7 @@ To run this project locally you need to create the env.py file using your own va
 5. To install the packages listed in the requirements file type the following in the terminal: 
 pip install -r requirements.txt
 
-## Fork Project  
+### Fork Project  
 To fork the project follow these steps:
 
 1. Log in to Github
@@ -201,9 +204,9 @@ To fork the project follow these steps:
 3. Locate the "Fork" button on the top right corner of the page
 4. A duplicate of the original repository is now in your Github account
 
-# Credits
+## Credits
 
-## Code
+### Code
 
 Changing the text color on navbar from [Stack Overflow](https://stackoverflow.com/questions/33746269/changing-the-text-color-on-a-nav-bar-using-materialize-css-rails)
 
@@ -216,7 +219,7 @@ Help from mentor Reuben Ferrante with functions for error handling and to make t
 
 The lessons from The mini project by Tim Nelson
 
-## Content
+### Content
 Recipes that I've added comes from these websites (with a few moderations on some):
 
 [Banana Pancakes](https://babyfoode.com/blog/banana-pancakes-for-baby/)  
@@ -230,7 +233,7 @@ Recipes that I've added comes from these websites (with a few moderations on som
 [Mint and Pea Soup](https://www.ellaskitchen.co.uk/recipes/pea-green-soup)  
 [Creamy Potato Soup](https://www.healthylittlefoodies.com/leek-and-potato-soup/)  
 
-## Media
+### Media
 
 All recipe images are sourced via [Unsplash](https://unsplash.com/)
 

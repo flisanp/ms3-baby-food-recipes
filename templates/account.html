@@ -24,7 +24,7 @@
             {% for recipe in recipes %}
             {% if session.user|lower == recipe.created_by|lower %}
             <div class="col s12 m6 l4">
-                <div class="card">
+                <div class="card hoverable">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator recipe-image" src="{{ recipe.image_url }}" alt="#">
                     </div>
@@ -45,13 +45,14 @@
                         </div>
                         {% endfor %}
                         <span class="card-title grey-text text-darken-4">Instructions</span>
-                        {% for steps in recipe.instructions.splitlines() %}
                         <div>
                             <ol>
+                                {% for steps in recipe.instructions.splitlines() %}
                                 <li>{{ steps }}</li>
+                                {% endfor %}
                             </ol>
                         </div>
-                        {% endfor %}
+                
                         <!--edit/delete recipe-->
                         <div>
                             {% if session.user|lower == recipe.created_by|lower %}
