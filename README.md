@@ -110,25 +110,40 @@ When the Admin is logged in there is a page to manage the categories for the rec
 
 # Technologies Used
 
-## Languages used
+## Languages
 - HTML5, CSS3, Javascript and Python3
 
-## Frameworks, Libraries & Programs Used
-- [GitPod](https://www.gitpod.io) - used GitPod for their IDE while building the website.
-- [GitHub](https://github.com) - This project uses GitHub to store the projects code after being pushed from Git.
-- [Materialize](https://materializecss.com/) - used to make the site responsive and to implement features such as the navbar and the buttons.
-- [FontAwesome](https://fontawesome.com) - for social media icons.
-- [Google Fonts](https://fonts.google.com) - This project uses Montserrat and Lora from Google Fonts.
-- [Balsamiq](https://balsamiq.com) - to create wireframes.
+## Frameworks and Libraries
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+- [Flask-PyMongo](https://pypi.org/project/Flask-PyMongo/)
+- [pip](https://pip.pypa.io/en/stable/)
+- [dnspython](https://www.dnspython.org/)
+- [jQuery](https://jquery.com)
+- [Jinja](https://jinja.palletsprojects.com/en/2.10.x/)
+- [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/)
+- [Materialize](https://materializecss.com/) 
+- [FontAwesome](https://fontawesome.com) 
+- [Google Fonts](https://fonts.google.com) 
+
+## All other tools
+- [MongoDB](https://www.mongodb.com/atlas/database) - used as database for this project
+- [Heroku](https://dashboard.heroku.com/) - used to deploy the live site
+- [GitPod](https://www.gitpod.io) - used for their IDE while building the website
+- [GitHub](https://github.com) - used to store repository
+- [Balsamiq](https://balsamiq.com) - used to create wireframes.
 - [DevTools](https://developers.google.com/web/tools/chrome-devtools) - to test responsiveness and diagnose problems. The tool **Lighthouse** has been used to improve the website's quality. 
-- [Tinypng](https://tinypng.com) - for compressing images.
-- [Freeformatter](https://www.freeformatter.com/) - used for beautifying the code.
-- [A11y](https://color.a11y.com) - used to check the websites color contrast accessibility.
-- [Wave](https://wave.webaim.org) - used to check the websites color contrast accessibility. 
-- [ResizeImage](https://resizeimage.net) - used to resize images.
-- [Coolors](https://coolors.co) - used to create the color palette.
+- [Tinypng](https://tinypng.com) - for compressing images
+- [Freeformatter](https://www.freeformatter.com/) - used for beautifying the code
+- [Wave](https://wave.webaim.org) - used to check the websites color contrast accessibility 
+- [ResizeImage](https://resizeimage.net) - used to resize images
+- [Coolors](https://coolors.co) - used to create the color palette
 - [Techsini](https://techsini.com/multi-mockup/index.php) - used to create the mockup image in the beginning of this README file.
-- [Canva](https://www.canva.com) used to create the hero image and logo in navbar.
+- [Canva](https://www.canva.com) used to create the hero image and logo in navbar
+- [Favicon](https://favicon.io)
+- [W3C Markup Validation Service](https://validator.w3.org) - used to check the HTML pages
+- [W3C CSS Markup Validation Service](https://jigsaw.w3.org/css-validator/) - used to check the CSS file
+- [JSHint](https://jshint.com) - used to check the script.js file
+- [PEP8 online](http://pep8online.com) - used to check the app.py file
 
 # Deployment
 ### Create Project
