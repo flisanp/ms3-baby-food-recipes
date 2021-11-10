@@ -1,5 +1,27 @@
 # Testing
 
+## Validator Testing
+
+### HTML Testing
+https://validator.w3.org/ -
+![html]()
+
+### CSS Testing 
+https://jigsaw.w3.org/css-validator/ - 
+![css]()
+
+### JS Testing
+https://jshint.com/ - 
+
+### Python
+http://pep8online.com/ - I checked the app.py file using PEP8 online
+![PEP8]()
+
+### Accessibility test
+https://wave.webaim.org - 
+![wave valid]()
+
+
 
 
 ## Testing User Stories
@@ -83,6 +105,12 @@ instead of:
             </div>
             {% endfor %}
 
+- I've had some responsiveness issues with the search bar. On smaller devices the input field was very small and buttons overlapping.
+    - I've had added the Materialize class name "valign-wrapper" because I wanted it to be vertically aligned. I removed this and kept the center-align class and the buttons now appeared below the search bar on smaller devices making it much easier to fill out and search.
+
+- Font weight for the logo "Yum Yum" was too big for iphone 5/SE making it appear on two lines. Even on Galaxy fold the logo jumped down a line.
+    - I've added the class .hide-on-small-only from Materialize which hides the logo on small screens. This actually made it look much cleaner and not so cluttered in the navbar.
+
 ## Validator Testing
 
 #### HTML Testing
@@ -105,6 +133,11 @@ https://wave.webaim.org -
 ![wave valid]()
 
 ## Lighthouse Testing
+
+I've ran the raport in Lighthouse when I considered myself almost done with the page and it had quite a good score, there was just some minor issues that needed to be fixed.
+    - Add alt text to images
+    - Add `rel="noopener"` to social media links
+    - Add meta description to base.html
 
 ## I Manually Tested The Following Features
 - Links in navbar works and takes you to the correct pages.
