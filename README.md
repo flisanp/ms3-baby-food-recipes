@@ -146,7 +146,7 @@ When the Admin is logged in there is a page to manage the categories for the rec
 - [PEP8 online](http://pep8online.com) - used to check the app.py file
 
 # Deployment
-## Create Project
+## Create Project  
 This project was creted on Github using the following steps: 
 1. Navigate to Github[GitHub](https://github.com/) and sign in
 2. On the left hand side above the list of your repositories click on the green button that says "New", this will create a new repository
@@ -159,11 +159,10 @@ Before creating the Heroku app you need to add the following files in Gitpod:
     - pip3 freeze --local > requirements.txt
 - To create your Procfile, type this in the terminal:
     - echo web: python run.py > Procfile 
-       
+
 In the Procfile make sure it contains the following line: web: python app.py, and that it is no blank line after it.
 
-
-## Deployment to Heroku
+## Deployment to Heroku  
 This project was deployed through Heroku using the following steps:
 1. Navigate to Heroku[Heroku](https://dashboard.heroku.com/login) and sign in
 2. On the top right corner there is a button that says "New". Click this button and choose the option "Create New App"
@@ -184,7 +183,7 @@ This project was deployed through Heroku using the following steps:
 9. Click on the "Deploy" tab and scroll down to the section "Automatic Deployment"
 10. Choose the branch you want to deploy from and then click "Enable Automatic Deploys"
 
-## How To Run The Code Locally
+## How To Run The Code Locally  
 To run this project locally you need to create the env.py file using your own variables since these are not provided for security reasons. To have the database connection you'll also need to create your own database collection on MongoDB and connect it to your project.
 
 1. Log in to Github.
@@ -194,7 +193,7 @@ To run this project locally you need to create the env.py file using your own va
 5. To install the packages listed in the requirements file type the following in the terminal: 
 pip install -r requirements.txt
 
-## Fork Project
+## Fork Project  
 To fork the project follow these steps:
 
 1. Log in to Github
@@ -202,45 +201,50 @@ To fork the project follow these steps:
 3. Locate the "Fork" button on the top right corner of the page
 4. A duplicate of the original repository is now in your Github account
 
-
-
-
-
-
 # Credits
 
-#### Content
+## Code
+
+Changing the text color on navbar from [Stack Overflow](https://stackoverflow.com/questions/33746269/changing-the-text-color-on-a-nav-bar-using-materialize-css-rails)
 
 
+404 error page from [this blog post](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vii-error-handling)
 
-**Code**
+`def is_logged_in` - Function that returns None if the user isn't logged in otherwise returns the username, by mentor Reuben Ferrante
 
+Help from mentor Reuben Ferrante with functions for error handling and to make them more efficiently
 
+The lessons from The mini project by Tim Nelson
 
-#### Media
+## Content
+Recipes that I've added comes from these websites (with a few moderations on some):
 
-Apple and blueberry puree: https://unsplash.com/photos/QvMen4ChnoI
-Fruit and veggie smoothie: https://unsplash.com/photos/wjt2-Vo7GA8
-Pancakes: https://unsplash.com/photos/tKKe3aDvncE
-Porridge: https://unsplash.com/photos/-eLS9k_uhUc
-risotto: https://unsplash.com/photos/qIPRTMulc-g
-Pumpkin soup: https://cdn.pixabay.com/photo/2018/03/20/09/18/plate-3242587_1280.jpg
-chickpea rice: https://unsplash.com/photos/vCNLO20cuwY
-mango chia: https://unsplash.com/photos/5fj-ShvSEnc
-soppa: https://unsplash.com/photos/BA6FzJZ9IfY
-soppa: https://unsplash.com/photos/BA6FzJZ9IfY
+[Banana Pancakes](https://babyfoode.com/blog/banana-pancakes-for-baby/)  
+[Oatmeal Porridge](https://www.eatingbirdfood.com/oatmeal-for-babies/)  
+[Fruit and Veggie Smoothie](https://www.theeverydaymomlife.com/recipe/hidden-veggie-smoothies-kids-will-actually-eat/)  
+[Apple and Blueberry Puree](https://blog.homemade-baby-food-recipes.com/babys-blueberry-and-apple-puree/)  
+[Zucchini Risotto](https://blog.homemade-baby-food-recipes.com/healthy-zucchini-risotto-for-baby/)  
+[Pumpkin Soup](https://www.mylittlemoppet.com/easy-pumpkin-soup-recipe-babies/)  
+[Chickpea Rice](https://www.mylittlemoppet.com/chickpea-rice-for-babies/)  
+[Raspberry Chia Pudding](https://plantbasedjuniors.com/mango-chia-pudding/)  
+[Mint and Pea Soup](https://www.ellaskitchen.co.uk/recipes/pea-green-soup)  
+[Creamy Potato Soup](https://www.healthylittlefoodies.com/leek-and-potato-soup/)  
 
-Recipes from:
-https://www.eatingbirdfood.com/oatmeal-for-babies/
-https://www.homemade-baby-food-recipes.com/
-https://www.mylittlemoppet.com/easy-pumpkin-soup-recipe-babies/
-https://plantbasedjuniors.com/
-https://babyfoode.com/
+## Media
 
-  
+All recipe images are sourced via [Unsplash](https://unsplash.com/)
 
-#### Acknowledgements
+[Banana Pancakes](https://unsplash.com/photos/tKKe3aDvncE)   
+[Oatmeal Porridge](https://unsplash.com/photos/-eLS9k_uhUc)  
+[Fruit and Veggie Smoothie](https://unsplash.com/photos/wjt2-Vo7GA8)  
+[Apple and Blueberry Puree](https://unsplash.com/photos/QvMen4ChnoI)  
+[Zucchini Risotto](https://unsplash.com/photos/qIPRTMulc-g)  
+[Pumpkin Soup](https://unsplash.com/photos/QbCF4wzSjJw)  
+[Chickpea Rice](https://unsplash.com/photos/vCNLO20cuwY)  
+[Raspberry Chia Pudding](https://unsplash.com/photos/5fj-ShvSEnc)  
+[Mint and Pea Soup](https://unsplash.com/photos/BA6FzJZ9IfY)  
+[Creamy Potato Soup](https://unsplash.com/photos/rIxoNvlcg0o)  
 
+Logo and image on landing page is from [Canva](https://www.canva.com/)
 
-
-<a target="_blank" href="https://icons8.com/icon/5Rd0v9hlYljM/baby-food">Baby Food</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+## Acknowledgements
