@@ -42,7 +42,7 @@ With a potential user in mind being a parent with restricted time searching for 
 The main fonts that I choose for this project is Montserrat and Lato which are two quite simple sans-serif fonts that gives a clean expression and are easy to read. For the name of the website I have used Gluten which is a cursive font with round shapes that fits well with the kids theme. It's also being used for the flash messages to tie the page together. This is a font that I think could feel a little overhelming and unserious if it's used too much so that is way I choose to use it sparingly.
 
 ### Wireframes
-Wireframes can be viewed [here](../images/README/wireframes/wireframes.pdf)
+Wireframes can be viewed [here](static/images/README/wireframes/wireframes.pdf)
 
 ## Features
 ### Existing Features
