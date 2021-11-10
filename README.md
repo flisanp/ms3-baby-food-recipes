@@ -146,19 +146,25 @@ When the Admin is logged in there is a page to manage the categories for the rec
 - [PEP8 online](http://pep8online.com) - used to check the app.py file
 
 # Deployment
-### Create Project
-To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+## Create Project
+This project was creted on Github using the following steps: 
 1. Navigate to Github[GitHub](https://github.com/) and sign in
-flisanp repositories.
-2. Select the one that is called ms2-barcelona-guide from the list.
-3. Click on settings in the menu that is located to the top right.
-4. Scroll down to "GitHub Pages"
-5. Under "Source", Select Master Branch from the drop-down menu.
-6. Click Save and the website is now deployed.
+2. On the left hand side above the list of your repositories click on the green button that says "New", this will create a new repository
+3. I choose the Code Institute Template from the drop down menu that says "Repository templates"
+4. Enter a name for the project and then click on the green button that says "Create Repository"
 
-### Deployment to Heroku
+Before creating the Heroku app you need to add the following files in Gitpod:
+
+ - To create your requirements file, type this in the terminal:
+    - pip3 freeze --local > requirements.txt
+- To create your Procfile, type this in the terminal:
+    - echo web: python run.py > Procfile 
+       
+In the Procfile make sure it contains the following line: web: python app.py, and that it is no blank line after it.
+
+
+## Deployment to Heroku
 This project was deployed through Heroku using the following steps:
-
 1. Navigate to Heroku[Heroku](https://dashboard.heroku.com/login) and sign in
 2. On the top right corner there is a button that says "New". Click this button and choose the option "Create New App"
 3. Choose a name for the App and what region that are closest to your location, click "Create App"
@@ -178,11 +184,28 @@ This project was deployed through Heroku using the following steps:
 9. Click on the "Deploy" tab and scroll down to the section "Automatic Deployment"
 10. Choose the branch you want to deploy from and then click "Enable Automatic Deploys"
 
-### How To Run The Code Locally
-1. Log inte Gitpod with your account.
-2. Navigate to the [repository](https://github.com/flisanp/ms3-baby-food-recipes).
-3. Click the green GitPod button on the top right.
-4. A new workspace will be created.
+## How To Run The Code Locally
+To run this project locally you need to create the env.py file using your own variables since these are not provided for security reasons. To have the database connection you'll also need to create your own database collection on MongoDB and connect it to your project.
+
+1. Log in to Github.
+2. Navigate to the [repository](https://github.com/flisanp/ms3-baby-food-recipes)
+3. Click the tab that says "Code" and from the dropdown menu choose copy the Git URL
+4. Open Git and type "git clone" in the terminal followed by the URL you just copied, press enter to create your local clone
+5. To install the packages listed in the requirements file type the following in the terminal: 
+pip install -r requirements.txt
+
+## Fork Project
+To fork the project follow these steps:
+
+1. Log in to Github
+2. Navigate to the [repository](https://github.com/flisanp/ms3-baby-food-recipes)
+3. Locate the "Fork" button on the top right corner of the page
+4. A duplicate of the original repository is now in your Github account
+
+
+
+
+
 
 # Credits
 
