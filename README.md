@@ -5,7 +5,7 @@
 ![mockup image]()
 
 
-Yum Yum is a recipe site for baby food. Users can search trough existing recipes and create an account where they can upload and store their own recipes and share them with other users. As a new mom I've realized the importance of finding good and healthy recipes for my kid. I've also realized the importance of finding them fast due to lack of time. This is way I wanted to create this website for me and parents alike that could benefit from this service.
+Yum Yum is a recipe site for baby food. Users can search trough existing recipes and create an account where they can upload and store their own recipes and share them with other users. As a new mom I've realized the importance of finding good and healthy recipes for my kid. I've also realized the importance of finding them fast due to lack of time. This is why I wanted to create this website for me and parents alike that could benefit from this service.
 
 
 ## UX
@@ -33,13 +33,13 @@ Yum Yum is a recipe site for baby food. Users can search trough existing recipes
 
 ### Design 
 
-With a potential user in mind being a parent with a restricted time searching for recipes, I wanted to have a minimalistic design and focus on ways to quick and easy locate what they're looking for. That is way I choose to have the recipes on a card that immidiately shows the recipes when they click on them rather then sending the user to an additional page. I choose to have a earthy color palette with calm colors that also had a good contrast ratio. The name Yum Yum is for me a playful way of saying that something is good when you're talking to a baby and also indicates that the website is designed with babies in mind. 
+With a potential user in mind being a parent with restricted time searching for recipes they can make for their babies, I wanted to have a minimalistic design and focus on ways to quick and easy locate what they're looking for. That is way I choose to have the recipes on a card that immidiately shows the recipes when they click on them rather then sending the user to an additional page. This way they can click their way through several recipes to see if it's something that interest them without leaving the main page.  I didn't want to have the classic pastel colors all over the page that you normally see when it's connected to babies and that is way I choose to have a color palette with calm colors that feels a little bit more modern and also has a good contrast ratio. The name Yum Yum is for me a playful way of saying that something is good when you're talking to a baby and also indicates that the website is designed with babies in mind. 
 
 ![color palette]()
 
 #### Typography
 
-The main fonts that I choose for this project is Montserrat and Lato which are two quite simple sans-serif fonts that gives a clean expression and are easy to read. For the name of the website I have used Gluten which is a cursive font with round shapes that fits well with the kids theme. This font is also being used for the flash messages.  
+The main fonts that I choose for this project is Montserrat and Lato which are two quite simple sans-serif fonts that gives a clean expression and are easy to read. For the name of the website I have used Gluten which is a cursive font with round shapes that fits well with the kids theme. It's also being used for the flash messages to tie the page together. This is a font that I think could feel a little overhelming and unserious if it's used too much so that is way I choose to use it sparingly.
 
 ## Features
 ### Existing Features
@@ -69,14 +69,14 @@ The main fonts that I choose for this project is Montserrat and Lato which are t
 - **Home** - The landing page features a flat illustration picturing a woman feeding a baby that is sitting in her lap. There is also a call to action button with the text *show recipes* that leads to the page with all the recipes so that users quick and easy can find it.
 
 - **Recipes** 
-    The Recipe page features a search bar at the top and beaneath that are links to the different categories that the recipes are divided into so you can filter out the category you're intrested in. The recipes are presented in a grid with image cards.
+    The Recipe page features a search bar at the top and below are links to the different categories that the recipes are divided into so you can filter out the category you're intrested in. The recipes are presented in a grid with image cards.
     - **Search bar**
     Allows the user to search for the name of a recipe or an ingredient in the recipe. This will then filter out all the recipes that includes the word that was searched.
     - **Cards**
     On the front the user is provided with an image of the recipe followed by the category and then the name. There is also an hover effect when you move the cursor over the cards to highligt which recipe you're currently on. When you click on the card the recipe is displayed. If you're the user who has uploaded the recipe you also have the possibility to edit or delete it.
 
 - **Account** 
-On top of the Account page there is a button to Add a recipe and beneath is all the recipes uploaded by the user.
+On top of the Account page there is a button to Add a recipe and below is all the recipes uploaded by the user.
     - **Add Recipe**
     As a registered user you can upload your own recipes. To do this you fill in a form that includes:
         - Recipe Category
@@ -84,6 +84,7 @@ On top of the Account page there is a button to Add a recipe and beneath is all 
         - Ingredients
         - Instructions
         - Image
+
     All fields need to be filled out for the form to be submitted. The recipe is then displayed on the users own account page and on the recipe page.
     - **Edit Recipe**
     You can edit your own recipe. The form is prefilled with the information that you have filled out so it's easy to adjust any changes. 
@@ -101,11 +102,11 @@ When the Admin is logged in there is a page to manage the categories for the rec
 
 
 ### Features Left To Implement
-- Pagination on recipe pages 
-- Upload own images of recipes instead of URL
+- At the moment there's not so many recipes on the website but eventually it will be a lot more and it could become hard to navigate if everything is on one single page and that is why pagination would be a nice feature to have.
+- To upload your own images of the recipe instead of an URL.
+- To save your favourite recipes
 - The possibility for users to delete their own account
-- More information 
-
+- Add more information about the recipes such as allergies, servings, preparation time and so on. 
 
 # Technologies Used
 
