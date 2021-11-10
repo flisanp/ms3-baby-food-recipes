@@ -140,11 +140,48 @@ I've ran the raport in Lighthouse when I considered myself almost done with the 
     - Add meta description to base.html
 
 ## I Manually Tested The Following Features
-- Links in navbar works and takes you to the correct pages.
-- Buttons on landing page takes you to the recipe page.
-- Hover effect on links in navbar.
-- All links works and opens in a new tab window.
-- Links to social media platforms works and opens in a new tab window.
+- Home  
+    - All links in navbar works and takes you to the correct pages
+    - Button works and takes you to the recipe page
+    - All links to social media platforms in footer works and opens in a new tab window   
+    - Hover effect on links in navbar
+- Recipes
+    - Search function and button works and finds the correct recipes
+    - Reset button works
+    - Links to the different categories works and displays the correct recipes
+- Sign Up
+    - Input fields displays the text to the user and hides the password
+    - User being added to the database upon registration and redirects to account page
+    - Error message "Username already exists" works if you try to type in an already existing username
+    - Link "Log In" leads to Log In page
+- Log In
+    - Input fields displays the text to the user and hides the password
+    - Submit button redirects to account page
+    - Link "Register Now" leads to Sign Up page
+- Account
+    - Users own recipe appears on their account page
+    - Add recipe button redirects to add recipe page
+    - Edit recipe button redirects to edit recipe page
+    - Delete recipe button opens confirmation modal
+        - "Yes" on modal deletes the recipe from database
+        - "No" on modal close the modal without any changes being made
+- Log Out
+    - User being logged out from Account and redirected to Log In page
+- Add recipe
+    - All fields in form are being filled out as expected
+    - Submitting form will not work without all fields being filled out
+    - If filled out correcly recipe is being added to account page and recipe page
+    - Ingredients are being displayed in a list if you press enter after every ingredient
+    - Instructions are being displayed in a ordered list if you press enter efter every step
+    - Cancel button takes you back to account page
+- Edit recipe
+    - Form is prefilled with the previous information
+    - Cancel button takes you back to recipe page
+    - Update recipe button updates recipe in database
+- Manage Categories
+    - Only visible when Admin is logged in
+    - 
+
 
 **Responsiveness**
 I manually tested the responsiveness on all available devices in DevTools. Galaxy fold didn't display well, this is something I will have to fix in the future.
