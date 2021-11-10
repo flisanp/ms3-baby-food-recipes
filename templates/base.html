@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Baby Food Recipes">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css" />
@@ -57,7 +58,7 @@
             {% endif %}
             <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
-            <li><a href="{{ url_for('register') }}">Register</a></li>
+            <li><a href="{{ url_for('register') }}">Sign Up</a></li>
             <li><a href="{{ url_for('login') }}">Log In</a></li>
             {% endif %}
         </ul>
@@ -89,16 +90,16 @@
                 <div class="col s12 pagination center-align">
                     <ul>
                         <li><a target="_blank" class="social-icons"
-                                href="https://www.facebook.com"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                                href="https://www.facebook.com" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i></a>
                         </li>
                         <li><a target="_blank" class="social-icons"
-                                href="https://www.instagram.com"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                href="https://www.instagram.com" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                         </li>
-                        <li><a target="_blank" class="social-icons" href="https://www.twitter.com"><i
+                        <li><a target="_blank" class="social-icons" href="https://www.twitter.com" rel="noopener"><i
                                     class="fab fa-twitter" aria-hidden="true"></i></a></li>
 
                         <li><a target="_blank" class="social-icons"
-                                href="https://www.pinterest.com"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+                                href="https://www.pinterest.com" rel="noopener"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
