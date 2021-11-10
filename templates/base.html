@@ -24,7 +24,8 @@
         <!--top navbar-->
         <nav class="nav-extended menu">
             <div class="nav-wrapper">
-                <img class="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="food bowl">
+
+                <a href="{{ url_for('home') }}"><img class="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="food bowl"></a>
                 <a href="{{ url_for('home') }}" class="brand-logo hide-on-small-only">Yum Yum</a>
 
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
