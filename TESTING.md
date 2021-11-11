@@ -1,6 +1,7 @@
-# Testing
+# Testing  
 
-## Validator Testing
+## Validator Testing  
+
 
 ### HTML Testing
 https://validator.w3.org/ -
@@ -21,8 +22,7 @@ http://pep8online.com/ - I checked the app.py file using PEP8 online
 https://wave.webaim.org - 
 ![wave valid]()
 
-
-
+---  
 
 ## Testing User Stories
 
@@ -152,7 +152,8 @@ To not delete anyting by mistake, a modal will appear where they need to confirm
   
 ## During Development I Fixed The Following Bugs
 
-### Card Display
+### Card Display  
+
 When a user added the ingredients to the recipes they've appeared on the same line instead of seperate lines which made it difficult to read. The same was for the instructions.  
 
 <br>
@@ -209,31 +210,47 @@ instead of:
         </div>
         {% endfor %}
 
-### Responsiveness
+### Responsiveness issues  
+
 - I've had some responsiveness issues with the search bar. On smaller devices the input field was very small and buttons overlapping.  
 <br>
-<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/valign-wrapper.png" width="300" height="600"/>
+<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/valign-wrapper.png" width="300" height=auto/>
 <br>
     - I've had added the Materialize class name `.valign-wrapper` because I wanted it to be vertically aligned. I removed this and kept the `.center-align` class and the buttons now appeared below the search bar on smaller devices making it much easier to fill out and search.
 
-- Font weight for the logo "Yum Yum" was too big for iphone 5/SE making it appear on two lines. Even on Galaxy fold the logo jumped down a line.
+- Font weight for the logo "Yum Yum" was too big for iphone 5/SE making it appear on two lines. Even on Galaxy fold the logo jumped down a line.  
+
 <br>
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/font-size.png" width="300" height= auto />
 <br>
 <br>
-<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/font-size2.png" width="300" height="300"/>
+<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/font-size2.png" width="300" height=auto/>
 <br>
-    - I've added the class .hide-on-small-only from Materialize which hides the logo on small screens. This actually made it look much cleaner and not so cluttered in the navbar.
 
+ - I added the class `.hide-on-small-only` from Materialize which hides the logo on small screens.
+This actually made it look much cleaner and not so cluttered in the navbar.  
+
+---  
 
 ## Lighthouse Testing
 
-I've ran the report in Lighthouse when I considered myself almost done with the page and it had quite a good score, there was just some minor issues that needed to be fixed.  
+I ran the the site through Chrome Lighthouse when I considered myself almost done and the score was quite ok, there were just some minor issues that needed to be fixed.  
     - Add alt text to images  
     - Add `rel="noopener"` to social media links  
     - Add meta description to base.html  
+<br>
+<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/lighthouse-first.png" width=auto height="300"/>
+<br>
 
-## I Manually Tested The Following Features
+After fixing the issues my score became much better
+<br>
+<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/lighthouse-second.png" width=auto height="300"/>
+<br>  
+
+---  
+
+## I Manually Tested The Following Features  
+
 - Home  
     - All links in navbar takes you to the correct pages
     - Button "Show recipes" takes you to the recipe page
@@ -287,27 +304,15 @@ I've ran the report in Lighthouse when I considered myself almost done with the 
 - Add Category
     - Submitting the form will not work without the field being filled out
     - "Cancel" button takes you back to manage categories page
-    - Category is being added to database and displays on managae category page and as an option for users when they add a new recipe
+    - Category is being added to database and displays on managae category page and as an option for users when they add a new recipe  
 
 
-**Responsiveness**  
+## Testing Responsiveness  
+
 To make sure that the site is responsive:
  - I manually tested it on all available devices in DevTools
- - I've used the site [Responsinator](http://www.responsinator.com/?url=baby-food.herokuapp.com%2Fhome)
+ - I've used the site [Responsinator](http://www.responsinator.com/?url=baby-food.herokuapp.com%2Fhome)  
 
+---  
 
-## Testing User Stories 
- 
-1. As a user I easily want to find good and healthy recipes that I can make for my baby
-2. As a user I want to be able to search for a specific ingredient in the recipes
-3. As a user I want to be able to look for recipes sorted by category
-4. As a user I want to be able to create my own account
-5. As a user I want to upload my own recipes
-6. As a user I want to be able to edit my recipes
-7. As a user I want to be able to delete my recipes
-8. As a user I want to be able to log in to my account
-9. As a user I want to be able to log out of my account
-10. As a site admin I want to be able to add new categories to the site
-11. As a site admin I want to be able to edit categories
-12. As a site admin I want to be able to delete categories
 
