@@ -1,204 +1,177 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200;300;400;500&family=Lato:wght@100;300;400&family=Montserrat:wght@100;200;300;400;500;600&display=swap');
- 
-
 body {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;  
-    color: #343739;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #343739;
 }
 
 main {
-    flex: 1 0 auto;
-  }
+	flex: 1 0 auto;
+}
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 48px;
-    letter-spacing: 3px;
-    color: #381D2A; 
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 48px;
+	letter-spacing: 3px;
+	color: #381D2A;
 }
 
 h2 {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    letter-spacing: 1px;
-    color: #343739;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	letter-spacing: 1px;
+	color: #343739;
 }
 
 h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #343739;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #343739;
 }
 
 h4 {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    color: #343739;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	color: #343739;
 }
 
 h5 {
-    font-family: 'Gluten', cursive;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    color: #343739;
+	font-family: 'Gluten', cursive;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	color: #343739;
 }
 
+
 /*----------navbar-----------*/
+
 
 /* changing the text color on navbar:
 https://stackoverflow.com/questions/33746269/changing-the-text-color-on-a-nav-bar-using-materialize-css-rails */
 
-nav ul li a{
-    color: #343739;
-  } 
+nav ul li a {
+	color: #343739;
+}
 
-nav a i{
-    color: #343739;
-  } 
+nav a i {
+	color: #343739;
+}
 
-  nav {
-    box-shadow: none;
+nav {
+	box-shadow: none;
 }
 
 .menu {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 8px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #FFF0EB;
-  }
-
-  .menu a:hover {
-    color: #FC6A60;
-    background-color: transparent;
-  }
-  
-  .brand-logo {
-    text-transform: uppercase;
-    font-family: 'Gluten', cursive;
-    color: #381D2A !important; 
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 8px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #FFF0EB;
 }
 
+.menu a:hover {
+	color: #FC6A60;
+	background-color: transparent;
+}
+
+.brand-logo {
+	text-transform: uppercase;
+	font-family: 'Gluten', cursive;
+	color: #381D2A !important;
+}
 
 .logo {
-    
-    width: 50px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 5px;
+	width: 50px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 5px;
 }
+
 
 /*----------index page-----------*/
 
 .top-text {
-    letter-spacing: 7px;
-    color: #381D2A;
-    text-transform: uppercase;
+	letter-spacing: 7px;
+	color: #381D2A;
+	text-transform: uppercase;
 }
 
-.top-text-image{
-    width: 30px;
-    margin-left: 5px;
-}
-
-.top-text-box {
-    background-color: #;
+.top-text-image {
+	width: 30px;
+	margin-left: 5px;
 }
 
 .heading {
-    text-align: center;
-    font-size: 54px;
+	text-align: center;
+	font-size: 54px;
 }
 
-.sub-heading{
-    text-align: center;
-    padding-top: 2rem;
-    
-  
-}
 .hero-image {
-    height: 100vh;
+	height: 100vh;
 }
 
-.hero-text-box{
-    background-color: ;
-}
 
-.image-box{
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.centered-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 /*----------recipes-----------*/
 
 .recipe-image {
-    width:  300px;
-    height: 300px;
-    object-fit: cover;
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
 }
 
 .card .card-title {
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 16px;
 }
 
-.card .card-title:hover{
-    color: #FC6A60 !important; ;
+.card .card-title:hover {
+	color: #FC6A60 !important;
+	;
 }
 
-.pagination li.active{
-    background-color: #FC6A60 !important;
+.pagination li.active {
+	background-color: #FC6A60 !important;
 }
 
-form a .btn{
-    background-color:;
-}
+
 /*----------buttons-----------*/
 
 .btn {
-    margin: 10px;
-    background-color: #FC6A60 !important;
+	margin: 10px;
+	background-color: #FC6A60 !important;
 }
 
 .btn-small {
-
-    margin: 10px;
-    background-color: #FC6A60 !important;
+	margin: 10px;
+	background-color: #FC6A60 !important;
 }
+
 
 /*----------footer----------*/
 
 .page-footer {
-    background-color: #FFF0EB;
+	background-color: #FFF0EB;
 }
+
 .social-icons {
-    color: #381D2A !important;
+	color: #381D2A !important;
 }
 
 .social-icons i:hover {
-    color: #FC6A60;
+	color: #FC6A60;
 }
-
