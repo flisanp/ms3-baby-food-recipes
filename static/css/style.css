@@ -23,7 +23,7 @@ h2 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
-	letter-spacing: 4px;
+	letter-spacing: 3px;
 	color: #343739;
 }
 
@@ -123,6 +123,9 @@ nav {
 
 .sub-headline{
 	margin-top: 3rem;
+}
+
+.btn-headline{
 	
 }
 
@@ -185,11 +188,7 @@ nav {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	.headline {
-		margin-top: 5rem;
+		margin-top: 6rem;
 	}	
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-	
-}

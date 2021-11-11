@@ -1,26 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
-
 <!--top text-->
 <div class="row top-text-box">
    <div class="col s12 center-align">
-      <h4 class="top-text">Baby Food Recipes That Your Little One Will Love<img class="responsive-img top-text-image" src="{{ url_for('static', filename='images/cherries.png') }}" alt="cherries"></h4>
+      <h4 class="top-text">Baby Food Recipes That Your Little One Will Love<img class="responsive-img top-text-image"
+         src="{{ url_for('static', filename='images/cherries.png') }}" alt="cherries"></h4>
    </div>
 </div>
-
 <!--headings-->
 <div class="row">
    <div class="col s12 m12 xl6">
       <h1 class="center-align headline">Is Your Baby Hungry? <a href="{{ url_for('get_recipes') }}"
-            class="btn-small">SHOW RECIPES</a></h1>
-            <h2 class="center-align sub-headline">Share Your Best Recipes And
-               Find New Favourites</h2>
+         class="btn-small">SHOW RECIPES</a></h1>
+      <h2 class="center-align sub-headline">Share Your Best Recipes And
+         Find New Favourites
+      </h2>
    </div>
- 
    <!--hero image-->
    <div class="col s12 m12 xl6">
-      <img class="responsive-img hero-image" src="{{ url_for('static', filename='images/mother-feed-baby.png') }}" alt="mother feeding baby with a spoon">
+      <img class="responsive-img hero-image" src="{{ url_for('static', filename='images/mother-feed-baby.png') }}"
+         alt="mother feeding baby with a spoon">
    </div>
 </div>
- 
-   {% endblock %}
+{% endblock %}
