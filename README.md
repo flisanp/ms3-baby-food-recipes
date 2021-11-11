@@ -22,7 +22,7 @@ Yum Yum is a recipe site for baby food. Users can search trough existing recipes
 1. As a user I easily want to find good and healthy recipes that I can make for my baby
 2. As a user I want to be able to search for a specific ingredient in the recipes
 3. As a user I want to be able to look for recipes sorted by category
-4. As a user I want to be able to create my own account
+4. As a user I want to be able to register my own account
 5. As a user I want to upload my own recipes
 6. As a user I want to be able to edit my recipes
 7. As a user I want to be able to delete my recipes

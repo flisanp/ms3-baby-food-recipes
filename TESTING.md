@@ -28,12 +28,12 @@ https://wave.webaim.org -
 
 
 1. As a user I easily want to find good and healthy recipes that I can make for my baby
-![wireframe]()
+![wireframe](/workspace/ms3-baby-food-recipes/static/images/README/user-stories/user_story_1.png)
 2. As a user I want to be able to search for a specific ingredient in the recipes
 ![wireframe]()
 3. As a user I want to be able to look for recipes sorted by category
 ![wireframe]()
-4. As a user I want to be able to create my own account
+4. As a user I want to be able to register my own account
 ![wireframe]()
 5. As a user I want to upload my own recipes
 ![wireframe]()
@@ -113,33 +113,13 @@ instead of:
 - Font weight for the logo "Yum Yum" was too big for iphone 5/SE making it appear on two lines. Even on Galaxy fold the logo jumped down a line.
     - I've added the class .hide-on-small-only from Materialize which hides the logo on small screens. This actually made it look much cleaner and not so cluttered in the navbar.
 
-## Validator Testing
-
-#### HTML Testing
-https://validator.w3.org/ -
-![html]()
-
-#### CSS Testing 
-https://jigsaw.w3.org/css-validator/ - 
-![css]()
-
-#### JS Testing
-https://jshint.com/ - 
-
-#### Python
-http://pep8online.com/ - I checked the app.py file using PEP8 online
-![PEP8]()
-
-#### Accessibility test
-https://wave.webaim.org - 
-![wave valid]()
 
 ## Lighthouse Testing
 
-I've ran the report in Lighthouse when I considered myself almost done with the page and it had quite a good score, there was just some minor issues that needed to be fixed.
-    - Add alt text to images
-    - Add `rel="noopener"` to social media links
-    - Add meta description to base.html
+I've ran the report in Lighthouse when I considered myself almost done with the page and it had quite a good score, there was just some minor issues that needed to be fixed.  
+    - Add alt text to images  
+    - Add `rel="noopener"` to social media links  
+    - Add meta description to base.html  
 
 ## I Manually Tested The Following Features
 - Home  
