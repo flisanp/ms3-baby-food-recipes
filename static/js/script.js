@@ -13,11 +13,11 @@ $(document).ready(function () {
   validateMaterializeSelect();
 
   function validateMaterializeSelect() {
-    let classValid = {
+    moz classValid = {
       "border-bottom": "1px solid #4caf50",
       "box-shadow": "0 1px 0 0 #4caf50"
     };
-    let classInvalid = {
+    moz classInvalid = {
       "border-bottom": "1px solid #f44336",
       "box-shadow": "0 1px 0 0 #f44336"
     };

@@ -253,7 +253,6 @@ def delete_category(category_id):
     return redirect(url_for("get_categories"))
 
 
-
 # 404 error page, code from:
 # https://blog.miguelgrinberg.com/post/
 # the-flask-mega-tutorial-part-vii-error-handling

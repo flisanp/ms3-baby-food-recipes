@@ -4,23 +4,22 @@
 
 
 ### HTML Testing
-https://validator.w3.org/ -
-![html]()
+[W3C Markup Validation](https://validator.w3.org/) was used to validate HTML.  
+No errors were found  
 
 ### CSS Testing 
 
-I checked the file using [W3C CSS Markup Validation Service](https://jigsaw.w3.org/css-validator/)  
-
+[W3C CSS Markup Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate CSS.  
 No errors were found 
 
 
-### JS Testing  
-I checked the script.js file using [JShint](https://jshint.com/)
-
 ### Python
-I checked the app.py file using [PEP8 online](http://pep8online.com/)
-![PEP8]()
+[PEP8 online](http://pep8online.com/) was used to valide Python.  
+No errors were found
 
+
+### JS Testing  
+[JShint](https://jshint.com/) was used to validate JavaScript  
 
 ---  
 
