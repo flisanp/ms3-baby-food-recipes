@@ -27,35 +27,133 @@ https://wave.webaim.org -
 ## Testing User Stories
 
 
-1. As a user I easily want to find good and healthy recipes that I can make for my baby
-![user_story_1](static/images/README/user-stories/user-story-1.png)
-2. As a user I want to be able to search for a specific ingredient in the recipes
-![user_story_2](static/images/README/user-stories/user-story-2.png)
-3. As a user I want to be able to look for recipes sorted by category
-![user_story_3](static/images/README/user-stories/user-story-3.png)
-4. As a user I want to be able to register my own account
-![user_story_4](static/images/README/user-stories/user-story-4.png)
-5. As a user I want to upload my own recipes
-![user_story_5](static/images/README/user-stories/user-story-5.png)
-6. As a user I want to be able to edit my recipes
-![user_story_6](static/images/README/user-stories/user-story-6.png)
-7. As a user I want to be able to delete my recipes
-![user_story_7](static/images/README/user-stories/user-story-7.png)
-8. As a user I want to be able to log in to my account
-![user_story_8](static/images/README/user-stories/user-story-8.png)
-9. As a user I want to be able to log out of my account
-![user_story_9](static/images/README/user-stories/user-story-9.png)
-10. As a site admin I want to be able to add new categories to the site
-![user_story_10](static/images/README/user-stories/user-story-10.png)
-11. As a site admin I want to be able to edit categories
-![user_story_11](static/images/README/user-stories/user-story-11.png)
-12. As a site admin I want to be able to delete categories
+- ### *As a user I easily want to find good and healthy recipes that I can make for my baby*   
+
+All users who visits the website can view the recipes without having an account or log in. They can navigate through the navbar or use the "show recipes" button on the landing page.
+
+![user_story_1](static/images/README/user-stories/user-story-1.png)  
+
+![user_story_1](static/images/README/user-stories/recipes.png)  
+
+---    
+
+- ### *As a user I want to be able to search for a specific ingredient in the recipes*  
+
+Users can use the search bar on the recipe page. Search results comes from ingredients in the recipe or the name of the recipe  
+
+![user_story_2](static/images/README/user-stories/user-story-2.png)  
+
+If there is a result it will show the recipes that includes that word    
+
+![user_story_2](static/images/README/user-stories/user-story-search2.png)  
+
+If there's no match the line "No Results Found" is displayed    
+
+![user_story_2](static/images/README/user-stories/user-story-search1.png)  
+
+---
+
+- ### *As a user I want to be able to look for recipes sorted by category*  
+
+Users can choose to either see all recipes or to filter them by the categories: *Breakfast*, *Lunch*, *Dinner* and *Snack*
+
+![user_story_3](static/images/README/user-stories/user-story-3.png)  
+
+---
+
+- ### *As a user I want to be able to register my own account*  
+
+From the navbar users can reach the Sign Up page where they can register to have their own account. There they choose a username and a password, if the username is already taken they will be informed with the line "Username already exists".
+
+![user_story_4](static/images/README/user-stories/user-story-4.png)  
+
+---
+
+- ### *As a user I want to be able to log in to my account*  
+
+After a user has been registered they can log in to their account through the Log In page located in the navbar
+
+![user_story_8](static/images/README/user-stories/user-story-8.png)  
+
+---
+
+- ### *As a user I want to be able to log out of my account*  
+
+Once the user is logged in they can log out of their account by clicking the Log Out link located in the navbar
+
+![user_story_9](static/images/README/user-stories/user-story-9.png)  
+
+---
+
+- ### *As a user I want to upload my own recipes*  
+
+Once the user is registered and have an account they can add their own recipes from their account page   
+
+![user_story_5](static/images/README/user-stories/user-story-5.png)  
+
+When they click the "Add Recipe" button they will be redirected to the Add Recipe page  
+
+![user_story_5](static/images/README/user-stories/add-recipe.png) 
+
+---
+
+- ### *As a user I want to be able to edit my recipes*  
+
+On the bottom of every recipe that the users has uploaded themselves there is an "edit" button.
+
+![user_story_6](static/images/README/user-stories/user-story-6.png)  
+
+When they click on the "edit" button they will be redirected to the edit recipe page. The input fields will be prefilled with the previous information added.
+
+![user_story_6](static/images/README/user-stories/edit-recipe.png)  
+
+---
+
+- ### *As a user I want to be able to delete my recipes*  
+
+On the bottom of every recipe that the users has uploaded themselves there is a "delete" button.
+
+![user_story_7](static/images/README/user-stories/user-story-7.png)  
+
+To not delete anyting by mistake, a modal will appear where they need to click to confirm the deletion or cancel it
+
+![user_story_7](static/images/README/user-stories/delete-recipe.png)  
+
+---
+
+- ### *As a site admin I want to be able to add new categories to the site*  
+
+As a site admin you get an additional page in the navbar that's called "Manage Categories". From here the admin can add new categories.
+
+![user_story_10](static/images/README/user-stories/user-story-10.png)  
+
+---
+
+- ### *As a site admin I want to be able to edit categories*  
+When admin clicks the name of the category they wish to edit the "edit" button will appear  
+
+![user_story_11](static/images/README/user-stories/user-story-11.png)  
+
+When they click on the button they will be redirected to the edit category page. The input field will be prefilled with the previous information added  
+
+![user_story_11](static/images/README/user-stories/edit-category.png)  
+
+---
+
+- ### *As a site admin I want to be able to delete categories*  
+
+NExt to the "edit" button there is a "delete" button
+
 ![user_story_12](static/images/README/user-stories/user-story-12.png)
+
+To not delete anyting by mistake, a modal will appear where they need to click to confirm the deletion or cancel it  
+
+---  
 
 ## During Development I Fixed The Following Bugs
 
 - When a user added the ingredients to the recipes they've appeared on the same line instead of seperate lines which made it difficult to read. The same was for instructions.  
-![issue-1](static/images/README/bugs/issue1copy.png)
+
 <br>
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/issue1.png" width="300" height="300"/>
 <br>
@@ -77,7 +175,6 @@ Previous: `{{ recipe.category_name }}`.
         `{% endfor %}`
 
 - This solved the issue but now all the letters was on a new line.  
-![issue-1](static/images/README/bugs/issue2copy.png)
 <br>
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/issue2.png" width="300" height="300"/>
 <br>
@@ -85,20 +182,19 @@ Previous: `{{ recipe.category_name }}`.
      = `{% for ingredient in recipe.ingredients.splitlines() %}` and that fixed the issue.
 
 - The different steps for the instructions all have nr 1.  
-![issue-1](static/images/README/bugs/issue3copy.png)
 <br>
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/issue3.png" width="300" height="300"/>
 <br>
 
-    moved for loop inside list item:
+moved for loop inside list item:
     
-      <div>
-                <ol>
-                    {% for steps in recipe.instructions.splitlines() %}
-                    <li>{{ steps }}</li>
-                    {% endfor %}
-                </ol>
-            </div>
+        <div>
+            <ol>
+                {% for steps in recipe.instructions.splitlines() %}
+                <li>{{ steps }}</li>
+                {% endfor %}
+            </ol>
+        </div>
 
 instead of:  
 
