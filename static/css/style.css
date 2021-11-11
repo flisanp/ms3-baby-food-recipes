@@ -20,18 +20,18 @@ h1 {
 }
 
 h2 {
-	font-family: "Lato", sans-serif;
-	font-weight: 400;
-	font-size: 32px;
-	letter-spacing: 1px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 200;
+	font-size: 28px;
+	letter-spacing: 4px;
 	color: #343739;
 }
 
 h3 {
 	font-family: 'Lato', sans-serif;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 20px;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	text-transform: uppercase;
 	color: #343739;
 }
@@ -112,12 +112,17 @@ nav {
 
 .top-text-image {
 	width: 30px;
+	height: auto;
 	margin-left: 5px;
 }
 
 .heading {
 	text-align: center;
 	font-size: 54px;
+}
+
+.sub-heading{
+	margin-top: 3rem;
 }
 
 .hero-image {

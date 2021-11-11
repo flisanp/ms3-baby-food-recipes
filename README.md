@@ -115,6 +115,12 @@ When the Admin is logged in there is a page to manage the categories for the rec
 
 ---
 
+## Database Design  
+
+
+
+---  
+
 ## Technologies Used
 
 ### Languages
@@ -141,8 +147,6 @@ When the Admin is logged in there is a page to manage the categories for the rec
 - [DevTools](https://developers.google.com/web/tools/chrome-devtools) - to test responsiveness and diagnose problems. The tool **Lighthouse** has been used to improve the website's quality. 
 - [Tinypng](https://tinypng.com) - for compressing images
 - [Freeformatter](https://www.freeformatter.com/) - used for beautifying the code
-- [Wave](https://wave.webaim.org) - used to check the websites color contrast accessibility 
-- [ResizeImage](https://resizeimage.net) - used to resize images
 - [Coolors](https://coolors.co) - used to create the color palette
 - [Techsini](https://techsini.com/multi-mockup/index.php) - used to create the mockup image in the beginning of this README file.
 - [Canva](https://www.canva.com) used to create the hero image and logo in navbar

@@ -1,85 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!--top text-->
 <div class="row top-text-box">
    <div class="col s12 center-align">
       <h4 class="top-text">Baby Food Recipes That Your Little One Will Love<img class="responsive-img top-text-image" src="{{ url_for('static', filename='images/cherries.png') }}" alt="cherries"></h4>
    </div>
 </div>
 
+<!--headings-->
 <div class="row">
-   <div class="col s12 l6 hero-text-box">
+   <div class="col s12 m12 l6 hero-text-box">
       <h1 class="center-align heading">Is Your Baby Hungry? <a href="{{ url_for('get_recipes') }}"
             class="btn-small">SHOW RECIPES</a></h1>
+            <h2 class="center-align sub-heading">Share your best recipes and
+               find new favourites</h2>
    </div>
  
    <!--hero image-->
-   <div class="col s12 l6">
+   <div class="col s12 m12 l6">
       <img class="responsive-img hero-image" src="{{ url_for('static', filename='images/mother-feed-baby.png') }}" alt="mother feeding baby with a spoon">
    </div>
 </div>
  
-
-
-<!--
-<div class="row #ffebee red lighten-5">
-   <div class="col s12 l6 center-align">
-      <div class="quick-tip">Quick tip!</div>
-      <h3 class="recipe-index">Banana Pancakes</h3>
-      <h4>Ingredients
-         <ul>
-            <li>1 banana</li>
-            <li>1 egg</li>
-         </ul>
-         <p>Instructions</p>
-         <ul>
-            <li>Mash the banana</li>
-            <li> Mix with the egg</li>
-            <li> Cook 1 tablespoon at a time</li>
-            <li>Flip over and serve warm</li>
-         </ul>
-
-
-      </h4>
-   </div>
-   <div class="col s12 l6 center-align">
-      <img class="circle" src="{{ url_for('static', filename='images/banana-pancakes.jpg') }}">
-   </div>
-</div>
-
--->
-
-<!--
-<div class="row #fff8e1 amber lighten-5">
-
-   <div class="col s12 m6 l3 image-box">
-      <a href="{{ url_for('breakfast') }}">
-         <img class="responsive-img" src="{{ url_for('static', filename='images/2.png') }}">
-      </a>
-   <div class="centered-text"><h5>Breakfast</h5></div>
-   </div>
-
-   <div class="col s12 m6 l3 image-box">
-      <a href="{{ url_for('breakfast') }}"></a>
-      <img class="responsive-img fruit-image" src="{{ url_for('static', filename='images/3.png') }}"></a>
-      <div class="centered-text"><h5>Lunch</h5></div>
-   </div>
-
-   <div class="col s12 m6 l3 image-box">
-      <a href="{{ url_for('breakfast') }}"></a>
-      <img class="responsive-img fruit-image" src="{{ url_for('static', filename='images/4.png') }}"></a>
-      <div class="centered-text"><h5>Dinner</h5></div>
-       </div>
-
-         <div class="col s12 m6 l3 image-box">
-            <a href="{{ url_for('breakfast') }}"></a>
-            <img class="responsive-img fruit-image" src="{{ url_for('static', filename='images/5.png') }}"></a>
-            <div class="centered-text"><h5>Snack</h5></div>
-         </div>
-   </div>
-
--->
-
-
-
    {% endblock %}

@@ -8,19 +8,19 @@ https://validator.w3.org/ -
 ![html]()
 
 ### CSS Testing 
-https://jigsaw.w3.org/css-validator/ - 
-![css]()
 
-### JS Testing
-https://jshint.com/ - 
+I checked the file using [W3C CSS Markup Validation Service](https://jigsaw.w3.org/css-validator/)  
+
+No errors were found 
+
+
+### JS Testing  
+I checked the script.js file using [JShint](https://jshint.com/)
 
 ### Python
-http://pep8online.com/ - I checked the app.py file using PEP8 online
+I checked the app.py file using [PEP8 online](http://pep8online.com/)
 ![PEP8]()
 
-### Accessibility test
-https://wave.webaim.org - 
-![wave valid]()
 
 ---  
 
@@ -212,11 +212,12 @@ instead of:
 
 ### Responsiveness issues  
 
-- I've had some responsiveness issues with the search bar. On smaller devices the input field was very small and buttons overlapping.  
+- I've had some responsiveness issues with the search bar. On smaller devices the input field was very small and the text was overlapping.  
 <br>
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/valign-wrapper.png" width="300" height=auto/>
 <br>
-    - I've had added the Materialize class name `.valign-wrapper` because I wanted it to be vertically aligned. I removed this and kept the `.center-align` class and the buttons now appeared below the search bar on smaller devices making it much easier to fill out and search.
+
+- I've had used the Materialize class name `.valign-wrapper` because I wanted it to be vertically aligned. I removed this and kept the `.center-align` class and the buttons now appeared below the search bar on smaller devices making it much easier to fill out and search.  
 
 - Font weight for the logo "Yum Yum" was too big for iphone 5/SE making it appear on two lines. Even on Galaxy fold the logo jumped down a line.  
 
@@ -242,7 +243,8 @@ I ran the the site through Chrome Lighthouse when I considered myself almost don
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/lighthouse-first.png" width=auto height="300"/>
 <br>
 
-After fixing the issues my score became much better
+After fixing the issues my score became much better  
+
 <br>
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/lighthouse-second.png" width=auto height="300"/>
 <br>  
