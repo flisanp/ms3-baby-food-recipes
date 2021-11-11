@@ -1,30 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
-
 <div class="container">
-<h3 class="center-align">Add Category</h3>
-    <div class="row card-panel">
-        <form class="col s12" method="POST" action="{{ url_for('add_category') }}">
-        
-            <!--category name-->
-            <div class="row">
-                <div class="input-field col s12 m6">
-                    <i class="far fa-folder-open prefix"></i>
-                    <input id="category_name" name="category_name" type="text" 
-                    class="validate" required>
-                    <label for="category_name">Category Name</label>
-                </div>
+   <h3 class="center-align">Add Category</h3>
+   <div class="row card-panel">
+      <form class="col s12" method="POST" action="{{ url_for('add_category') }}">
+         <!--category name-->
+         <div class="row">
+            <div class="input-field col s12 m6">
+               <i class="far fa-folder-open prefix"></i>
+               <input id="category_name" name="category_name" type="text" 
+                  class="validate" required>
+               <label for="category_name">Category Name</label>
             </div>
-            
-            <!--submit button-->
-            <div class="row">
-                <div class="col s12 center-align">
-                    <a href="{{ url_for('get_categories') }}" class="btn-small red">Cancel <i class="fas fa-times-circle right"></i></a>
-                    <button type="submit" class="btn-small grey">Add Category<i class="fas fa-plus right"></i></button>
-                </div>
+         </div>
+         <!--submit button-->
+         <div class="row">
+            <div class="col s12 center-align">
+               <a href="{{ url_for('get_categories') }}" class="btn-small red">Cancel <i class="fas fa-times-circle right"></i></a>
+               <button type="submit" class="btn-small grey">Add Category<i class="fas fa-plus right"></i></button>
             </div>
-        </form>
-    </div>
+         </div>
+      </form>
+   </div>
 </div>
-
 {% endblock %}
