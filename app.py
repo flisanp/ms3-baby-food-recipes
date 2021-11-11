@@ -134,7 +134,8 @@ def login():
     return render_template("login.html")
 
 
-# account page (Mentor Reuben Ferrante helped
+# account page 
+# (Mentor Reuben Ferrante helped
 # me with parts of the code for this function)
 @app.route("/account", methods=["GET", "POST"])
 def account():
@@ -252,8 +253,7 @@ def delete_category(category_id):
     return redirect(url_for("get_categories"))
 
 
-# mentor Reuben Ferrante helped me with these
-# functions for error handling and to make them more efficiently
+
 # 404 error page, code from:
 # https://blog.miguelgrinberg.com/post/
 # the-flask-mega-tutorial-part-vii-error-handling
@@ -268,7 +268,8 @@ def not_found_error(error):
         404,
     )
 
-
+# mentor Reuben Ferrante helped me with these
+# functions for error handling and to make them more efficient
 @app.errorhandler(Exception)
 def server_error(error):
     # optional
