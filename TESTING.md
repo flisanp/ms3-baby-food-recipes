@@ -103,7 +103,7 @@ On the bottom of every recipe that the users has uploaded themselves there is an
 
 ![user_story_6](static/images/README/user-stories/user-story-6.png)  
 
-When they click on the "edit" button they will be redirected to the edit recipe page. The input fields will be prefilled with the previous information added.
+When they click on the button they will be redirected to the edit recipe page. The input fields will be prefilled with the previous information added.
 
 ![user_story_6](static/images/README/user-stories/edit-recipe.png)  
 
@@ -115,7 +115,7 @@ On the bottom of every recipe that the users has uploaded themselves there is a 
 
 ![user_story_7](static/images/README/user-stories/user-story-7.png)  
 
-To not delete anyting by mistake, a modal will appear where they need to click to confirm the deletion or cancel it
+To not delete anyting by mistake, a modal will appear where they need to confirm the deletion or cancel it
 
 ![user_story_7](static/images/README/user-stories/delete-recipe.png)  
 
@@ -123,7 +123,7 @@ To not delete anyting by mistake, a modal will appear where they need to click t
 
 - ### *As a site admin I want to be able to add new categories to the site*  
 
-As a site admin you get an additional page in the navbar that's called "Manage Categories". From here the admin can add new categories.
+When you're logged in as site admin you get an additional page in the navbar that's called "Manage Categories". From here the admin can add new categories.
 
 ![user_story_10](static/images/README/user-stories/user-story-10.png)  
 
@@ -142,51 +142,54 @@ When they click on the button they will be redirected to the edit category page.
 
 - ### *As a site admin I want to be able to delete categories*  
 
-NExt to the "edit" button there is a "delete" button
+Next to the "edit" button there is a "delete" button
 
 ![user_story_12](static/images/README/user-stories/user-story-12.png)
 
-To not delete anyting by mistake, a modal will appear where they need to click to confirm the deletion or cancel it  
-
----  
-
+To not delete anyting by mistake, a modal will appear where they need to confirm the deletion or cancel it  
+  
+---   
+  
 ## During Development I Fixed The Following Bugs
 
-- When a user added the ingredients to the recipes they've appeared on the same line instead of seperate lines which made it difficult to read. The same was for instructions.  
+### Card Display
+When a user added the ingredients to the recipes they've appeared on the same line instead of seperate lines which made it difficult to read. The same was for the instructions.  
 
 <br>
-<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/issue1.png" width="300" height="300"/>
+<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/issue1.png" width="300" height="300"/>
 <br>
 
-- I wanted the user to be able to add ingredients and instructions so they all would appear on seperate lines in a list. At first I had the `input` field from Materialize then I changed it to `textarea` and added the class of .materialize-textarea so that when a user added an ingredient or a new step in the instructions they could just press enter to make a line break. I've also added a .helper-text to clearify for the user what to do.
+- I wanted the ingredients and instructions to appear in a list. At first I had the `input` field
+from Materialize then I changed it to `textarea` and added the class of .materialize-textarea so that when a user added an ingredient or a new step in the instructions they could just press enter to make a line break. I've also added a .helper-text for clarification.
 
 
-    - I've also added a for loop with list element so the ingredients/instructions could iterate through.
-Previous: `{{ recipe.category_name }}`.
-        Changed it to:
-        `{% for ingredient in recipe.ingredients %}`
-                `<div>`
-                    `<ul>`
-                        `<li>`
-                            `{{ ingredient }}`
-                        `</li>`
-                    `</ul>`
-                `</div>`
-        `{% endfor %}`
+- I've also added a for loop with list element so the ingredients/instructions could iterate through.  
+Previous: `{{ recipe.category_name }}`  
+Changed it to:  
+
+        {% for ingredient in recipe.ingredients %}
+             <div>
+                <ul>
+                    <li>
+                    {{ ingredient }}
+                    </li>
+                </ul>
+            </div>
+        {% endfor %}
 
 - This solved the issue but now all the letters was on a new line.  
 <br>
-<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/issue2.png" width="300" height="300"/>
+<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/issue2.png" width="300" height="300"/>
 <br>
     - I added `.splitlines()`  
-     = `{% for ingredient in recipe.ingredients.splitlines() %}` and that fixed the issue.
+     = `{% for ingredient in recipe.ingredients.splitlines() %}`  and that fixed the issue.  
 
-- The different steps for the instructions all have nr 1.  
+- The different steps for the instructions all have nr 1.   
 <br>
-<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/issue3.png" width="300" height="300"/>
+<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/issue3.png" width="300" height="300"/>
 <br>
 
-moved for loop inside list item:
+-   moved for loop inside list item:
     
         <div>
             <ol>
@@ -206,10 +209,20 @@ instead of:
         </div>
         {% endfor %}
 
-- I've had some responsiveness issues with the search bar. On smaller devices the input field was very small and buttons overlapping.
-    - I've had added the Materialize class name "valign-wrapper" because I wanted it to be vertically aligned. I removed this and kept the center-align class and the buttons now appeared below the search bar on smaller devices making it much easier to fill out and search.
+### Responsiveness
+- I've had some responsiveness issues with the search bar. On smaller devices the input field was very small and buttons overlapping.  
+<br>
+<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/valign-wrapper.png" width="300" height="300"/>
+<br>
+    - I've had added the Materialize class name `.valign-wrapper` because I wanted it to be vertically aligned. I removed this and kept the `.center-align` class and the buttons now appeared below the search bar on smaller devices making it much easier to fill out and search.
 
 - Font weight for the logo "Yum Yum" was too big for iphone 5/SE making it appear on two lines. Even on Galaxy fold the logo jumped down a line.
+<br>
+<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/font-size.png" width="300" height="300"/>
+<br>
+<br>
+<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/font-size2.png" width="300" height="300"/>
+<br>
     - I've added the class .hide-on-small-only from Materialize which hides the logo on small screens. This actually made it look much cleaner and not so cluttered in the navbar.
 
 
