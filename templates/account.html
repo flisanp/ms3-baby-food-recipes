@@ -1,91 +1,77 @@
 {% extends "base.html" %}
 {% block content %}
-
-
-<!--show username-->
+<!--add recipe button-->
 <div class="row">
-    <div class="col s12">
-        <h2 class="center-align">
-            {{ username }}
-        </h2>
-        <!--add recipe button-->
-        <div class="row">
-            <div class="col s12 center-align">
-                <h3 class="center-align">My recipes</h3>
-                <a class="btn center-align" href="{{ url_for('add_recipe') }}">Add Recipe<i
-                    class="fas fa-plus right "></i></a>
+   <div class="col s12 center-align">
+      <h3 class="center-align">My recipes</h3>
+      <a class="btn center-align" href="{{ url_for('add_recipe') }}">Add Recipe<i
+         class="fas fa-plus right "></i></a>
+   </div>
+</div>
+{% if recipes|length > 0 %}
+<!--show users recipes-->
+<div class="row">
+   {% for recipe in recipes %}
+   {% if session.user|lower == recipe.created_by|lower %}
+   <div class="col s12 m6 l4">
+      <div class="card hoverable">
+         <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator recipe-image" src="{{ recipe.image_url }}" alt="#">
+         </div>
+         <div class="card-content">
+            {{ recipe.category_name }}
+            <span class="card-title activator grey-text text-darken-4">{{ recipe.recipe_name }}</span>
+         </div>
+         <!--recipe display-->
+         <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Ingredients<i class="far fa-times-circle right"></i></span>
+            {% for ingredient in recipe.ingredients.splitlines() %}
+            <div>
+               <ul>
+                  <li>
+                     {{ ingredient }}
+                  </li>
+               </ul>
             </div>
-        </div>
-    
-        
-        {% if recipes|length > 0 %}
-        <!--show users recipes-->
-        <div class="row">
-            {% for recipe in recipes %}
-            {% if session.user|lower == recipe.created_by|lower %}
-            <div class="col s12 m6 l4">
-                <div class="card hoverable">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator recipe-image" src="{{ recipe.image_url }}" alt="#">
-                    </div>
-                    <div class="card-content">
-                        {{ recipe.category_name }}
-                        <span class="card-title activator grey-text text-darken-4">{{ recipe.recipe_name }}</span>
-                    </div>
-                    <!--recipe display-->
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Ingredients<i class="far fa-times-circle right"></i></span>
-                        {% for ingredient in recipe.ingredients.splitlines() %}
-                        <div>
-                            <ul>
-                                <li>
-                                    {{ ingredient }}
-                                </li>
-                            </ul>
-                        </div>
-                        {% endfor %}
-                        <span class="card-title grey-text text-darken-4">Instructions</span>
-                        <div>
-                            <ol>
-                                {% for steps in recipe.instructions.splitlines() %}
-                                <li>{{ steps }}</li>
-                                {% endfor %}
-                            </ol>
-                        </div>
-                
-                        <!--edit/delete recipe-->
-                        <div>
-                            {% if session.user|lower == recipe.created_by|lower %}
-                            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small grey">Edit</a>
-                            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}"
-                                class="btn-small grey modal-trigger" data-target="modal1{{ recipe._id }}">Delete</a>
-                            {% endif %}
-                            <p><em>by: {{recipe.created_by}}</em></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal Structure -->
-                <div id="modal1{{recipe._id}}" class="modal">
-                    <div class="modal-content">
-                        <h4>Are You Sure You Want To Delete This Recipe?</h4>
-                        <p>Deleting The Recipe Will Remove It Permanently</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}"" class=" modal-close waves-effect
-                            waves-green btn-flat">Yes</a>
-                        <a href="{{ url_for('get_recipes' )}}"" class=" modal-close waves-effect waves-green
-                            btn-flat">No</a>
-                    </div>
-                </div>
-            </div>
-            {% endif %}
             {% endfor %}
-        </div>
-        {% else %}
-        <h4 class="center-align red-text">You haven't uploaded any recipes yet</h4>
-        {% endif %}
-    </div>
+            <span class="card-title grey-text text-darken-4">Instructions</span>
+            <div>
+               <ol>
+                  {% for steps in recipe.instructions.splitlines() %}
+                  <li>{{ steps }}</li>
+                  {% endfor %}
+               </ol>
+            </div>
+            <!--edit/delete recipe-->
+            <div>
+               {% if session.user|lower == recipe.created_by|lower %}
+               <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small grey">Edit</a>
+               <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}"
+                  class="btn-small grey modal-trigger" data-target="modal1{{ recipe._id }}">Delete</a>
+               {% endif %}
+               <p><em>by: {{recipe.created_by}}</em></p>
+            </div>
+         </div>
+      </div>
+      <!-- Modal Structure -->
+      <div id="modal1{{recipe._id}}" class="modal">
+         <div class="modal-content">
+            <h4>Are You Sure You Want To Delete This Recipe?</h4>
+            <p>Deleting The Recipe Will Remove It Permanently</p>
+         </div>
+         <div class="modal-footer">
+            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="modal-close waves-effect
+               waves-green btn-flat">Yes</a>
+            <a href="{{ url_for('get_recipes' )}}" class="modal-close waves-effect waves-green
+               btn-flat">No</a>
+         </div>
+      </div>
+   </div>
+   {% endif %}
+   {% endfor %}
 </div>
-</div>
+{% else %}
+<h4 class="center-align red-text">You haven't uploaded any recipes yet</h4>
+{% endif %}
 
 {% endblock %}

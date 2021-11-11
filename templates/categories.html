@@ -1,52 +1,41 @@
 {% extends "base.html" %}
 {% block content %}
-
 <div class="container">
-    <h3 class="center-align">Manage Categories</h3>
-
-
-<!-- categories -->
-    <ul class="collapsible">
-        {% for category in categories %}
-        <li>
-            <div class="collapsible-header"> {{ category.category_name }} <i class="fas fa-angle-down"></i></div>
-            <div class="collapsible-body">
-                <div>
-                    <a href="{{ url_for('edit_category', category_id=category._id) }}" class="btn-small grey">Edit</a>
-                    <a href="{{ url_for('delete_category', category_id=category._id) }}"
-                        class="btn-small blue modal-trigger" data-target="modal1{{ category._id }}">Delete</a>
-                </div>
+   <h3 class="center-align">Manage Categories</h3>
+   <!-- categories -->
+   <ul class="collapsible">
+      {% for category in categories %}
+      <li>
+         <div class="collapsible-header"> {{ category.category_name }} <i class="fas fa-angle-down"></i></div>
+         <div class="collapsible-body">
+            <div>
+               <a href="{{ url_for('edit_category', category_id=category._id) }}" class="btn-small grey">Edit</a>
+               <a href="{{ url_for('delete_category', category_id=category._id) }}"
+                  class="btn-small blue modal-trigger" data-target="modal1{{ category._id }}">Delete</a>
             </div>
-
-            <!-- modal structure -->
-            <div id="modal1{{category._id}}" class="modal">
-                <div class="modal-content">
-                    <h4>Are You Sure You Want To Delete This Category?</h4>
-                    <p>Deleting The Category Will Remove It Permanently</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="{{ url_for('delete_category', category_id=category._id) }}"" class=" modal-close
-                        waves-effect waves-green btn-flat">Yes</a>
-                    <a href="{{ url_for('get_categories' )}}"" class=" modal-close waves-effect waves-green
-                        btn-flat">No</a>
-                </div>
+         </div>
+         <!-- modal structure -->
+         <div id="modal1{{category._id}}" class="modal">
+            <div class="modal-content">
+               <h4>Are You Sure You Want To Delete This Category?</h4>
+               <p>Deleting The Category Will Remove It Permanently</p>
             </div>
-        </li>
-        {% endfor %}
-    </ul>
-
-
-
-
-
-    <!-- add new category button -->
-    <div class="row">
-        <div class="col s12 center-align">
-            <a href="{{ url_for('add_category') }}" class="btn-small light-grey">Add New Category<i
-                    class="fas fa-plus right"></i></a>
-        </div>
-    </div>
+            <div class="modal-footer">
+               <a href="{{ url_for('delete_category', category_id=category._id) }}" class="modal-close
+                  waves-effect waves-green btn-flat">Yes</a>
+               <a href="{{ url_for('get_categories' )}}" class="modal-close waves-effect waves-green
+                  btn-flat">No</a>
+            </div>
+         </div>
+      </li>
+      {% endfor %}
+   </ul>
+   <!-- add new category button -->
+   <div class="row">
+      <div class="col s12 center-align">
+         <a href="{{ url_for('add_category') }}" class="btn-small light-grey">Add New Category<i
+            class="fas fa-plus right"></i></a>
+      </div>
+   </div>
 </div>
-</div>
-
 {% endblock %}
