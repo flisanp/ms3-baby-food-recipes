@@ -212,13 +212,13 @@ instead of:
 ### Responsiveness
 - I've had some responsiveness issues with the search bar. On smaller devices the input field was very small and buttons overlapping.  
 <br>
-<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/valign-wrapper.png" width="300" height="300"/>
+<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/valign-wrapper.png" width="300" height="600"/>
 <br>
     - I've had added the Materialize class name `.valign-wrapper` because I wanted it to be vertically aligned. I removed this and kept the `.center-align` class and the buttons now appeared below the search bar on smaller devices making it much easier to fill out and search.
 
 - Font weight for the logo "Yum Yum" was too big for iphone 5/SE making it appear on two lines. Even on Galaxy fold the logo jumped down a line.
 <br>
-<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/font-size.png" width="300" height="300"/>
+<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/font-size.png" width="300" height= auto />
 <br>
 <br>
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/font-size2.png" width="300" height="300"/>
