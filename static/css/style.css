@@ -24,7 +24,7 @@ h2 {
 	font-weight: 400;
 	font-size: 16px;
 	letter-spacing: 3px;
-	color: #343739;
+	color: #381D2A;
 }
 
 h3 {
@@ -33,7 +33,7 @@ h3 {
 	font-size: 20px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	color: #343739;
+	color: #381D2A;
 }
 
 h4 {
@@ -41,7 +41,7 @@ h4 {
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: 2px;
-	color: #343739;
+	color: #381D2A;
 }
 
 h5 {
@@ -49,7 +49,7 @@ h5 {
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: 2px;
-	color: #343739;
+	color: #381D2A;
 }
 
 
@@ -60,11 +60,11 @@ h5 {
 https://stackoverflow.com/questions/33746269/changing-the-text-color-on-a-nav-bar-using-materialize-css-rails */
 
 nav ul li a {
-	color: #343739;
+	color: #381D2A;
 }
 
 nav a i {
-	color: #343739;
+	color: #381D2A;
 }
 
 nav {
@@ -123,10 +123,6 @@ nav {
 
 .sub-headline{
 	margin-top: 3rem;
-}
-
-.btn-headline{
-	
 }
 
 .hero-image {

@@ -35,7 +35,7 @@ Yum Yum is a recipe site for baby food. Users can search trough existing recipes
 
 With a potential user in mind being a parent with restricted time searching for recipes they can make for their babies, I wanted to have a minimalistic design and focus on ways to quick and easy locate what they're looking for. That is way I choose to have the recipes on a card that immidiately shows the recipes when they click on them rather then sending the user to an additional page. This way they can click their way through several recipes to see if it's something that interest them without leaving the main page.  I didn't want to have the classic pastel colors all over the page that you normally see when it's connected to babies and that is way I choose to have a color palette with calm colors that feels a little bit more modern and also has a good contrast ratio. The name Yum Yum is for me a playful way of saying that something is good when you're talking to a baby and also indicates that the website is designed with babies in mind. 
 
-![color palette]()
+![color palette](static/images/color-palette.png)
 
 #### Typography
 
@@ -147,17 +147,16 @@ Diagram of my database:
 - [Heroku](https://dashboard.heroku.com/) - used to deploy the live site
 - [GitPod](https://www.gitpod.io) - used for their IDE while building the website
 - [GitHub](https://github.com) - used to store repository
-- [Balsamiq](https://balsamiq.com) - used to create wireframes.
-- [DevTools](https://developers.google.com/web/tools/chrome-devtools) - to test responsiveness 
-- [Lighthouse](https://developers.google.com/web/tools/lighthouse) - used for improving performance
-The tool **Lighthouse** has been used to improve the website's quality. 
-- [Tinypng](https://tinypng.com) - for compressing images
-- [Freeformatter](https://www.freeformatter.com/) - used for beautifying the code
-- [Coolors](https://coolors.co) - used for creating the color palette
+- [Balsamiq](https://balsamiq.com) - used to create wireframes
+- [DevTools](https://developers.google.com/web/tools/chrome-devtools) - used to test responsiveness 
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse) - used to improve performance
+- [Tinypng](https://tinypng.com) - used to compress images
+- [Freeformatter](https://www.freeformatter.com/) - used to beautify code
+- [Coolors](https://coolors.co) - used to create color palette
 - [dbdiagarm](https://dbdiagram.io/home) - used to create database diagram 
 - [Techsini](https://techsini.com/multi-mockup/index.php) - used to create the mockup image in the beginning of this README file.
 - [Canva](https://www.canva.com) used to create the hero image and logo in navbar
-- [Favicon](https://favicon.io)
+- [RealFaviconGenerator](https://realfavicongenerator.net) - used to create site favicon
 - [W3C Markup Validation Service](https://validator.w3.org) - used to check the HTML pages
 - [W3C CSS Markup Validation Service](https://jigsaw.w3.org/css-validator/) - used to check the CSS file
 - [JSHint](https://jshint.com) - used to check the script.js file
