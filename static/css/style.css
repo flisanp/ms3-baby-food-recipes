@@ -181,3 +181,15 @@ nav {
 .social-icons i:hover {
 	color: #FC6A60;
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.headline {
+		margin-top: 5rem;
+	}	
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	
+}
