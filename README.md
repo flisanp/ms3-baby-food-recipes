@@ -18,19 +18,18 @@ Yum Yum is a recipe site for baby food. Users can search trough existing recipes
 - Make it easy for users to navigate the site on any device 
 
 ### User Stories
-
-1. As a user I easily want to find good and healthy recipes that I can make for my baby
-2. As a user I want to be able to search for a specific ingredient in the recipes
-3. As a user I want to be able to look for recipes sorted by category
-4. As a user I want to be able to register my own account
-5. As a user I want to upload my own recipes
-6. As a user I want to be able to edit my recipes
-7. As a user I want to be able to delete my recipes
-8. As a user I want to be able to log in to my account
-9. As a user I want to be able to log out of my account
-10. As a site admin I want to be able to add new categories to the site
-11. As a site admin I want to be able to edit categories
-12. As a site admin I want to be able to delete categories
+-   As a user I easily want to find good and healthy recipes that I can make for my baby
+-   As a user I want to be able to search for a specific ingredient in the recipes
+-   As a user I want to be able to look for recipes sorted by category
+-   As a user I want to be able to register my own account
+-   As a user I want to be able to log in to my account
+-   As a user I want to be able to log out of my account
+-   As a user I want to upload my own recipes
+-   As a user I want to be able to edit my recipes
+-   As a user I want to be able to delete my recipes
+-   As a site admin I want to be able to add new categories to the site
+-   As a site admin I want to be able to edit categories
+-   As a site admin I want to be able to delete categories
 
 ### Design 
 
