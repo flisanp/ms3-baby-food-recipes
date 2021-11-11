@@ -148,10 +148,12 @@ Diagram of my database:
 - [GitPod](https://www.gitpod.io) - used for their IDE while building the website
 - [GitHub](https://github.com) - used to store repository
 - [Balsamiq](https://balsamiq.com) - used to create wireframes.
-- [DevTools](https://developers.google.com/web/tools/chrome-devtools) - to test responsiveness and diagnose problems. The tool **Lighthouse** has been used to improve the website's quality. 
+- [DevTools](https://developers.google.com/web/tools/chrome-devtools) - to test responsiveness 
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse) - used for improving performance
+The tool **Lighthouse** has been used to improve the website's quality. 
 - [Tinypng](https://tinypng.com) - for compressing images
 - [Freeformatter](https://www.freeformatter.com/) - used for beautifying the code
-- [Coolors](https://coolors.co) - used to create the color palette
+- [Coolors](https://coolors.co) - used for creating the color palette
 - [dbdiagarm](https://dbdiagram.io/home) - used to create database diagram 
 - [Techsini](https://techsini.com/multi-mockup/index.php) - used to create the mockup image in the beginning of this README file.
 - [Canva](https://www.canva.com) used to create the hero image and logo in navbar
@@ -235,14 +237,16 @@ Changing the text color on navbar from [Stack Overflow](https://stackoverflow.co
 
 404 error page from [this blog post](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vii-error-handling)
 
+Code that will fix the validation requirements for Materialize select elements, copied from Code Institue lesson: Materialize Form Validation
+
 `def is_logged_in` - Function that returns None if the user isn't logged in otherwise returns the username, by mentor Reuben Ferrante
 
-Help from mentor Reuben Ferrante with functions for error handling and to make them more efficiently
+Help with functions for error handling and to make them more efficiently, by mentor Reuben Ferrante 
 
 The lessons from The mini project by Tim Nelson
 
 ### Content
-Recipes that I've added comes from these websites (with a few moderations on some):
+Recipes that I've added comes from these websites (a few moderations were made on some recipes):
 
 [Banana Pancakes](https://babyfoode.com/blog/banana-pancakes-for-baby/)  
 [Oatmeal Porridge](https://www.eatingbirdfood.com/oatmeal-for-babies/)  
@@ -257,7 +261,7 @@ Recipes that I've added comes from these websites (with a few moderations on som
 
 ### Media
 
-All recipe images are sourced via [Unsplash](https://unsplash.com/)
+All images of recipes uploaded by me are sourced via [Unsplash](https://unsplash.com/)
 
 [Banana Pancakes](https://unsplash.com/photos/tKKe3aDvncE)   
 [Oatmeal Porridge](https://unsplash.com/photos/-eLS9k_uhUc)  
@@ -270,7 +274,8 @@ All recipe images are sourced via [Unsplash](https://unsplash.com/)
 [Mint and Pea Soup](https://unsplash.com/photos/BA6FzJZ9IfY)  
 [Creamy Potato Soup](https://unsplash.com/photos/rIxoNvlcg0o)  
 
-Logo and image on landing page is from [Canva](https://www.canva.com/)
+Logo and hero image on landing page is from [Canva](https://www.canva.com/)  
+Cherries vector is from [Vecteezy](https://www.vecteezy.com/free-vector/apple)  
 
 ---
 
