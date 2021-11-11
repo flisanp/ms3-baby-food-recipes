@@ -28,33 +28,34 @@ https://wave.webaim.org -
 
 
 1. As a user I easily want to find good and healthy recipes that I can make for my baby
-![wireframe](/workspace/ms3-baby-food-recipes/static/images/README/user-stories/user_story_1.png)
+![user_story_1](static/images/README/user-stories/user-story-1.png)
 2. As a user I want to be able to search for a specific ingredient in the recipes
-![wireframe]()
+![user_story_2](static/images/README/user-stories/user-story-2.png)
 3. As a user I want to be able to look for recipes sorted by category
-![wireframe]()
+![user_story_3](static/images/README/user-stories/user-story-3.png)
 4. As a user I want to be able to register my own account
-![wireframe]()
+![user_story_4](static/images/README/user-stories/user-story-4.png)
 5. As a user I want to upload my own recipes
-![wireframe]()
+![user_story_5](static/images/README/user-stories/user-story-5.png)
 6. As a user I want to be able to edit my recipes
-![wireframe]()
+![user_story_6](static/images/README/user-stories/user-story-6.png)
 7. As a user I want to be able to delete my recipes
-![wireframe]()
+![user_story_7](static/images/README/user-stories/user-story-7.png)
 8. As a user I want to be able to log in to my account
-![wireframe]()
+![user_story_8](static/images/README/user-stories/user-story-8.png)
 9. As a user I want to be able to log out of my account
-![wireframe]()
+![user_story_9](static/images/README/user-stories/user-story-9.png)
 10. As a site admin I want to be able to add new categories to the site
-![wireframe]()
+![user_story_10](static/images/README/user-stories/user-story-10.png)
 11. As a site admin I want to be able to edit categories
-![wireframe]()
+![user_story_11](static/images/README/user-stories/user-story-11.png)
 12. As a site admin I want to be able to delete categories
-![wireframe]()
+![user_story_12](static/images/README/user-stories/user-story-12.png)
 
 ## During Development I Fixed The Following Bugs
 
-- When a user added the ingredients to the recipes they've appeared on the same line instead of seperate lines which made it difficult to read. The same was for instructions.
+- When a user added the ingredients to the recipes they've appeared on the same line instead of seperate lines which made it difficult to read. The same was for instructions.  
+![issue-1](static/images/README/bugs/issue1copy.png)
 <br>
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/issue1.png" width="300" height="300"/>
 <br>
@@ -75,14 +76,16 @@ Previous: `{{ recipe.category_name }}`.
                 `</div>`
         `{% endfor %}`
 
-- This solved the issue but now all the letters was on a new line.
+- This solved the issue but now all the letters was on a new line.  
+![issue-1](static/images/README/bugs/issue2copy.png)
 <br>
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/issue2.png" width="300" height="300"/>
 <br>
     - I added `.splitlines()`  
      = `{% for ingredient in recipe.ingredients.splitlines() %}` and that fixed the issue.
 
-- The different steps for the instructions all have nr 1.
+- The different steps for the instructions all have nr 1.  
+![issue-1](static/images/README/bugs/issue3copy.png)
 <br>
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/issue3.png" width="300" height="300"/>
 <br>
