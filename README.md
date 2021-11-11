@@ -7,6 +7,7 @@
 
 Yum Yum is a recipe site for baby food. Users can search trough existing recipes and create an account where they can upload and store their own recipes and share them with other users. As a new mom I've realized the importance of finding good and healthy recipes for my kid. I've also realized the importance of finding them fast due to lack of time. This is why I wanted to create this website for me and parents alike that could benefit from this service.
 
+---  
 
 ## UX
 
@@ -43,6 +44,8 @@ The main fonts that I choose for this project is Montserrat and Lato which are t
 
 ### Wireframes
 Wireframes can be viewed [here](static/images/README/wireframes/wireframes.pdf)
+
+---
 
 ## Features
 ### Existing Features
@@ -111,6 +114,8 @@ When the Admin is logged in there is a page to manage the categories for the rec
 - The possibility for users to delete their own account
 - Add more information about the recipes such as allergies, servings, preparation time and so on. 
 
+---
+
 ## Technologies Used
 
 ### Languages
@@ -147,6 +152,13 @@ When the Admin is logged in there is a page to manage the categories for the rec
 - [W3C CSS Markup Validation Service](https://jigsaw.w3.org/css-validator/) - used to check the CSS file
 - [JSHint](https://jshint.com) - used to check the script.js file
 - [PEP8 online](http://pep8online.com) - used to check the app.py file
+
+---
+
+## Testing
+Testing information can be found [here](TESTING.md)
+
+---
 
 ## Deployment
 ### Create Project  
@@ -204,6 +216,8 @@ To fork the project follow these steps:
 3. Locate the "Fork" button on the top right corner of the page
 4. A duplicate of the original repository is now in your Github account
 
+---
+
 ## Credits
 
 ### Code
@@ -249,5 +263,7 @@ All recipe images are sourced via [Unsplash](https://unsplash.com/)
 [Creamy Potato Soup](https://unsplash.com/photos/rIxoNvlcg0o)  
 
 Logo and image on landing page is from [Canva](https://www.canva.com/)
+
+---
 
 ## Acknowledgements

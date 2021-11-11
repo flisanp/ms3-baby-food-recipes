@@ -198,10 +198,11 @@ I've ran the report in Lighthouse when I considered myself almost done with the 
     - Category is being added to database and displays on managae category page and as an option for users when they add a new recipe
 
 
-**Responsiveness**
-I manually tested the responsiveness on all available devices in DevTools. Galaxy fold didn't display well, this is something I will have to fix in the future.
+**Responsiveness**  
+To make sure that the site is responsive:
+ - I manually tested it on all available devices in DevTools
+ - I've used the site [Responsinator](http://www.responsinator.com/?url=baby-food.herokuapp.com%2Fhome)
 
-![galaxy fold](https://github.com/flisanp/ms2-barcelona-guide/blob/d4a033c7e48d4b2828d4fb14bf498dfe54db6248/readme%20assets/bugs/galaxy-fold.png)
 
 ## Testing User Stories 
  
