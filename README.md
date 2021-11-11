@@ -115,7 +115,11 @@ When the Admin is logged in there is a page to manage the categories for the rec
 
 ---
 
-## Database Design  
+## Database 
+
+Diagram of my database:
+
+![database](static/images/README/database.png)
 
 
 
@@ -148,6 +152,7 @@ When the Admin is logged in there is a page to manage the categories for the rec
 - [Tinypng](https://tinypng.com) - for compressing images
 - [Freeformatter](https://www.freeformatter.com/) - used for beautifying the code
 - [Coolors](https://coolors.co) - used to create the color palette
+- [dbdiagarm](https://dbdiagram.io/home) - used to create database diagram 
 - [Techsini](https://techsini.com/multi-mockup/index.php) - used to create the mockup image in the beginning of this README file.
 - [Canva](https://www.canva.com) used to create the hero image and logo in navbar
 - [Favicon](https://favicon.io)
