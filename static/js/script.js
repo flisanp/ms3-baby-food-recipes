@@ -1,3 +1,8 @@
+/*
+line below tells JSHint that the code uses ECMAScript 6 specific syntax:https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const
+*/
+/*jshint esversion: 6 */
+
 $(document).ready(function () {
   $('.sidenav').sidenav({
     edge: "right"
