@@ -58,7 +58,7 @@ Wireframes can be viewed [here](static/images/README/wireframes/wireframes.pdf)
 ### Existing Features
 
 - **Navbar**   
-    - Each page features a responsive Materialize navbar that’s collapsed to a burger icon when viewing on smaller screens. The navbar has a hover effect so when the user hovers over the different pages the text changes color. In the left corner there is a logo with a link that takes you to the landing page.
+    Each page features a responsive Materialize navbar that’s collapsed to a burger icon when viewing on smaller screens. The navbar has a hover effect so when the user hovers over the different pages the text changes color. In the left corner there is a logo with a link that takes you to the landing page.
     - Users that are not logged in have the following pages in the navbar:
         - HOME
         - RECIPES
