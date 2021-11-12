@@ -14,7 +14,7 @@ No errors were found
 
 
 ### Python
-[PEP8 online](http://pep8online.com/) was used to valide Python.  
+[PEP8 online](http://pep8online.com/) was used to validate Python.  
 No errors were found
 
 
@@ -86,11 +86,11 @@ Once the user is logged in they can log out of their account by clicking the Log
 
 - ### *As a user I want to upload my own recipes*  
 
-Once the user is registered and have an account they can add their own recipes from their account page   
+Once the user is registered and have an account they can add their own recipes from their account page by clicking the button "Add Recipe"   
 
 ![user_story_5](static/images/README/user-stories/user-story-5.png)  
 
-When they click the "Add Recipe" button they will be redirected to the Add Recipe page  
+When they click the button they will be redirected to the Add Recipe page  
 
 ![user_story_5](static/images/README/user-stories/add-recipe.png) 
 
@@ -98,7 +98,7 @@ When they click the "Add Recipe" button they will be redirected to the Add Recip
 
 - ### *As a user I want to be able to edit my recipes*  
 
-On the bottom of every recipe that the users has uploaded themselves there is an "edit" button.
+On the bottom of every recipe that the users have uploaded themselves there is an "edit" button.
 
 ![user_story_6](static/images/README/user-stories/user-story-6.png)  
 
@@ -114,7 +114,7 @@ On the bottom of every recipe that the users has uploaded themselves there is a 
 
 ![user_story_7](static/images/README/user-stories/user-story-7.png)  
 
-To not delete anyting by mistake, a modal will appear where they need to confirm the deletion or cancel it
+To not delete anything by mistake, a modal will appear where they need to either confirm the deletion or cancel it
 
 ![user_story_7](static/images/README/user-stories/delete-recipe.png)  
 
@@ -145,7 +145,7 @@ Next to the "edit" button there is a "delete" button
 
 ![user_story_12](static/images/README/user-stories/user-story-12.png)
 
-To not delete anyting by mistake, a modal will appear where they need to confirm the deletion or cancel it  
+To not delete anyting by mistake, a modal will appear where they need to either confirm the deletion or cancel it  
   
 ---   
   
@@ -153,7 +153,7 @@ To not delete anyting by mistake, a modal will appear where they need to confirm
 
 ### Card Display  
 
-When a user added the ingredients to the recipes they've appeared on the same line instead of seperate lines which made it difficult to read. The same was for the instructions.  
+When I added the ingredients to the recipes they appeared on the same line instead of seperate lines which made it difficult to read. The same was for the instructions.  
 
 <br>
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/issue1.png" width="300" height="300"/>
@@ -163,7 +163,7 @@ When a user added the ingredients to the recipes they've appeared on the same li
 from Materialize then I changed it to `textarea` and added the class of .materialize-textarea so that when a user added an ingredient or a new step in the instructions they could just press enter to make a line break. I've also added a .helper-text for clarification.
 
 
-- I've also added a for loop with list element so the ingredients/instructions could iterate through.  
+- I've added a for loop with list element so the ingredients/instructions could iterate through.  
 Previous: `{{ recipe.category_name }}`  
 Changed it to:  
 
@@ -180,8 +180,9 @@ Changed it to:
 - This solved the issue but now all the letters was on a new line.  
 <br>
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/issue2.png" width="300" height="300"/>
-<br>
-    - I added `.splitlines()`  
+<br>  
+
+- I added `.splitlines()`  
      = `{% for ingredient in recipe.ingredients.splitlines() %}`  and that fixed the issue.  
 
 - The different steps for the instructions all have nr 1.   
@@ -234,7 +235,7 @@ This actually made it look much cleaner and not so cluttered in the navbar.
 
 ## Lighthouse Testing
 
-I ran the the site through Chrome Lighthouse when I considered myself almost done and the score was quite ok, there were just some minor issues that needed to be fixed.  
+I ran the site through Chrome Lighthouse when I considered myself almost done and the score was quite ok, there were just some minor issues that needed to be fixed.  
     - Add alt text to images  
     - Add `rel="noopener"` to social media links  
     - Add meta description to base.html  
@@ -257,6 +258,7 @@ After fixing the issues my score became much better
     - Button "Show recipes" takes you to the recipe page
     - All links to social media platforms in footer opens in a new tab window   
     - Hover effect on links in navbar
+    - Hover effect on links in footer
 - Recipes
     - Search function finds the correct recipes
     - "Reset" button clears the search bar
@@ -282,9 +284,9 @@ After fixing the issues my score became much better
 - Add recipe
     - All fields in form are being filled out as expected
     - Submitting the form will not work without all fields being filled out
-    - If filled out correcly recipe is being added to the database and diaplays on account page and recipe page
+    - If filled out correcly recipe is being added to the database and displays on account page and recipe page
     - Ingredients are being displayed in a list if you press enter after every ingredient
-    - Instructions are being displayed in a ordered list if you press enter efter every step
+    - Instructions are being displayed in a ordered list if you press enter after every step
     - "Cancel" button takes you back to account page
 - Edit recipe
     - Form is prefilled with the previous information

@@ -33,13 +33,13 @@ Yum Yum is a recipe site for baby food. Users can search trough existing recipes
 
 ### Design 
 
-With a potential user in mind being a parent with restricted time searching for recipes they can make for their babies, I wanted to have a minimalistic design and focus on ways to quick and easy locate what they're looking for. That is way I choose to have the recipes on a card that immidiately shows the recipes when they click on them rather then sending the user to an additional page. This way they can click their way through several recipes to see if it's something that interest them without leaving the main page.  I didn't want to have the classic pastel colors all over the page that you normally see when it's connected to babies and that is way I choose to have a color palette with calm colors that feels a little bit more modern and also has a good contrast ratio. The name Yum Yum is for me a playful way of saying that something is good when you're talking to a baby and also indicates that the website is designed with babies in mind. 
+With a potential user in mind being a parent with restricted time searching for recipes they can make for their babies, I wanted to have a minimalistic design and focus on ways to quick and easy locate what they're looking for. That is way I choose to have the recipes on a card that immidiately shows the recipes when they click on them rather then sending the user to an additional page. This way they can click their way through several recipes to see if it's something that interest them without leaving the main page.  I didn't want to have the classic pastel colors all over the page that you normally see when it's connected to babies and that is way I choose to have a color palette with calm colors that feels a little bit more modern and also has a good contrast ratio. The name Yum Yum is for me a playful way of saying that something is good when you're talking to a baby about food and also indicates that the website is designed with babies in mind. 
 
 ![color palette](static/images/color-palette.png)
 
 #### Typography
 
-The main fonts that I choose for this project is Montserrat and Lato which are two quite simple sans-serif fonts that gives a clean expression and are easy to read. For the name of the website I have used Gluten which is a cursive font with round shapes that fits well with the kids theme. It's also being used for the flash messages to tie the page together. This is a font that I think could feel a little overhelming and unserious if it's used too much so that is way I choose to use it sparingly.
+The main fonts that I choose for this project is Montserrat and Lato which are two quite simple sans-serif fonts that gives a clean expression and are easy to read. For the name of the website I have used Gluten that with it's round shapes fits well with the kids theme. It's also being used for flash messages to tie the page together. This is a font that I think could feel a little overhelming and unserious if it's used too much so that is way I choose to use it sparingly.
 
 ### Wireframes
 Wireframes can be viewed [here](static/images/README/wireframes/wireframes.pdf)
@@ -110,6 +110,7 @@ When the Admin is logged in there is a page to manage the categories for the rec
 - At the moment there's not so many recipes on the website but eventually it will be a lot more and it could become hard to navigate if everything is on one single page and that is why pagination would be a nice feature to have.
 - To upload your own images of the recipe instead of an URL.
 - To save your favourite recipes
+- To rate recipes
 - The possibility for users to delete their own account
 - Add more information about the recipes such as allergies, servings, preparation time and so on. 
 
@@ -155,7 +156,7 @@ Diagram of my database:
 - [Coolors](https://coolors.co) - used to create color palette
 - [dbdiagarm](https://dbdiagram.io/home) - used to create database diagram 
 - [Am I Responsive](http://ami.responsivedesign.is/#) - used to create the mockup image in the beginning of this README file.
-- [Canva](https://www.canva.com) used to create the hero image and logo in navbar
+- [Canva](https://www.canva.com) - used to create the hero image and logo in navbar
 - [RealFaviconGenerator](https://realfavicongenerator.net) - used to create site favicon
 - [W3C Markup Validation Service](https://validator.w3.org) - used to check the HTML pages
 - [W3C CSS Markup Validation Service](https://jigsaw.w3.org/css-validator/) - used to check the CSS file
@@ -171,10 +172,10 @@ Testing information can be found [here](TESTING.md)
 
 ## Deployment
 ### Create Project  
-This project was creted on Github using the following steps: 
-1. Navigate to Github[GitHub](https://github.com/) and sign in
+This project was created on Github using the following steps: 
+1. Navigate to [GitHub](https://github.com/) and sign in
 2. On the left hand side above the list of your repositories click on the green button that says "New", this will create a new repository
-3. I choose the Code Institute Template from the drop down menu that says "Repository templates"
+3. From the drop down menu that says "Repository templates" I choose the Code Institute Template  
 4. Enter a name for the project and then click on the green button that says "Create Repository"
 
 Before creating the Heroku app you need to add the following files in Gitpod:
@@ -188,7 +189,7 @@ In the Procfile make sure it contains the following line: web: python app.py, an
 
 ### Deployment to Heroku  
 This project was deployed through Heroku using the following steps:
-1. Navigate to Heroku[Heroku](https://dashboard.heroku.com/login) and sign in
+1. Navigate to [Heroku](https://dashboard.heroku.com/login) and sign in
 2. On the top right corner there is a button that says "New". Click this button and choose the option "Create New App"
 3. Choose a name for the App and what region that are closest to your location, click "Create App"
 4. Click on the tab saying "Deploy" and select GitHub, Connect to GitHub
@@ -212,7 +213,7 @@ To run this project locally you need to create the env.py file using your own va
 
 1. Log in to Github.
 2. Navigate to the [repository](https://github.com/flisanp/ms3-baby-food-recipes)
-3. Click the tab that says "Code" and from the dropdown menu choose copy the Git URL
+3. Click the tab that says "Code" and from the dropdown menu choose copy Git URL
 4. Open Git and type "git clone" in the terminal followed by the URL you just copied, press enter to create your local clone
 5. To install the packages listed in the requirements file type the following in the terminal: 
 pip install -r requirements.txt

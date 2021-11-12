@@ -262,7 +262,7 @@ def not_found_error(error):
         render_template(
             "error.html",
             error_message="We can't find the page you're looking for",
-            error_title="Oooopss...",
+            error_title="Oooops...",
         ),
         404,
     )
