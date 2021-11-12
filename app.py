@@ -64,9 +64,7 @@ def search():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        """
-        check if username already exists in db
-        """
+        # check if username already exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
@@ -80,9 +78,7 @@ def register():
         }
         mongo.db.users.insert_one(register)
 
-        """
-        put the new user into 'session' cookie
-        """
+        # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
         return redirect(url_for("account", username=session["user"]))
@@ -92,17 +88,13 @@ def register():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        """
-        check if username exists in db
-        """
+        # check if username exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()}
         )
 
         if existing_user:
-            """
-            ensure hashed password matches user input
-            """
+            # ensure hashed password matches user input
             if check_password_hash(
                 existing_user["password"], request.form.get("password")
             ):
@@ -110,15 +102,11 @@ def login():
                 flash("Hi, {}".format(request.form.get("username")))
                 return redirect(url_for("account", username=session["user"]))
             else:
-                """
-                invalid password match
-                """
+                # invalid password match
                 flash("Incorrect Username and/or Password")
                 return redirect(url_for("login"))
         else:
-            """
-            username doesn't exist
-            """
+            # username doesn't exist
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
     return render_template("login.html")
@@ -141,9 +129,7 @@ def account():
 @app.route("/logout")
 def logout():
     if is_logged_in():
-        """
-        remove user from session cookie
-        """
+        # remove user from session cookie
         flash("You have been logged out, see you soon!")
         session.pop("user", None)
     return redirect(url_for("login"))
@@ -151,9 +137,7 @@ def logout():
 
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
-    """
-    adds recipe to database
-    """
+    # adds recipe to database
     if is_logged_in() and request.method == "POST":
         recipe = {
             "category_name": request.form.get("category_name"),
@@ -173,9 +157,7 @@ def add_recipe():
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
-    """
-    updates recipe in database
-    """
+    # updates recipe in database
     if is_logged_in() and request.method == "POST":
         submit = {
             "category_name": request.form.get("category_name"),
