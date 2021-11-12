@@ -4,9 +4,9 @@ from flask import (
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+from bson.errors import InvalidId
 from typing import Union
 from werkzeug.security import generate_password_hash, check_password_hash
-
 if os.path.exists("env.py"):
     import env
 
@@ -20,10 +20,10 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-# code from mentor Reuben Ferrante
 def is_logged_in() -> Union[str, None]:
     """
     Returns None if the user isn't logged in otherwise returns the username
+    Help from mentor Reuben Ferrante
     """
     return session.get("user")
 
@@ -35,32 +35,14 @@ def home():
     return render_template("index.html")
 
 
-# breakfast category page
-@app.route("/breakfast")
-def breakfast():
-    recipes = list(mongo.db.recipes.find())
-    return render_template("breakfast.html", recipes=recipes)
-
-
-# lunch category page
-@app.route("/lunch")
-def lunch():
-    recipes = list(mongo.db.recipes.find())
-    return render_template("lunch.html", recipes=recipes)
-
-
-# dinner category page
-@app.route("/dinner")
-def dinner():
-    recipes = list(mongo.db.recipes.find())
-    return render_template("dinner.html", recipes=recipes)
-
-
-# snack category page
-@app.route("/snack")
-def snack():
-    recipes = list(mongo.db.recipes.find())
-    return render_template("snack.html", recipes=recipes)
+@app.route("/get_recipes/<category>")
+def filter_recipes(category):
+    """
+    Used to dynamically filter through recipes via the category
+    """
+    app.logger.info(f"Filtering with category {category}")
+    recipes = list(mongo.db.recipes.find({"category_name": category.title()}))
+    return render_template("filtered_recipes.html", recipes=recipes, category=category)
 
 
 # all recipes page
@@ -70,9 +52,11 @@ def get_recipes():
     return render_template("recipes.html", recipes=recipes)
 
 
-# search recipes function
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    """
+    Searches for both the recipe title and the ingredients
+    """
     query = request.form.get("query")
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
     return render_template("recipes.html", recipes=recipes)
@@ -100,7 +84,6 @@ def register():
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
         return redirect(url_for("account", username=session["user"]))
-
     return render_template("register.html")
 
 
@@ -125,12 +108,10 @@ def login():
                 # invalid password match
                 flash("Incorrect Username and/or Password")
                 return redirect(url_for("login"))
-
         else:
             # username doesn't exist
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
-
     return render_template("login.html")
 
 
@@ -143,13 +124,10 @@ def account():
         # grab the session user's username from db
         user = mongo.db.users.find_one({"username": session["user"]})
         recipes = list(mongo.db.recipes.find({"created_by": user["username"]}))
-
-        if session["user"]:
-            return render_template("account.html", user=user, recipes=recipes)
-        return redirect(url_for("login"))
+        return render_template("account.html", user=user, recipes=recipes)
+    return redirect(url_for("login"))
 
 
-# logout function
 @app.route("/logout")
 def logout():
     if is_logged_in():
@@ -200,7 +178,6 @@ def edit_recipe(recipe_id):
         "edit_recipe.html", recipe=recipe, categories=categories)
 
 
-# delete recipe function
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     if is_logged_in():
@@ -209,14 +186,12 @@ def delete_recipe(recipe_id):
     return redirect(url_for("get_recipes"))
 
 
-# manage categories page
 @app.route("/get_categories")
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
 
 
-# add category function
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
     if request.method == "POST":
@@ -230,7 +205,6 @@ def add_category():
     return render_template("add_category.html")
 
 
-# edit category function
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
     if request.method == "POST":
@@ -245,7 +219,6 @@ def edit_category(category_id):
     return render_template("edit_category.html", category=category)
 
 
-# delete category function
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
@@ -253,11 +226,13 @@ def delete_category(category_id):
     return redirect(url_for("get_categories"))
 
 
-# 404 error page, code from:
-# https://blog.miguelgrinberg.com/post/
-# the-flask-mega-tutorial-part-vii-error-handling
+
 @app.errorhandler(404)
 def not_found_error(error):
+    """
+    404 error page, code referenced from:
+    https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vii-error-handling
+    """
     return (
         render_template(
             "error.html",
@@ -267,13 +242,15 @@ def not_found_error(error):
         404,
     )
 
-# mentor Reuben Ferrante helped me with these
-# functions for error handling and to make them more efficient
 @app.errorhandler(Exception)
 def server_error(error):
+    """
+    Catches any potential exception which is then handled according
+    to the instance type
+    """
     # optional
     error_title = "Oooops..."
-    if isinstance(error, bson.errors.InvalidId):
+    if isinstance(error, InvalidId):
         error_message = "Couldn't find it in the database"
     else:
         error_message = "Something went wrong"

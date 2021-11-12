@@ -27,10 +27,10 @@
 <!--category links-->
 <ul class="pagination center-align">
    <li class="active"><a href="{{ url_for('get_recipes') }}">All</a></li>
-   <li><a href="{{ url_for('breakfast') }}">Breakfast</a></li>
-   <li><a href="{{ url_for('lunch') }}">Lunch</a></li>
-   <li><a href="{{ url_for('dinner') }}">Dinner</a></li>
-   <li><a href="{{ url_for('snack') }}">Snack</a></li>
+   <li><a href="{{ url_for('filter_recipes', category='breakfast') }}">Breakfast</a></li>
+   <li><a href="{{ url_for('filter_recipes', category='lunch') }}">Lunch</a></li>
+   <li><a href="{{ url_for('filter_recipes', category='dinner') }}">Dinner</a></li>
+   <li><a href="{{ url_for('filter_recipes', category='snack') }}">Snack</a></li>
 </ul>
 <!--all recipes-->
 <div class="row">
