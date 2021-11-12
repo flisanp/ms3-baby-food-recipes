@@ -52,21 +52,21 @@ Wireframes can be viewed [here](static/images/README/wireframes/wireframes.pdf)
 - **Navbar** 
     - Each page features a responsive Materialize navbar that’s collapsed to a burger icon when viewing on smaller screens. The navbar has a hover effect so when the user hovers over the different pages the text changes color. In the left corner there is a logo with a link that takes you to the landing page.
     - Users that are not logged in have the following pages in the navbar:
-        - *HOME*
-        - *RECIPES*
-        - *SIGN UP*
-        - *LOG IN* 
+        - HOME
+        - RECIPES
+        - SIGN UP
+        - LOG IN  
     - Users that are logged in have the following pages in the navbar:
-        - *HOME*
-        - *RECIPES*
-        - *ACCOUNT*
-        - *LOG OUT* 
+        - HOME
+        - RECIPES
+        - ACCOUNT
+        - LOG OUT  
     - Admin that are logged in have the following pages in the navbar:
-        - *HOME*
-        - *RECIPES*
-        - *ACCOUNT*
-        - *MANAGE CATEGORIES*
-        - *LOG OUT* 
+        - HOME
+        - RECIPES
+        - ACCOUNT
+        - MANAGE CATEGORIES
+        - LOG OUT  
 
 - **Footer**
         - The footer is displayed on all pages and features links to social media accounts (currently to the main sites for the platforms but will eventually be linked to Yum Yum's social media accounts once they exist)
