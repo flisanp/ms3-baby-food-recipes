@@ -32,7 +32,7 @@ When running the script.js file through JShint the linter throws a warning regar
 ## Testing User Stories
 
 
-- ### *As a user I easily want to find good and healthy recipes that I can make for my baby*   
+- *As a user I easily want to find good and healthy recipes that I can make for my baby*   
 
 All users who visits the website can view the recipes without having an account or log in. They can navigate through the navbar or use the "show recipes" button on the landing page.
 
@@ -42,7 +42,7 @@ All users who visits the website can view the recipes without having an account 
 
 ---    
 
-- ### *As a user I want to be able to search for a specific ingredient in the recipes*  
+- *As a user I want to be able to search for a specific ingredient in the recipes*  
 
 Users can use the search bar on the recipe page. Search results comes from ingredients in the recipe or the name of the recipe  
 
@@ -58,7 +58,7 @@ If there's no match the line "No Results Found" is displayed
 
 ---
 
-- ### *As a user I want to be able to look for recipes sorted by category*  
+- *As a user I want to be able to look for recipes sorted by category*  
 
 Users can choose to either see all recipes or to filter them by the categories: *Breakfast*, *Lunch*, *Dinner* and *Snack*
 
@@ -66,7 +66,7 @@ Users can choose to either see all recipes or to filter them by the categories: 
 
 ---
 
-- ### *As a user I want to be able to register my own account*  
+- *As a user I want to be able to register my own account*  
 
 From the navbar users can reach the Sign Up page where they can register to have their own account. There they choose a username and a password, if the username is already taken they will be informed with the line "Username already exists".
 
@@ -74,7 +74,7 @@ From the navbar users can reach the Sign Up page where they can register to have
 
 ---
 
-- ### *As a user I want to be able to log in to my account*  
+- *As a user I want to be able to log in to my account*  
 
 After a user has been registered they can log in to their account through the Log In page located in the navbar
 
@@ -82,7 +82,7 @@ After a user has been registered they can log in to their account through the Lo
 
 ---
 
-- ### *As a user I want to be able to log out of my account*  
+- *As a user I want to be able to log out of my account*  
 
 Once the user is logged in they can log out of their account by clicking the Log Out link located in the navbar
 
@@ -90,7 +90,7 @@ Once the user is logged in they can log out of their account by clicking the Log
 
 ---
 
-- ### *As a user I want to upload my own recipes*  
+- *As a user I want to upload my own recipes*  
 
 Once the user is registered and have an account they can add their own recipes from their account page by clicking the button "Add Recipe"   
 
@@ -102,7 +102,7 @@ When they click the button they will be redirected to the Add Recipe page
 
 ---
 
-- ### *As a user I want to be able to edit my recipes*  
+- *As a user I want to be able to edit my recipes*  
 
 On the bottom of every recipe that the users have uploaded themselves there is an "edit" button.
 
@@ -114,7 +114,7 @@ When they click on the button they will be redirected to the edit recipe page. T
 
 ---
 
-- ### *As a user I want to be able to delete my recipes*  
+- *As a user I want to be able to delete my recipes*  
 
 On the bottom of every recipe that the users has uploaded themselves there is a "delete" button.
 
@@ -126,7 +126,7 @@ To not delete anything by mistake, a modal will appear where they need to either
 
 ---
 
-- ### *As a site admin I want to be able to add new categories to the site*  
+- *As a site admin I want to be able to add new categories to the site*  
 
 When you're logged in as site admin you get an additional page in the navbar that's called "Manage Categories". From here the admin can add new categories.
 
@@ -134,7 +134,7 @@ When you're logged in as site admin you get an additional page in the navbar tha
 
 ---
 
-- ### *As a site admin I want to be able to edit categories*  
+- *As a site admin I want to be able to edit categories*  
 When admin clicks the name of the category they wish to edit the "edit" button will appear  
 
 ![user_story_11](static/images/README/user-stories/user-story-11.png)  
@@ -145,7 +145,7 @@ When they click on the button they will be redirected to the edit category page.
 
 ---
 
-- ### *As a site admin I want to be able to delete categories*  
+- *As a site admin I want to be able to delete categories*  
 
 Next to the "edit" button there is a "delete" button
 
@@ -191,7 +191,7 @@ Changed it to:
 - I added `.splitlines()`  
      = `{% for ingredient in recipe.ingredients.splitlines() %}`  and that fixed the issue.  
 
-- The different steps for the instructions all have nr 1.   
+- The different steps for the instructions now all have nr 1.   
 <br>
 <img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/issue3.png" width="300" height="300"/>
 <br>

@@ -33,7 +33,7 @@ Yum Yum is a recipe site for baby food. Users can search through existing recipe
 
 ### Design 
 
-With a potential user in mind being a parent with restricted time searching for recipes they can make for their babies, I wanted to have a minimalistic design and focus on ways to quick and easy locate what they're looking for. That is why I choose to have the recipes on a card that immidiately shows the recipes when they click on them rather then sending the user to an additional page. This way they can click their way through several recipes to see if it's something that interest them without leaving the main page. 
+With a potential user in mind being a parent with restricted time searching for recipes they can make for their babies, I wanted to have a minimalistic design and focus on giving the user an easy and quick way of locate what they're looking for. That is why I choose to have the recipes on a card that immidiately shows the recipes when they click on them rather then sending the user to an additional page. This way they can click their way through several recipes to see if it's something that interest them without leaving the main page. 
 ![color palette](static/images/README/recipe-cards.png) 
 
 #### Colors
