@@ -28,7 +28,6 @@ def is_logged_in() -> Union[str, None]:
     return session.get("user")
 
 
-# landing page
 @app.route("/")
 @app.route("/home")
 def home():
@@ -42,10 +41,10 @@ def filter_recipes(category):
     """
     app.logger.info(f"Filtering with category {category}")
     recipes = list(mongo.db.recipes.find({"category_name": category.title()}))
-    return render_template("filtered_recipes.html", recipes=recipes, category=category)
+    return render_template(
+        "filtered_recipes.html", recipes=recipes, category=category)
 
 
-# all recipes page
 @app.route("/get_recipes")
 def get_recipes():
     recipes = list(mongo.db.recipes.find())
@@ -62,11 +61,12 @@ def search():
     return render_template("recipes.html", recipes=recipes)
 
 
-# register function
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        # check if username already exists in db
+        """
+        check if username already exists in db
+        """
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
@@ -80,24 +80,29 @@ def register():
         }
         mongo.db.users.insert_one(register)
 
-        # put the new user into 'session' cookie
+        """
+        put the new user into 'session' cookie
+        """
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
         return redirect(url_for("account", username=session["user"]))
     return render_template("register.html")
 
 
-# login function
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        # check if username exists in db
+        """
+        check if username exists in db
+        """
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()}
         )
 
         if existing_user:
-            # ensure hashed password matches user input
+            """
+            ensure hashed password matches user input
+            """
             if check_password_hash(
                 existing_user["password"], request.form.get("password")
             ):
@@ -105,23 +110,28 @@ def login():
                 flash("Hi, {}".format(request.form.get("username")))
                 return redirect(url_for("account", username=session["user"]))
             else:
-                # invalid password match
+                """
+                invalid password match
+                """
                 flash("Incorrect Username and/or Password")
                 return redirect(url_for("login"))
         else:
-            # username doesn't exist
+            """
+            username doesn't exist
+            """
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
     return render_template("login.html")
 
 
-# account page 
-# (Mentor Reuben Ferrante helped
-# me with parts of the code for this function)
 @app.route("/account", methods=["GET", "POST"])
 def account():
     if is_logged_in():
-        # grab the session user's username from db
+        """
+        (Mentor Reuben Ferrante helped
+        me with parts of the code for this function)
+        grab the session user's username from db
+        """
         user = mongo.db.users.find_one({"username": session["user"]})
         recipes = list(mongo.db.recipes.find({"created_by": user["username"]}))
         return render_template("account.html", user=user, recipes=recipes)
@@ -131,15 +141,19 @@ def account():
 @app.route("/logout")
 def logout():
     if is_logged_in():
-        # remove user from session cookie
+        """
+        remove user from session cookie
+        """
         flash("You have been logged out, see you soon!")
         session.pop("user", None)
     return redirect(url_for("login"))
 
 
-# create recipe function
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
+    """
+    adds recipe to database
+    """
     if is_logged_in() and request.method == "POST":
         recipe = {
             "category_name": request.form.get("category_name"),
@@ -157,9 +171,11 @@ def add_recipe():
     return render_template("add_recipe.html", categories=categories)
 
 
-# update recipe function
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
+    """
+    updates recipe in database
+    """
     if is_logged_in() and request.method == "POST":
         submit = {
             "category_name": request.form.get("category_name"),
@@ -226,7 +242,6 @@ def delete_category(category_id):
     return redirect(url_for("get_categories"))
 
 
-
 @app.errorhandler(404)
 def not_found_error(error):
     """
@@ -242,13 +257,13 @@ def not_found_error(error):
         404,
     )
 
+
 @app.errorhandler(Exception)
 def server_error(error):
     """
     Catches any potential exception which is then handled according
     to the instance type
     """
-    # optional
     error_title = "Oooops..."
     if isinstance(error, InvalidId):
         error_message = "Couldn't find it in the database"
