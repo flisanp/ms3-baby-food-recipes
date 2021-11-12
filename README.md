@@ -5,7 +5,7 @@
 ![mockup image](static/images/README/mockup.png)
 
 
-Yum Yum is a recipe site for baby food. Users can search trough existing recipes and create an account where they can upload and store their own recipes and share them with other users. As a new mom I've realized the importance of finding good and healthy recipes for my kid. I've also realized the importance of finding them fast due to lack of time. This is why I wanted to create this website for me and parents alike that could benefit from this service.
+Yum Yum is a recipe site for baby food. Users can search through existing recipes and create an account where they can upload and store their own recipes and share them with other users. As a new mom I've realized the importance of finding good and healthy recipes for my kid. I've also realized the importance of finding them fast due to lack of time. This is why I wanted to create this website for me and parents alike that could benefit from this service.
 
 ---  
 
@@ -33,17 +33,17 @@ Yum Yum is a recipe site for baby food. Users can search trough existing recipes
 
 ### Design 
 
-With a potential user in mind being a parent with restricted time searching for recipes they can make for their babies, I wanted to have a minimalistic design and focus on ways to quick and easy locate what they're looking for. That is way I choose to have the recipes on a card that immidiately shows the recipes when they click on them rather then sending the user to an additional page. This way they can click their way through several recipes to see if it's something that interest them without leaving the main page. 
+With a potential user in mind being a parent with restricted time searching for recipes they can make for their babies, I wanted to have a minimalistic design and focus on ways to quick and easy locate what they're looking for. That is why I choose to have the recipes on a card that immidiately shows the recipes when they click on them rather then sending the user to an additional page. This way they can click their way through several recipes to see if it's something that interest them without leaving the main page. 
 ![color palette](static/images/README/recipe-cards.png) 
 
 #### Colors
-I didn't want to have the classic pastel colors all over the page that you normally see when it's connected to babies and that is way I choose to have a color palette with calm colors that feels a little bit more modern and also has a good contrast ratio. The name Yum Yum is for me a playful way of saying that something is good when you're talking to a baby about food and also indicates that the website is designed with babies in mind. 
+I didn't want to have the classic pastel color scheme that you normally see when it's connected to babies and that is why I choose to have a color palette with calm colors that feels a little bit more sophisticated and also has a good contrast ratio. The name Yum Yum is for me a playful way of saying that something is good when you're talking to a baby about food and also indicates that the website is designed with babies in mind. 
 
 ![color palette](static/images/README/color-palette.png)
 
 #### Typography
 
-The main fonts that I choose for this project is Montserrat and Lato which are two quite simple sans-serif fonts that gives a clean expression and are easy to read. For the name of the website I have used Gluten that with it's round shapes fits well with the kids theme. It's also being used for flash messages to tie the page together. This is a font that I think could feel a little overhelming and unserious if it's used too much so that is way I choose to use it sparingly.
+The main fonts that I choose for this project is Montserrat and Lato which are two quite simple sans-serif fonts that gives a clean expression and are easy to read. For the name of the website I have used Gluten that with it's round shapes fits well with the kids theme. It's also being used for flash messages to tie the page together. This is a font that I think could feel a little overhelming and unserious if it's used too much so that is why I choose to use it sparingly.
 
 ### Wireframes
 Wireframes can be viewed [here](static/images/README/wireframes/wireframes.pdf)
@@ -75,7 +75,7 @@ Wireframes can be viewed [here](static/images/README/wireframes/wireframes.pdf)
 - **Footer**
         - The footer is displayed on all pages and features links to social media accounts (currently to the main sites for the platforms but will eventually be linked to Yum Yum's social media accounts once they exist)
 
-- **Home** - The landing page features a flat illustration picturing a woman feeding a baby that is sitting in her lap. There is also a call to action button with the text *show recipes* that leads to the page with all the recipes so that users quick and easy can find it.
+- **Home** - The landing page features a flat illustration picturing a woman feeding a baby that is sitting in her lap. There is also a call to action button with the text *show recipes* that leads to the page with all the recipes so that users have an easy and quick way of finding it.
 
 - **Recipes** 
     The Recipe page features a search bar at the top and below are links to the different categories that the recipes are divided into so you can filter out the category you're intrested in. The recipes are presented in a grid with image cards.
@@ -104,19 +104,20 @@ On top of the Account page there is a button to Add a recipe and below is all th
 The Sign up page features a simple form where the user can pick a username and a password. A request is made to MongoDB to check if the username is already in use. If it's not being used a profile is created and the user is directed to their account page.
 
 - **Log In**
-The log in page also features a simple form  where the user type their username and password to log in to their account. If the user don't exists or make a typo a flash message appears that says "Incorrect Username and/or Password".
+The log in page also features a simple form where the user type their username and password to log in to their account. If the user doesn't exist or make a typo when writing, a flash message appears that says "Incorrect Username and/or Password".
 
 - **Manage Categories**
-When the Admin is logged in there is a page to manage the categories for the recipes. It's possible to either edit or delete the existing categories or to add new ones.
+When site admin is logged in there is a page to manage the categories for the recipes. It's possible to either edit or delete the existing categories or to add new ones.
 
 
 ### Features Left To Implement
-- At the moment there's not so many recipes on the website but eventually it will be a lot more and it could become hard to navigate if everything is on one single page and that is why pagination would be a nice feature to have.
-- To upload your own images of the recipe instead of an URL.
+- At the moment there are not so many recipes on the website but eventually it will be a lot more and it could become hard to navigate if everything is on one single page and that is why pagination would be a nice feature to have.
+- To upload your own images of the recipe instead of an URL
 - To save your favourite recipes
 - To rate recipes
 - The possibility for users to delete their own account
-- Add more information about the recipes such as allergies, servings, preparation time and so on. 
+- Add more information about the recipes such as allergies, servings, preparation time and so on
+- A more informative landing page that continues when you scroll with e.g top rated recipes, recipes for different ages or other tips that could be useful for parents
 
 ---
 
