@@ -52,12 +52,11 @@ h5 {
 	color: #381D2A;
 }
 
-
 /*----------navbar-----------*/
-
-
-/* changing the text color on navbar:
-https://stackoverflow.com/questions/33746269/changing-the-text-color-on-a-nav-bar-using-materialize-css-rails */
+/* 
+changing the text color on navbar:
+https://stackoverflow.com/questions/33746269/changing-the-text-color-on-a-nav-bar-using-materialize-css-rails 
+*/
 
 nav ul li a {
 	color: #381D2A;
@@ -101,7 +100,6 @@ nav {
 	margin-left: 5px;
 }
 
-
 /*----------index page-----------*/
 
 .top-text {
@@ -129,7 +127,6 @@ nav {
 	height: 100vh;
 }
 
-
 /*----------recipes-----------*/
 
 .recipe-image {
@@ -146,13 +143,11 @@ nav {
 
 .card .card-title:hover {
 	color: #FC6A60 !important;
-	;
 }
 
 .pagination li.active {
 	background-color: #FC6A60 !important;
 }
-
 
 /*----------buttons-----------*/
 
@@ -185,7 +180,10 @@ nav {
 	color: #FC6A60;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/*----------media queries----------*/
+/* 
+Large devices (laptops/desktops, 992px and up) 
+*/
 @media only screen and (min-width: 992px) {
 	.headline {
 		margin-top: 6rem;
