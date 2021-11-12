@@ -2,7 +2,7 @@
 
 [A live version of the page can be viewed here](https://baby-food.herokuapp.com/home)
 
-![mockup image]()
+![mockup image](static/images/README/mockup.png)
 
 
 Yum Yum is a recipe site for baby food. Users can search trough existing recipes and create an account where they can upload and store their own recipes and share them with other users. As a new mom I've realized the importance of finding good and healthy recipes for my kid. I've also realized the importance of finding them fast due to lack of time. This is why I wanted to create this website for me and parents alike that could benefit from this service.
@@ -154,7 +154,7 @@ Diagram of my database:
 - [Freeformatter](https://www.freeformatter.com/) - used to beautify code
 - [Coolors](https://coolors.co) - used to create color palette
 - [dbdiagarm](https://dbdiagram.io/home) - used to create database diagram 
-- [Techsini](https://techsini.com/multi-mockup/index.php) - used to create the mockup image in the beginning of this README file.
+- [Am I Responsive](http://ami.responsivedesign.is/#) - used to create the mockup image in the beginning of this README file.
 - [Canva](https://www.canva.com) used to create the hero image and logo in navbar
 - [RealFaviconGenerator](https://realfavicongenerator.net) - used to create site favicon
 - [W3C Markup Validation Service](https://validator.w3.org) - used to check the HTML pages
