@@ -33,9 +33,13 @@ Yum Yum is a recipe site for baby food. Users can search trough existing recipes
 
 ### Design 
 
-With a potential user in mind being a parent with restricted time searching for recipes they can make for their babies, I wanted to have a minimalistic design and focus on ways to quick and easy locate what they're looking for. That is way I choose to have the recipes on a card that immidiately shows the recipes when they click on them rather then sending the user to an additional page. This way they can click their way through several recipes to see if it's something that interest them without leaving the main page.  I didn't want to have the classic pastel colors all over the page that you normally see when it's connected to babies and that is way I choose to have a color palette with calm colors that feels a little bit more modern and also has a good contrast ratio. The name Yum Yum is for me a playful way of saying that something is good when you're talking to a baby about food and also indicates that the website is designed with babies in mind. 
+With a potential user in mind being a parent with restricted time searching for recipes they can make for their babies, I wanted to have a minimalistic design and focus on ways to quick and easy locate what they're looking for. That is way I choose to have the recipes on a card that immidiately shows the recipes when they click on them rather then sending the user to an additional page. This way they can click their way through several recipes to see if it's something that interest them without leaving the main page. 
+![color palette](static/images/README/recipe-cards.png) 
 
-![color palette](static/images/color-palette.png)
+#### Colors
+I didn't want to have the classic pastel colors all over the page that you normally see when it's connected to babies and that is way I choose to have a color palette with calm colors that feels a little bit more modern and also has a good contrast ratio. The name Yum Yum is for me a playful way of saying that something is good when you're talking to a baby about food and also indicates that the website is designed with babies in mind. 
+
+![color palette](static/images/README/color-palette.png)
 
 #### Typography
 
@@ -280,3 +284,5 @@ Cherries vector is from [Vecteezy](https://www.vecteezy.com/free-vector/apple)
 ---
 
 ## Acknowledgements
+
+Special thanks to my mentor Reuben Ferrante for valuable feedback throughout the project
