@@ -166,6 +166,10 @@ nav {
 	background-color: #FC6A60 !important;
 }
 
+.btn-hero {
+	height: 40px;
+	line-height: 40px;
+}
 
 /*----------footer----------*/
 

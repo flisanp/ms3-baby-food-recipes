@@ -19,11 +19,14 @@ No errors were found
 
 
 ### JS Testing  
-[JShint](https://jshint.com/) was used to validate JavaScript.
-When running the script.js file through JShint the linter throws a warning regarding an undefined variable. This is because the $ sign is jQuery syntax and the linter is checking for ES6 syntax which jQuery operators aren't a part of.
+[JShint](https://jshint.com/) was used to validate JavaScript.  
+
+When running the script.js file through JShint the linter throws a warning regarding an undefined variable. This is because the $ sign is jQuery syntax and the linter is checking for ES6 syntax which jQuery operators aren't a part of.  
+
 <br>
-<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/font-size.png" width="300" height= auto />
-<br>
+<img src="https://github.com/flisanp/ms3-baby-food-recipes/blob/main/static/images/README/bugs/jshint.png" width="300" height= auto />
+<br>  
+
 ---  
 
 ## Testing User Stories
