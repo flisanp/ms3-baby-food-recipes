@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200;300;400;500&family=Lato:wght@100;300;400&family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	display: flex;
@@ -119,7 +120,7 @@ nav {
 	font-size: 54px;
 }
 
-.sub-headline{
+.sub-headline {
 	margin-top: 3rem;
 }
 
@@ -164,6 +165,7 @@ nav {
 .btn-hero {
 	height: 40px;
 	line-height: 40px;
+	transition: background-color .2s ease-out;
 }
 
 /*----------footer----------*/
@@ -174,6 +176,14 @@ nav {
 
 .social-icons {
 	color: #381D2A !important;
+}
+
+i.fab {
+	width: 18px;
+	height: 18px;
+	padding: 10px 0;
+	font-size: 20px !important;
+	line-height: 7px;
 }
 
 .social-icons i:hover {
@@ -187,6 +197,5 @@ Large devices (laptops/desktops, 992px and up)
 @media only screen and (min-width: 992px) {
 	.headline {
 		margin-top: 6rem;
-	}	
+	}
 }
-
